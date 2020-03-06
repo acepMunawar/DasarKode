@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class ScreenFlash extends AppCompatActivity {
-    private int duration = 8000;
+    private int duration = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
