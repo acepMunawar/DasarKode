@@ -9,15 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".home_kuis">
+            <intent-filter>
+                <action android:name=".home_kuis" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".belajar.home_belajar">
+            <intent-filter>
+                <action android:name=".belajar.home_belajar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ScreenFlash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".home">
             <intent-filter>
-                <action android:name=".home"/>
+                <action android:name=".home" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
