@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_kuis">
+    tools:context=".menu_kuis">
 
     <TextView
         android:id="@+id/border_background_1"

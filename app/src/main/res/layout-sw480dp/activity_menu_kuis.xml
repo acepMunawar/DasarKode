@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00C6EB"
-    tools:context=".home_kuis">
+    tools:context=".menu_kuis">
 
     <ImageView
         android:id="@+id/logo_dk"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_custom_1"
+        android:background="@drawable/button_custom_gray"
         android:text="Info"
         android:textColor="#E9E9F0"
         app:layout_constraintBottom_toTopOf="@+id/border_background_1"
@@ -49,7 +49,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_custom_1"
+        android:background="@drawable/button_custom_gray"
         android:text="Belajar"
         android:textColor="#E9E9F0"
         app:layout_constraintBottom_toTopOf="@+id/border_background_1"
@@ -67,7 +67,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_custom_1"
+        android:background="@drawable/button_custom_gray"
         android:text="Kuis"
         android:textColor="#E9E9F0"
         app:layout_constraintBottom_toTopOf="@+id/border_background_1"
