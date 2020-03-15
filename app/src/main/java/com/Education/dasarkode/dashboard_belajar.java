@@ -1,16 +1,14 @@
-package com.Education.dasarkode.belajar;
+package com.Education.dasarkode;
 
-import com.Education.dasarkode.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-
-public class menu_belajar extends AppCompatActivity {
+public class dashboard_belajar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_belajar);
+        setContentView(R.layout.activity_dashboard_belajar);
     }
 }

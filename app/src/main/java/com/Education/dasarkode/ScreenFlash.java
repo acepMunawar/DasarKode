@@ -19,7 +19,7 @@ public class ScreenFlash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
                                       @Override
                                       public void run() {
-                                          Intent home =new Intent(ScreenFlash.this, dashboard.class);
+                                          Intent home =new Intent(ScreenFlash.this, dashboard_belajar.class);
                                           startActivity(home);
                                           finish();
                                       }
