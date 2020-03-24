@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/btn_kuis"
-        android:title="@string/kuis"
-        android:icon="@drawable/bw"
+        android:id="@+id/nav_belajar"
+        android:icon="@drawable/learn_ic"
         />
     <item
-        android:id="@+id/btn_belajar"
-        android:title="@string/belajar"
-        android:icon="@drawable/belajar_ic"
+        android:id="@+id/nav_kuis"
+        android:icon="@drawable/kuis_ic"
         />
     <item
-        android:id="@+id/btn_user"
-        android:title="@string/user"
+        android:id="@+id/nav_info"
+        android:icon="@drawable/info_ic"
+        />
+    <item
+        android:id="@+id/nav_user"
         android:icon="@drawable/user_ic"
         />
+
 </menu>
