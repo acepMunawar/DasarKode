@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAqua"
-    tools:context=".dashboard_belajar">
+    tools:context=".dashboard_kuis">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragmentDashboardBelajar"
+        android:id="@+id/fragmentDashboardKuis"
         android:layout_width="match_parent"
         android:layout_height="750dp"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_bottom_belajar"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bottom_kuis"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
         app:layout_constraintVertical_bias="0.65" />
@@ -31,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_top_belajar"
+            android:id="@+id/nav_top_kuis"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_gravity="bottom"
@@ -52,12 +51,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="7dp"
-        android:src="@drawable/logo_belajar_ic"
+        android:src="@drawable/logo_kuis_ic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_bottom_belajar"
+        android:id="@+id/nav_bottom_kuis"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="bottom"
