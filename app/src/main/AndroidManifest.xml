@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".UserInterface.Belajar.ruby.menuBelajarRuby"></activity>
+        <activity android:name=".UserInterface.Belajar.mysql.menuBelajarMysql" />
+        <activity android:name=".UserInterface.Belajar.python.menuBelajarPython" />
+        <activity android:name=".UserInterface.Belajar.cpp.menuBelajarCpp" />
+        <activity android:name=".UserInterface.Belajar.Java.menuBelajarJava" />
+        <activity android:name=".UserInterface.Belajar.Algoritma.menuBelajarAlgoritma" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ScreenFlash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

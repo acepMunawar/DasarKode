@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 import com.Education.dasarkode.UserInterface.Belajar.Fragment_dashboard_belajar;
 import com.Education.dasarkode.UserInterface.Info.Fragment_dashboard_info;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.nav_bottom_dasarkode);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentDashboardBelajar, new Fragment_dashboard_belajar()).commit();
+        ImageButton imageButton;
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
