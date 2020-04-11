@@ -17,6 +17,7 @@ import com.Education.dasarkode.UserInterface.Belajar.cpp.menuBelajarCpp;
 import com.Education.dasarkode.UserInterface.Belajar.mysql.menuBelajarMysql;
 import com.Education.dasarkode.UserInterface.Belajar.python.menuBelajarPython;
 import com.Education.dasarkode.UserInterface.Belajar.ruby.menuBelajarRuby;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Fragment_dashboard_belajar extends Fragment {
 
@@ -24,7 +25,7 @@ public class Fragment_dashboard_belajar extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dashboard_belajar, container, false);
+        final View view = inflater.inflate(R.layout.fragment_dashboard_belajar, container, false);
 
            ImageButton btnAlgoritma = (ImageButton) view.findViewById(R.id.algoritma);
             btnAlgoritma.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentAlgoritma = new Intent(getActivity(), menuBelajarAlgoritma.class);
                     startActivity(intentAlgoritma);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 
@@ -41,6 +43,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentJava = new Intent(getActivity(), menuBelajarJava.class);
                     startActivity(intentJava);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 
@@ -50,6 +53,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentCpp = new Intent(getActivity(),menuBelajarCpp.class);
                     startActivity(intentCpp);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 
@@ -59,6 +63,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentPython = new Intent(getActivity(), menuBelajarPython.class);
                     startActivity(intentPython);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 
@@ -68,6 +73,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentRuby = new Intent(getActivity(), menuBelajarRuby.class);
                     startActivity(intentRuby);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 
@@ -77,6 +83,7 @@ public class Fragment_dashboard_belajar extends Fragment {
                 public void onClick(View v) {
                     Intent intentMysql = new Intent(getActivity(), menuBelajarMysql.class);
                     startActivity(intentMysql);
+                    getActivity().overridePendingTransition(0,0);
                 }
             });
 

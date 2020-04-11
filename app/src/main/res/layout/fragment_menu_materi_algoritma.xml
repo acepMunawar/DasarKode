@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserInterface.Belajar.Algoritma.FragmentMenuMateriAlgoritma">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="232dp"
+                android:layout_marginRight="232dp"
+                android:src="@drawable/list_menu_algoritma_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+<!-- button list theory-->
+            <Button
+                android:id="@+id/button_first_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="first button"
+                android:drawableLeft=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_second_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="second button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_first_materi" />
+
+            <Button
+                android:id="@+id/button_third_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="third button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_second_materi" />
+
+            <Button
+                android:id="@+id/button_fourth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button fourth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_third_materi" />
+
+            <Button
+                android:id="@+id/button_sixth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button sixth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_fifth_materi" />
+
+            <Button
+                android:id="@+id/button_fifth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button fifth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_fourth_materi" />
+
+            <Button
+                android:id="@+id/button_seventh_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button seventh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_sixth_materi" />
+
+            <Button
+                android:id="@+id/button_eighth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button eighth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_seventh_materi" />
+
+            <Button
+                android:id="@+id/button_nineth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button nineth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_eighth_materi" />
+
+            <Button
+                android:id="@+id/button_tenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button tenth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_nineth_materi" />
+
+            <Button
+                android:id="@+id/button_eleventh_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button eleventh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_tenth_materi" />
+
+            <Button
+                android:id="@+id/button_twelfth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button twelfth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_eleventh_materi" />
+
+            <Button
+                android:id="@+id/button_thirteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button thirteenth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twelfth_materi" />
+
+            <Button
+                android:id="@+id/button_fourteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button fourteenth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_thirteenth_materi" />
+
+            <Button
+                android:id="@+id/button_fifteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:text="button fifteenth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_fourteenth_materi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

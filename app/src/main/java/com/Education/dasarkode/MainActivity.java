@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.nav_bottom_dasarkode);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentDashboardBelajar, new Fragment_dashboard_belajar()).commit();
-        ImageButton imageButton;
+
 
     }
 

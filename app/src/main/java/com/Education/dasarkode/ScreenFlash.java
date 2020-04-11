@@ -21,6 +21,7 @@ public class ScreenFlash extends AppCompatActivity {
                                       public void run() {
                                           Intent home =new Intent(ScreenFlash.this, MainActivity.class);
                                           startActivity(home);
+                                          overridePendingTransition(0,0);
                                           finish();
                                       }
                                   },duration
