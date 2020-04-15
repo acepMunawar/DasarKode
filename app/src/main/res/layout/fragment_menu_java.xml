@@ -14,11 +14,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -26,14 +26,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="232dp"
                 android:layout_marginRight="232dp"
-                android:src="@drawable/list_menu_java1"
+                android:src="@drawable/list_menu_javaa10"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <!-- button list theory-->
             <Button
-                android:id="@+id/button_first_materi"
+                 android:id="@+id/button_first_materi"
                 android:layout_width="290dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="180dp"
@@ -42,7 +42,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Pengertian logika algoritma"
+                android:text="Pengertian bahasa pemograman java"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -59,7 +59,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Definisi struktur data algoritma"
+                android:text="Install bahasa pemograman java"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -76,7 +76,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Penulisan algoritma deskriptif"
+                android:text="Membuat Pemograman Java pertama"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -90,13 +90,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Penulisan algoritma pseudocode"
-                android:textSize="18dp"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
+                android:text="Install Text Editor IDE"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_third_materi" />
 
@@ -110,7 +110,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Penulisan algoritma flowchart"
+                android:text="Tipe Data dan Variable"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -127,7 +127,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Struktur data array"
+                android:text="Operator di Program Java"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -145,7 +145,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Struktur data stack"
+                android:text="Input dan Output di Program Java"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"
@@ -159,13 +159,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Struktur data queue"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Percabangan di Program Java"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_seventh_materi" />
 
@@ -176,13 +176,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Struktur data tree"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Perulangan di Program Java"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_eighth_materi" />
 
@@ -193,13 +193,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Struktur data graph"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Struktur Data Array di Program Java"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_nineth_materi" />
 
@@ -210,13 +210,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Studikasus permasalahan sederhana"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Struktur Data Array List di Program Java"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_tenth_materi" />
 
@@ -227,13 +227,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Studi kasus perbandingan"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Struktur Data HashMap"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_eleventh_materi" />
 
@@ -244,13 +244,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Studi kasus konversi"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Konsep dasar OOP"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_twelfth_materi" />
 
@@ -261,13 +261,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Studi kasus percabangan"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Inheritance"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_thirteenth_materi" />
 
@@ -278,23 +278,207 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginRight="31dp"
-                android:text="Studi kasus perulangan"
+                android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:textSize="18dp"
+                android:text="Method Overriding"
                 android:textAllCaps="false"
-                android:background="@color/colorAqua"
                 android:textColor="@color/colorWhite"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_fourteenth_materi" />
+
+            <Button
+                android:id="@+id/button_sixteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Tingkat akses member dan class(modifier)"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_fifteenth_materi" />
+
+            <Button
+                android:id="@+id/button_seventeenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Konstruktor dan Destructor Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_sixteenth_materi" />
+
+            <Button
+                android:id="@+id/button_eigthteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Method Setter dan Getter"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_seventeenth_materi" />
+
+            <Button
+                android:id="@+id/button_nineteenth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Kata kunci This dan Super"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_eigthteenth_materi" />
+
+            <Button
+                android:id="@+id/button_twentieth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Konsep Polymorfisme Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_nineteenth_materi" />
+
+            <Button
+                android:id="@+id/button_twentyOne_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Interface pada Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentieth_materi" />
+
+            <Button
+                android:id="@+id/button_twentySecond_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Class Abstract"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentyOne_materi" />
+
+            <Button
+                android:id="@+id/button_twentyThird_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Design Patern pada Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentySecond_materi" />
+
+            <Button
+                android:id="@+id/button_twentyFourth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Anonymous Lambda Expression Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentyThird_materi" />
+
+            <Button
+                android:id="@+id/button_twentyFifth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="CRUD menggunakan Program Java"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentyFourth_materi" />
+
+            <Button
+                android:id="@+id/button_twentySixth_materi"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:background="@color/colorAqua"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Model View Controller"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_twentyFifth_materi" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
