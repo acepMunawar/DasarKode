@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UserInterface.Belajar.Algoritma.FragmentMenuMateriAlgoritma">
+    tools:context=".UserInterface.Belajar.Java.FragmentMenuJava">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,12 +26,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="232dp"
                 android:layout_marginRight="232dp"
-                android:src="@drawable/list_menu_algoritma8"
+                android:src="@drawable/list_menu_java1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-<!-- button list theory-->
+            <!-- button list theory-->
             <Button
                 android:id="@+id/button_first_materi"
                 android:layout_width="290dp"
@@ -296,7 +296,5 @@
     </ScrollView>
 
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

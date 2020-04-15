@@ -12,5 +12,6 @@ public class menuBelajarJava extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_java);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarJava, new FragmentMenuJava()).commit();
     }
 }
