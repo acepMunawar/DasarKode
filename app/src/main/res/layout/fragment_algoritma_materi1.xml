@@ -92,17 +92,51 @@
                      app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                      <TextView
+                         android:id="@+id/logikaDanAlgoritma"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="16dp"
+                         android:layout_marginLeft="16dp"
+                         android:layout_marginTop="16dp"
+                         android:text="Pengertian logika dan algoritma"
+                         android:textColor="@color/colorWhite"
+                         android:textSize="20dp"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent" />
+
+                     <TextView
+                         android:id="@+id/definisiLogikaDanAlgoritma"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="16dp"
+                         android:layout_marginLeft="16dp"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginEnd="16dp"
+                         android:layout_marginRight="16dp"
+                         android:justificationMode="inter_word"
+                         android:text="Pengertiaan algoritma sangat lekat dengan kata logika, yaitu kemampuan seorang manusia untuk berfikir
+                         dengan akal tentang suatu masalah dan menghasilkan sebuah kebenaran, dapat dibuktikan dan masuk akal.
+Dalam menyelesaikan suatu masalah logika sangat diperlukan. Logika identik dengan masuk akal dan penalaran. Penalaran adalah salah
+satu bentuk pemikiran . Definisi logika sangat sederhana yaitu cara berfikir untuk tujuan tertentu namun menurut aturan yang berlaku."
+                         android:textColor="@color/colorWhite"
+                         android:textSize="20sp"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintHorizontal_bias="0.0"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/logikaDanAlgoritma" />
+
+                     <TextView
                          android:id="@+id/logika"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_marginStart="16dp"
                          android:layout_marginLeft="16dp"
-                         android:layout_marginTop="13dp"
+                         android:layout_marginTop="16dp"
                          android:text="Pengertian logika"
                          android:textColor="@color/colorWhite"
                          android:textSize="20dp"
                          app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toTopOf="parent" />
+                         app:layout_constraintTop_toBottomOf="@+id/definisiLogikaDanAlgoritma" />
 
                      <TextView
                          android:id="@+id/definisiL"
@@ -131,14 +165,49 @@
                          android:layout_height="wrap_content"
                          android:layout_marginStart="16dp"
                          android:layout_marginLeft="16dp"
-                         android:layout_marginTop="8dp"
-                         android:text="Algoritma"
+                         android:layout_marginTop="16dp"
+                         android:text="Pengertian Algoritma"
                          android:textColor="@color/colorWhite"
                          android:textSize="20sp"
                          app:layout_constraintStart_toStartOf="parent"
                          app:layout_constraintTop_toBottomOf="@+id/definisiL" />
 
+                     <TextView
+                         android:id="@+id/definisiAlgoritma"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="16dp"
+                         android:layout_marginLeft="16dp"
+                         android:layout_marginTop="8dp"
+                         android:justificationMode="inter_word"
+                         android:text="Algoritma berasal dari kata “algorist” yang berarti langkah menghitung dengan memanfaatkan angka arab.
+\n\nAlgoritma adalah deretan instruksi yang jelas dalam memecahkan masalah, yaitu untuk memperoleh
+  keluaran yang diinginkan dari suatu masukkan dalam jumlah waktu yang terbatas.  Algoritma merupakan sebuah urutan intruksi yang jelas untuk menyelesaikan masalah atau
+  mencapai tujuan tertentu dengan cara yang masuk akal. Dari pengertian diatas maka dapat
+disimpulkan bahwa Logika dan Algoritma adalah ilmu yang mempelajari cara penyelesaian
+suatu masalah berdasarkan urutan langkah-langkah terbatas yang disusun secara sistematis
+dan menggunakan bahasa yang logis dengan tujuan tertentu.
+"
+                         android:textColor="@color/colorWhite"
+                         android:textSize="20sp"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintStrart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/algoritma" />
 
+                <TextView
+                    android:id="@+id/logikaAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Logika Algoritma"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintStrart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiAlgoritma"
+                    />
 
 
                  </androidx.constraintlayout.widget.ConstraintLayout>
