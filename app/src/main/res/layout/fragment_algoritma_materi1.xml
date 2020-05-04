@@ -6,219 +6,255 @@
     android:layout_height="match_parent"
     tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri1">
 
-        <ScrollView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
 
-             <androidx.constraintlayout.widget.ConstraintLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent">
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
-                 <SeekBar
-                     android:id="@+id/FirstSeekBar"
-                     android:layout_width="350dp"
-                     android:layout_height="wrap_content"
-                     android:layout_marginTop="24dp"
-                     android:layout_marginEnd="16dp"
-                     android:layout_marginRight="16dp"
-                     app:layout_constraintEnd_toEndOf="parent"
-                     app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
-                     app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+            <ImageView
+                android:id="@+id/FirstTheory"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/materi1_lg_ic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                 <ImageView
-                     android:id="@+id/FirstTheory"
-                     android:layout_width="match_parent"
-                     android:layout_height="300dp"
-                     android:layout_marginTop="16dp"
-                     android:src="@drawable/materi1_lg_ic"
-                     app:layout_constraintEnd_toEndOf="parent"
-                     app:layout_constraintStart_toStartOf="parent"
-                     app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
-                 <LinearLayout
-                     android:id="@+id/linearLayout"
-                     android:layout_width="340dp"
-                     android:layout_height="wrap_content"
-                     android:layout_marginStart="10dp"
-                     android:layout_marginLeft="10dp"
-                     android:layout_marginTop="16dp"
-                     android:layout_marginEnd="16dp"
-                     android:layout_marginRight="16dp"
-                     app:layout_constraintEnd_toEndOf="parent"
-                     app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
-                     app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+                <TextView
+                    android:id="@+id/elapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
-                     <TextView
-                         android:id="@+id/elapsedTimeLabel"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:text="0:11" />
+                <TextView
+                    android:id="@+id/remainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
 
-                     <TextView
-                         android:id="@+id/remainingTimeLabel"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginLeft="265dp"
-                         android:text="-1:49" />
+            </LinearLayout>
 
-                 </LinearLayout>
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
 
-                 <Button
-                     android:id="@+id/FirstBtnPlay"
-                     android:layout_width="50dp"
-                     android:layout_height="50dp"
-                     android:layout_marginStart="16dp"
-                     android:layout_marginLeft="16dp"
-                     android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
-                     android:background="@drawable/play_sound"
-                     app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
-                     app:layout_constraintStart_toStartOf="parent"
-                     app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianAL"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-                 <androidx.constraintlayout.widget.ConstraintLayout
-                     android:id="@+id/layoutPengertianAL"
-                     android:layout_width="400dp"
-                     android:layout_height="match_parent"
-                     android:layout_marginStart="18dp"
-                     android:layout_marginLeft="18dp"
-                     android:layout_marginTop="16dp"
-                     android:background="@color/colorAegeanBlue"
-                     app:layout_constraintStart_toStartOf="parent"
-                     app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                <TextView
+                    android:id="@+id/logikaDanAlgoritma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian logika dan algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                     <TextView
-                         android:id="@+id/logikaDanAlgoritma"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="16dp"
-                         android:text="Pengertian logika dan algoritma"
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20dp"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toTopOf="parent" />
-
-                     <TextView
-                         android:id="@+id/definisiLogikaDanAlgoritma"
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="8dp"
-                         android:layout_marginEnd="16dp"
-                         android:layout_marginRight="16dp"
-                         android:justificationMode="inter_word"
-                         android:text="Pengertiaan algoritma sangat lekat dengan kata logika, yaitu kemampuan seorang manusia untuk berfikir
-                         dengan akal tentang suatu masalah dan menghasilkan sebuah kebenaran, dapat dibuktikan dan masuk akal.
+                <TextView
+                    android:id="@+id/definisiLogikaDanAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pengertiaan algoritma sangat lekat dengan kata logika, yaitu kemampuan seorang manusia untuk berfikir
+                     dengan akal tentang suatu masalah dan menghasilkan sebuah kebenaran, dapat dibuktikan dan masuk akal.
 Dalam menyelesaikan suatu masalah logika sangat diperlukan. Logika identik dengan masuk akal dan penalaran. Penalaran adalah salah
 satu bentuk pemikiran . Definisi logika sangat sederhana yaitu cara berfikir untuk tujuan tertentu namun menurut aturan yang berlaku."
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20sp"
-                         app:layout_constraintEnd_toEndOf="parent"
-                         app:layout_constraintHorizontal_bias="0.0"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toBottomOf="@+id/logikaDanAlgoritma" />
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logikaDanAlgoritma" />
 
-                     <TextView
-                         android:id="@+id/logika"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="16dp"
-                         android:text="Pengertian logika"
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20dp"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toBottomOf="@+id/definisiLogikaDanAlgoritma" />
+                <TextView
+                    android:id="@+id/logika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian logika"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiLogikaDanAlgoritma" />
 
-                     <TextView
-                         android:id="@+id/definisiL"
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="8dp"
-                         android:layout_marginEnd="16dp"
-                         android:layout_marginRight="16dp"
-                         android:justificationMode="inter_word"
-                         android:text="Logika berasal dari bahasa yunani yaitu logos yang berarti ilmu. Logika dapat diartikan ilmu
-	yang mengajarkan cara berfikir untuk melakukan kegiatan dengan tujuan tertentu.
-\n\nLogika merupakan kemampuan seorang manusia dalam berpikir jelas dengan akal tentang
-	sesuatu permasalahan yang dapat menghasilkan sebuah kebenaran yang dapat dibuktikan,
-	sehingga dapat diterima oleh akal"
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20sp"
-                         app:layout_constraintEnd_toEndOf="parent"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toBottomOf="@+id/logika" />
+                <TextView
+                    android:id="@+id/definisiL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Logika berasal dari bahasa yunani yaitu logos yang berarti ilmu. Logika dapat diartikan ilmu
+yang mengajarkan cara berfikir untuk melakukan kegiatan dengan tujuan tertentu.
+\nLogika merupakan kemampuan seorang manusia dalam berpikir jelas dengan akal tentang
+sesuatu permasalahan yang dapat menghasilkan sebuah kebenaran yang dapat dibuktikan,
+sehingga dapat diterima oleh akal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logika" />
 
-                     <TextView
-                         android:id="@+id/algoritma"
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="16dp"
-                         android:text="Pengertian Algoritma"
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20sp"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintTop_toBottomOf="@+id/definisiL" />
+                <TextView
+                    android:id="@+id/algoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiL" />
 
-                     <TextView
-                         android:id="@+id/definisiAlgoritma"
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="16dp"
-                         android:layout_marginLeft="16dp"
-                         android:layout_marginTop="8dp"
-                         android:justificationMode="inter_word"
-                         android:text="Algoritma berasal dari kata “algorist” yang berarti langkah menghitung dengan memanfaatkan angka arab.
-\n\nAlgoritma adalah deretan instruksi yang jelas dalam memecahkan masalah, yaitu untuk memperoleh
-  keluaran yang diinginkan dari suatu masukkan dalam jumlah waktu yang terbatas.  Algoritma merupakan sebuah urutan intruksi yang jelas untuk menyelesaikan masalah atau
-  mencapai tujuan tertentu dengan cara yang masuk akal. Dari pengertian diatas maka dapat
+                <TextView
+                    android:id="@+id/definisiAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Algoritma berasal dari kata “algorist” yang berarti langkah menghitung dengan memanfaatkan angka arab.
+\nAlgoritma adalah deretan instruksi yang jelas dalam memecahkan masalah, yaitu untuk memperoleh
+keluaran yang diinginkan dari suatu masukkan dalam jumlah waktu yang terbatas.  Algoritma merupakan sebuah urutan intruksi yang jelas untuk menyelesaikan masalah atau
+mencapai tujuan tertentu dengan cara yang masuk akal. \nDari pengertian diatas maka dapat
 disimpulkan bahwa Logika dan Algoritma adalah ilmu yang mempelajari cara penyelesaian
 suatu masalah berdasarkan urutan langkah-langkah terbatas yang disusun secara sistematis
 dan menggunakan bahasa yang logis dengan tujuan tertentu.
 "
-                         android:textColor="@color/colorWhite"
-                         android:textSize="20sp"
-                         app:layout_constraintStart_toStartOf="parent"
-                         app:layout_constraintStrart_toStartOf="parent"
-                         app:layout_constraintTop_toBottomOf="@+id/algoritma" />
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/algoritma" />
 
                 <TextView
-                    android:id="@+id/logikaAlgoritma"
+                    android:id="@+id/studiKasus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Pemecahan masalah dengan algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiAlgoritma" />
+
+                <TextView
+                    android:id="@+id/FirststudiKasus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Logika Algoritma"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Untuk lebih mudah  memahami arti dari algoritma dicontohkan sebuah permasalahan
+penukaran isi dari dua gelas.
+\n\nDiberikan dua buah gelas yang berisi gelas A Teh dan gelas B Kopi. Tukarkan isi gelas tersebut hingga menghasilkan
+gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar berikut :"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintStrart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/definisiAlgoritma"
-                    />
+                    app:layout_constraintTop_toBottomOf="@+id/studiKasus" />
+
+                <ImageView
+                    android:id="@+id/glasscoffeeandteh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/glasscoffeeandteh"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FirststudiKasus" />
 
 
-                 </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-             </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
-
-        </ScrollView>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
