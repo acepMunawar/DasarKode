@@ -123,8 +123,7 @@
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pengertiaan algoritma sangat lekat dengan kata logika, yaitu kemampuan seorang manusia untuk berfikir
                      dengan akal tentang suatu masalah dan menghasilkan sebuah kebenaran, dapat dibuktikan dan masuk akal.
-Dalam menyelesaikan suatu masalah logika sangat diperlukan. Logika identik dengan masuk akal dan penalaran. Penalaran adalah salah
-satu bentuk pemikiran . Definisi logika sangat sederhana yaitu cara berfikir untuk tujuan tertentu namun menurut aturan yang berlaku."
+Dalam menyelesaikan suatu masalah logika sangat diperlukan. Logika dan Algoritma adalah ilmu yang mempelajari cara penyelesaian suatu masalah berdasarkan urutan langkah-langkah yang disusun secara sistematis dan menggunakan bahasa yang logis dengan tujuan tertentu."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -315,12 +314,28 @@ gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar be
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="40dp"
                     android:text="Penyelesaian masalah :"
                     android:textColor="@color/colorAqua"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/plyRecorderSecond" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/answercoffeandteh2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalah" />
 
                 <TextView
                     android:id="@+id/penyelesaianMasalahJawaban"
@@ -329,13 +344,16 @@ gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar be
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="1.  Siapkan gelas cadangan X \n2.  Tuangkan air teh dari gelas A ke \n&#160;&#160;&#160;&#160;&#160;dalam gelas cadangan X maka gelas A &#160;&#160;&#160;&#160;&#160;menjadi kosong.
 \n3.  Tuangkan kopi dari gelas B ke dalam &#160;&#160;&#160;&#160;&#160;gelas A maka gelas B menjadi kosong. \n4.  Tuangkan air teh di dalam gelas X ke &#160;&#160;&#160;&#160;&#160;dalam gelas B."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalah" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
