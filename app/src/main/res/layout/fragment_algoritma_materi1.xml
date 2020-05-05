@@ -76,7 +76,6 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
-
                 android:background="@drawable/play_sound"
                 app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
                 app:layout_constraintStart_toStartOf="parent"
@@ -89,9 +88,15 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
                     android:id="@+id/logikaDanAlgoritma"
@@ -247,6 +252,90 @@ gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar be
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/FirststudiKasus" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/plyRecorderSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/glasscoffeeandteh">
+
+                    <SeekBar
+                        android:id="@+id/SecondSeekBar"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/LLRecorderPM"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/SecondSeekBar"
+                        app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
+
+                        <TextView
+                            android:id="@+id/elapsedLRPM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
+
+                        <TextView
+                            android:id="@+id/remainingLRPM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="240dp"
+                            android:text="-1:49" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/SecondBtnPlay"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/play_sound"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/penyelesaianMasalah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Penyelesaian masalah :"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/plyRecorderSecond" />
+
+                <TextView
+                    android:id="@+id/penyelesaianMasalahJawaban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="1.  Siapkan gelas cadangan X \n2.  Tuangkan air teh dari gelas A ke \n&#160;&#160;&#160;&#160;&#160;dalam gelas cadangan X maka gelas A &#160;&#160;&#160;&#160;&#160;menjadi kosong.
+\n3.  Tuangkan kopi dari gelas B ke dalam &#160;&#160;&#160;&#160;&#160;gelas A maka gelas B menjadi kosong. \n4.  Tuangkan air teh di dalam gelas X ke &#160;&#160;&#160;&#160;&#160;dalam gelas B."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalah" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
