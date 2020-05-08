@@ -9,19 +9,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Switch;
 
 import com.Education.dasarkode.R;
-import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri1;
 
 public class FragmentMenuMateriAlgoritma extends Fragment {
-    Button btnFirstMateri;
+    Button btnFirstMateri,btnSecondMateri;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_menu_materi_algoritma, container, false);
+
         btnFirstMateri = (Button) view.findViewById(R.id.button_first_materi);
+        btnSecondMateri = (Button) view.findViewById(R.id.button_second_materi);
+
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +34,18 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        btnSecondMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentAlgoritmaMateri2 fragmentSecondMateri = new FragmentAlgoritmaMateri2();
+                FragmentTransaction fragmentTransactionSecond = getFragmentManager().beginTransaction();
+                fragmentTransactionSecond.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentSecondMateri);
+                fragmentTransactionSecond.commit();
+            }
+        });
+
+
 
     return view;
     }

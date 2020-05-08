@@ -99,6 +99,41 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
+                    android:id="@+id/TujuanBelajarAlgoritma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tujuan Belajar Logika dan Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PenjelasanTujuanBelajarLA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Tujuan dari belajar logika dan algoritma adalah agar dapat membiasakan diri
+melakukan suatu perencanaan apabila menyelesaikan suatu masalah.Karena suatu
+permasalahan yang diselesaikan dengan suatu perencanaan yang matang maka akan
+mendapatkan solusi yang lebih optimal dibandingkan menyelesaikan masalah tanpa
+menggunakan suatu perencanaan."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TujuanBelajarAlgoritma" />
+
+                <TextView
                     android:id="@+id/logikaDanAlgoritma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -109,7 +144,7 @@
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/PenjelasanTujuanBelajarLA" />
 
                 <TextView
                     android:id="@+id/definisiLogikaDanAlgoritma"
@@ -224,14 +259,13 @@ dan menggunakan bahasa yang logis dengan tujuan tertentu.
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Untuk lebih mudah  memahami arti dari algoritma dicontohkan sebuah permasalahan
-penukaran isi dari dua gelas.
-\n\nDiberikan dua buah gelas yang berisi gelas A Teh dan gelas B Kopi. Tukarkan isi gelas tersebut hingga menghasilkan
-gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar berikut :"
+                    android:text="Untuk lebih mudah  memahami arti dari algoritma dicontohkan dua kasus permasalan. \n\nA. Kasus Penukaran isi dari dua gelas.
+\n&#160;&#160;&#160;&#160;&#160;Diberikan dua buah gelas yang &#160;&#160;&#160;&#160;&#160;berisi gelas A Teh dan gelas B Kopi. &#160;&#160;&#160;&#160;&#160;Tukarkan isi gelas tersebut hingga &#160;&#160;&#160;&#160;&#160;menghasilkan
+gelas A kopi dan gelas &#160;&#160;&#160;&#160;&#160;B Teh. Ilustrasi permasalahan bisa &#160;&#160;&#160;&#160;&#160;dilihat pada gambar berikut :"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -316,7 +350,7 @@ gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar be
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="40dp"
                     android:text="Penyelesaian masalah :"
-                    android:textColor="@color/colorAqua"
+                    android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/plyRecorderSecond" />
@@ -344,17 +378,115 @@ gelas A kopi dan gelas B Teh. Ilustrasi permasalahan bisa dilihat pada gambar be
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginBottom="24dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="1.  Siapkan gelas cadangan X \n2.  Tuangkan air teh dari gelas A ke \n&#160;&#160;&#160;&#160;&#160;dalam gelas cadangan X maka gelas A &#160;&#160;&#160;&#160;&#160;menjadi kosong.
 \n3.  Tuangkan kopi dari gelas B ke dalam &#160;&#160;&#160;&#160;&#160;gelas A maka gelas B menjadi kosong. \n4.  Tuangkan air teh di dalam gelas X ke &#160;&#160;&#160;&#160;&#160;dalam gelas B."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+                <TextView
+                    android:id="@+id/KasusKedua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="B. Kasus menghitung luas lingkaran. \n&#160;&#160;&#160;&#160;&#160;1.  Menentukan nilai jari - jari (r) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lingkaran. \n&#160;&#160;&#160;&#160;&#160;2.  Menentukan nilai PHI
+\n&#160;&#160;&#160;&#160;&#160;3. Menghitung luas lingkaran dengan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cara mengkalikan nilai jari-jari (r) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dengan (r) lalu.
+dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nilai PHI. \n&#160;&#160;&#160;&#160;&#160;4. Maka luas lingkaran ditemukan. \n&#160;&#160;&#160;&#160;&#160;5. Selesai"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalahJawaban" />
+
+                <TextView
+                    android:id="@+id/SolusiAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Solusi Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/KasusKedua" />
+
+                <ImageView
+                    android:id="@+id/imageSolusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/solusialgoritma"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SolusiAlgoritma" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/plyRecorderThird"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSolusi">
+
+                    <SeekBar
+                        android:id="@+id/ThirdSeekBar"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/LLRecorderSA"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/ThirdSeekBar"
+                        app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
+
+                        <TextView
+                            android:id="@+id/elapsedSA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
+
+                        <TextView
+                            android:id="@+id/remainingSA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="240dp"
+                            android:text="-1:49" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/ThirdBtnPlay"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/play_sound"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

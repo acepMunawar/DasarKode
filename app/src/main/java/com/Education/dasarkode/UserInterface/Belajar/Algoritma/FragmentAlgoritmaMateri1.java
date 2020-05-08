@@ -34,11 +34,6 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
         ElapsedTimeLabel = (TextView) view.findViewById(R.id.elapsedTimeLabel);
         RemainingTimeLabel = (TextView) view.findViewById(R.id.remainingTimeLabel);
         FirstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-
-
-
-
-
         FirstMediaPlayer.seekTo(0);
         totalTime = FirstMediaPlayer.getDuration();
 
