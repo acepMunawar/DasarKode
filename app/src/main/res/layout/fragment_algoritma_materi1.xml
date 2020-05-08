@@ -486,6 +486,33 @@ dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <TextView
+                        android:id="@+id/definisiTeoriAlgoritma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="Saat menggunakan logika, sebaiknya jangan berfikir terlalu rumit tentang
+sebuah masalah, karena belum tentu masalah itu serumit yang kita pikir. Pikirkan hal yang
+paling sederhana untuk menyelesaikan masalah itu, sehingga tidak terjebak dalam pikiran
+rumit yang dibuat sendiri. Meski demikian jangan meremehkan masalah sekecil apapun, tapi
+berfikir sederhana untuk menghasilkan solusi yang efektif. \n\nDalam menentukan algoritma untuk menyelesaikan suatu permasalahan, mungkin kita
+dihadapkan oleh beberapa pilihan algoritma.\nOleh karen itu kita harus memiliki pertimbangan dalam pemilihan algoritma seperti berikut : \n\n&#160;&#160;&#160;&#160;&#160;1. algoritma haruslah benar. Artinya &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma akan memberikan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;keluaran sesuai
+seperti yang &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;diharapkan dari sejumlah masukan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;yang diberikan. \n&#160;&#160;&#160;&#160;&#160;2. Harus mengetahui seberapa &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;baik hasil yang dicapai oleh &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma
+tersebut. Algoritma yang &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;baik harus mampu
+memberikan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hasil yang sedekat mungkin dengan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nilai yang sebenarnya. \n&#160;&#160;&#160;&#160;&#160;3. Efisiensi algoritma dimana &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma dapat ditinjau dari dua hal &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;yaitu efisiensi waktu dan memori.   "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ThirdBtnPlay" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
