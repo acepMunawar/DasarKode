@@ -14,7 +14,7 @@ import android.widget.Switch;
 import com.Education.dasarkode.R;
 
 public class FragmentMenuMateriAlgoritma extends Fragment {
-    Button btnFirstMateri,btnSecondMateri;
+    Button btnFirstMateri,btnSecondMateri,btnThirdMateri;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,6 +24,7 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
 
         btnFirstMateri = (Button) view.findViewById(R.id.button_first_materi);
         btnSecondMateri = (Button) view.findViewById(R.id.button_second_materi);
+        btnThirdMateri = (Button) view.findViewById(R.id.button_third_materi);
 
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +43,16 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
                 FragmentTransaction fragmentTransactionSecond = getFragmentManager().beginTransaction();
                 fragmentTransactionSecond.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentSecondMateri);
                 fragmentTransactionSecond.commit();
+            }
+        });
+
+        btnThirdMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentAlgoritmaMateri3 fragmentThirdMateri = new FragmentAlgoritmaMateri3();
+                FragmentTransaction fragmentTransactionThird = getFragmentManager().beginTransaction();
+                fragmentTransactionThird.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentThirdMateri);
+                fragmentTransactionThird.commit();
             }
         });
 
