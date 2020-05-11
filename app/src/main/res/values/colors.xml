@@ -8,4 +8,8 @@
     <color name="colorAqua">#00C6EB</color>
     <color name="colorGray">#5f5f5f</color>
     <color name="black">#050505</color>
+    <color name="darkGreen">#053238</color>
+    <color name="seaFoam">#b3c6cc</color>
+    <color name="black2">#141212</color>
+
 </resources>

@@ -261,7 +261,6 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
                     android:text="-1:49" />
-
             </LinearLayout>
 
             <Button
@@ -318,7 +317,7 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                     android:text="Judul Algoritma merupakan penamaan dan penjelasan (spesifikasi) atas algoritma tersebut.
 Judul algoritma digunakan untuk menenetukan apakah teks algoritma yang dibuat tersebut
 adalah program, prosedur, atau fungsi. Nama judul algoritma sebaiknya singkat namun cukup
-menggambarkan apa yang dilakukan algoritma tersebut"
+menggambarkan apa yang dilakukan algoritma tersebut."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -327,6 +326,7 @@ menggambarkan apa yang dilakukan algoritma tersebut"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/DefinisiJudulAD" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
 <!--third layout -->
 
                 <SeekBar
@@ -340,14 +340,14 @@ menggambarkan apa yang dilakukan algoritma tersebut"
                     app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlayAD"
                     app:layout_constraintTop_toBottomOf="@+id/ThirdTheoryAD" />
 
+
             <ImageView
                 android:id="@+id/ThirdTheoryAD"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/contjudulas"
+                android:layout_width="437dp"
+                android:layout_height="338dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/contohjudulalgoritmadanspesifikasi"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
 
@@ -442,6 +442,192 @@ sesuai dengan spesifikasi yang didefinisikan"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/DefinisiContohJudulAD" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Fourth layout-->
+
+            <SeekBar
+                android:id="@+id/FourthSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/FourthTheoryAD"
+                android:layout_width="437dp"
+                android:layout_height="338dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/deklarasialgoritmadeskriptif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianContohJudulAD" />
+
+            <LinearLayout
+                android:id="@+id/FourthlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBarAD">
+
+                <TextView
+                    android:id="@+id/FourthelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FourthremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FourthBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutPengertianAlgoritmaDeskriptif"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthBtnPlayAD">
+
+                <TextView
+                    android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Deklarasi algoritma deskriptif"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/LayoutPengertianAlgoritmaDeskriptif" />
+
+                <TextView
+                    android:id="@+id/DefenisiPengertianAlgoritmaDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Di dalam algoritma, deklarasi atau kamus adalah bagian untuk mendefinisikan semua
+nama yang dipakai di dalam algoritma. Nama tersebut dapat berupa nama variabel, nama
+konstanta, nama tipe, nama prosedur atau nama fungsi. Semua nama tersebut baru dapat
+digunakan di dalam algoritma jika telah didefinisikan terlebih dahulu didalam bagian
+deklarasi. Penulisan sekumpulan nama dalam bagian deklarasi sebaiknya dikelompokkan
+menurut jenisnya. Pendefinisian nama konstanta sekaligus memberikan nilai konstanta.
+Pendefinisian nama fungsi atau prosedur sekaligus dengan pendefinisian spesifikasi dan
+parameternya"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianAlgoritmaDeskriptif" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Fifth layout-->
+
+            <SeekBar
+                android:id="@+id/FifthSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/FifthTheoryAD"
+                android:layout_width="437dp"
+                android:layout_height="1000dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/contohdeklarasialgoritmanew2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif" />
+
+            <LinearLayout
+                android:id="@+id/FifthlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FifthSeekBarAD">
+
+                <TextView
+                    android:id="@+id/FifthelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FifthremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FifthBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FifthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD" />
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
