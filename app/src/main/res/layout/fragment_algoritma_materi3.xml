@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/algoritmadeskriptif"
+            android:src="@drawable/algoritmadeskriptifnew"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -122,7 +122,7 @@
                 android:text="Tujuan dari belajar logika deskriptif adalah agar kita bisa membuat algoritma
 dengan menggunakan bahasa sehari - hari yang jelas untuk menyelesaikan masalah tanpa harus terpaku pada bahasa pemograman.
 Karena dengan kita paham dengan algoritma deskriptif maka orang yang tidak paham bahasa pemogramanpun akan paham dengan alur algoritma yang kita
-buat karena isi dalam algoritmanya menggunakan bahasa sehari - hari yang dipakai"
+buat karena isi dalam algoritmanya menggunakan bahasa sehari - hari yang dipakai."
                 android:textColor="@color/colorWhite"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -229,7 +229,7 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/judulalgoritmadeskriptif"
+                android:src="@drawable/judulalgoritmadeskriptifnew"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -346,7 +346,7 @@ menggambarkan apa yang dilakukan algoritma tersebut."
                 android:layout_width="437dp"
                 android:layout_height="338dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/contohjudulalgoritmadanspesifikasi"
+                android:src="@drawable/contohjudulalgoritmadanspesifikasifinisnew"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
@@ -433,7 +433,7 @@ menggambarkan apa yang dilakukan algoritma tersebut."
                     android:text="Pada contoh judul algoritma deskriptif di atas, nama algoritma tersebut terdapat penjelasan singkat (intisari) tentang apa yang
 dilakukan oleh algoritma. Penjelasan dibawah nama algoritma sering dinamakan juga
 spesifikasi algoritma yang dituliskan dalam kurung kurawal ({}). Algoritma harus ditulis
-sesuai dengan spesifikasi yang didefinisikan"
+sesuai dengan spesifikasi yang didefinisikan."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -553,7 +553,7 @@ digunakan di dalam algoritma jika telah didefinisikan terlebih dahulu didalam ba
 deklarasi. Penulisan sekumpulan nama dalam bagian deklarasi sebaiknya dikelompokkan
 menurut jenisnya. Pendefinisian nama konstanta sekaligus memberikan nilai konstanta.
 Pendefinisian nama fungsi atau prosedur sekaligus dengan pendefinisian spesifikasi dan
-parameternya"
+parameternya."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -582,7 +582,7 @@ parameternya"
                 android:layout_width="437dp"
                 android:layout_height="1000dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/contohdeklarasialgoritmanew2"
+                android:src="@drawable/contohdeklarasialgoritma1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif" />
@@ -628,6 +628,462 @@ parameternya"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD" />
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutJudulContohAlgoritmaDeskriptif"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthlinearLayoutAD">
+
+                <TextView
+                    android:id="@+id/DefenisiContohAlgoritmaDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pada pendeklarasian algoritma deskriptif yang sudah di jelaskan pada contoh di atas kita dapat
+membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan tipe data \n&#160;&#160;&#160;&#160;&#160;dasar seperti waktu yang dimana &#160;&#160;&#160;&#160;&#160;di dalamnya terdapat 3 data macam &#160;&#160;&#160;&#160;&#160;masukan yaitu, “hh” sebagai jam, “mm” &#160;&#160;&#160;&#160;&#160;sebagai menit, dan “ss” sebagai detik.
+\n2. Menggunakan konstanta yang &#160;&#160;&#160;&#160;&#160;menyebutkan tipe data dan &#160;&#160;&#160;&#160;&#160;nilai seperti constant PHI: real = &#160;&#160;&#160;&#160;&#160;3.141592653589793. \n3. Menggunakan nama type variable &#160;&#160;&#160;&#160;&#160;dengan tipe data dasar yang \n&#160;&#160;&#160;&#160;&#160;di dalamnya terdapat tipe data Int, \n&#160;&#160;&#160;&#160;&#160;String, Boolean, Double \n&#160;&#160;&#160;&#160;&#160;dan sebagainya."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--Sixth layout-->
+
+            <SeekBar
+                android:id="@+id/SixthSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/SixthTheoryAD"
+                android:layout_width="437dp"
+                android:layout_height="338dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/contohdeklarasialgoritmapjari2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />
+
+            <LinearLayout
+                android:id="@+id/SixthlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBarAD">
+
+                <TextView
+                    android:id="@+id/SixthelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SixthremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SixthBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SixthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutJudulContohmenghiutngjarijari"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthlinearLayoutAD">
+
+
+                <TextView
+                    android:id="@+id/DefenisiContohmenhitungjarijari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pada contoh di atas, adalah cara bagaimana mambuat deklarasi menghitung luas lingkaran, dimana
+                    pada setiap variable memiliki tipe data sehingga pada masing - masing variable tersebut bisa di isi dengan nilai yang
+akan di jumlahkan dan pada hasil penjumlahan nilai tersebut, bisa menjadi nilai hasil akhir pada perhitungan luas lingkaran."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Seventh layout PENGERTIAN DESKRIPSI PADA ALGORITMA DESKRIPTIF-->
+
+            <SeekBar
+                android:id="@+id/SeventhSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/SeventhTheoryAD"
+                android:layout_width="437dp"
+                android:layout_height="338dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/juduldeskripsipadaalgoritmadeskriptifnew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />
+
+            <LinearLayout
+                android:id="@+id/SeventhlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBarAD">
+
+                <TextView
+                    android:id="@+id/SeventhelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SeventhremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SeventhBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SixthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutJudulContohdeskripsiAD"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthlinearLayoutAD">
+
+
+                <TextView
+                    android:id="@+id/DefenisiContohdeskripsiAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Deskripsi adalah bagian inti dari struktur algoritma. Bagian ini berisi uraian langkah
+langkah penyelesaian masalah. Langkah-langkah ini dituliskan dengan notasi yang lazim
+dalam penulisan algoritma. penulisan menentukan urutan pelaksanaan perintah karena penyusunan atau struktur dasar algoritma merupakan langkah - langkah penyelesaian masalah.
+\nAlgoritma dapat terdiri dari tiga struktur dasar, yaitu runtunan, pemilihan dan
+pengulangan. Ketiga jenis langkah tersebut membentuk konstruksi suatu algoritma. Pada
+bagian deskripsi inilah letak tiga struktur algoritma tersebut.  "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Eigth layout CONTOH DESKRIPSI PADA ALGORITMA DESKRIPTIF  -->
+
+            <SeekBar
+                android:id="@+id/EigthSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/EigthTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/EigthTheoryAD"
+                android:layout_width="437dp"
+                android:layout_height="338dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/contohdeskripsialgoritmamenghitungllnew2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohdeskripsiAD" />
+
+            <LinearLayout
+                android:id="@+id/EigthlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/EigthSeekBarAD">
+
+                <TextView
+                    android:id="@+id/EigthelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/EigthremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/EigthBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/EigthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EigthTheoryAD" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutContohpenggunaandeskripsiAD"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EigthlinearLayoutAD">
+
+
+                <TextView
+                    android:id="@+id/DefenisiContohpenggunaandeskripsiAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pada Deskripsi menghitung luas linkaran pada contoh tersebut menjelaskan hasil urutan bagaimana menghitung luas lingkaran "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Nineth layout CONTOH PENYELESAIAN MASALAH MENGHITUNG LUAS LINGKARAN MENGGUNA AD-->
+
+            <SeekBar
+                android:id="@+id/NinethSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/NinethTheoryAD" />
+
+
+            <ImageView
+                android:id="@+id/NinethTheoryAD"
+                android:layout_width="431dp"
+                android:layout_height="630dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/contohpenyelesainamasalahalgoritmadeskriptif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutContohpenggunaandeskripsiAD" />
+
+            <LinearLayout
+                android:id="@+id/NinethlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/NinethSeekBarAD">
+
+                <TextView
+                    android:id="@+id/NinethelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/NinethremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/NinethBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/NinethSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NinethTheoryAD" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LayoutContohpenggunaanADPK"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NinethlinearLayoutAD">
+
+
+                <TextView
+                    android:id="@+id/PenjelasanADPK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Contoh penyelesaian masalah mengitung luas lingkaran menggunakan algoritma deskriptif, ada tiga tahap yaitu :
+                    \n1. Membuat judul algoritma dengan \n&#160;&#160;&#160;&#160;&#160;singkat, jelas sesuai dengan apa \n&#160;&#160;&#160;&#160;&#160;yang akan dilakukan algoritma dan \n&#160;&#160;&#160;&#160;&#160;menyertakan spesifikasi atau \n&#160;&#160;&#160;&#160;&#160;komentar tentang apa yang akan \n&#160;&#160;&#160;&#160;&#160;dilakukan oleh algoritma tersebut.
+                    \n2. Membuat Deklarasi, dimana di \n&#160;&#160;&#160;&#160;&#160;dalamnya terdapat variable yang bisa \n&#160;&#160;&#160;&#160;&#160;kita berikan tipe data dan nilai sesuai \n&#160;&#160;&#160;&#160;&#160;dengan yang di butuhkan.
+\n3. Membuat Deskripsi dimana didalam \n&#160;&#160;&#160;&#160;&#160;deskripsi akan ada uraian langkah - \n&#160;&#160;&#160;&#160;&#160;langkah penyelesaian masalah."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
