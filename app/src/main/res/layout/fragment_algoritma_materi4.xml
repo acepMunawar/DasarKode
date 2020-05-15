@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!-- main layout -->
+
+        <SeekBar
+            android:id="@+id/seekbarPembukaanPseudecode"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnPengertianPseudecode"
+            app:layout_constraintTop_toBottomOf="@+id/imgJudulPseudocode" />
+
+        <ImageView
+            android:id="@+id/imgJudulPseudocode"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/judulpseudecode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LineaerLayoutPembukaanPseudocode"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnPengertianPseudecode"
+            app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanPseudecode">
+
+            <TextView
+                android:id="@+id/ETLpembukaanPseudocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:11" />
+
+            <TextView
+                android:id="@+id/RTLpembukaanPseudocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="265dp"
+                android:text="-1:49" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPengertianPseudecode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/play_sound"
+            app:layout_constraintEnd_toStartOf="@+id/seekbarPembukaanPseudecode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgJudulPseudocode" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianPseudocode"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPembukaanPseudocode"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/JudulPengertianPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pengertian Pseudocode"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PengertianPseudocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pseudocode adalah deskripsi tingkat tinggi informal serta ringkasan algoritma pemrograman komputer menggunakan konveksi struktural dalam bahasa pemrograman, dan juga ditampilkan supaya dibaca oleh manusia dan bukan untuk mesin.
+    Pseudocode juga merupakan kode yang mirip dengan pemrograman sebenarnya, karena Pseudocode merupakan gabungan dari kata Pseudo yang artinya imitasi, menyerupai, atau mirip, dan code berarti kode bahasa dari pemrograman.
+    dan juga tidak memiliki aturan baku dalam penulisannya, dan bahasa yang digunakan berbasis pada bahasa pemrograman seperti Pascal, Java, C++, dan lainnya."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianPseudocode" />
+
+                <TextView
+                    android:id="@+id/JudulTujuanBelajarPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tujuan Belajar Pseudocode"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PengertianPseudocode" />
+
+                <TextView
+                    android:id="@+id/TujuanBelajarPseudocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Tujuan belajar Algoritma Pseudocode yaitu agar memudahkan kita dalam mentranslasi ke notasi
+bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode dengan notasi bahasa pemrograman.Selain itu Algoritma Pseudocode dapat dijadikan alat dokumentasi dalam membuat algoritma dan penggunaan algoritma pseudocode relatif mudah karena tidak tergantung pada suatu sistem tertentu. "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulTujuanBelajarPseudocode" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!-- layout perbandingan penulisan kata algoritma deskriptif dan pseudocode-->
+
+
+            <SeekBar
+                android:id="@+id/seekbarPerbandinganADDP"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
+                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
+
+            <ImageView
+                android:id="@+id/imgPerbandinganADDP"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/perbandingankatapenulisanalgoritmadeskriptifdanpseudocodenew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianPseudocode" />
+
+            <LinearLayout
+                android:id="@+id/LineaerLayoutPerbandinganADDP"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarPerbandinganADDP">
+
+                <TextView
+                    android:id="@+id/ETLPerbandinganADDP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/RTLPerbandinganADDP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPerbandinganADDP"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarPerbandinganADDP"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPerbandinganADDP"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPerbandinganADDP"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/PengertianADDP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Perbandingannya antara algoritma deskriptif dan algoritma pseudecode tidaklah jauh karena struktur penggunaannya sama
+hanya berbeda pada cara penulisan, karena pada penulisan algoritma pseudocode, penulisannya lebih mendekati bahasa pemograman karena terdapat lambang istilah seperti  "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.032" />
+
+                <TextView
+                    android:id="@+id/JudulPengertianContohPenulisanPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Penulisan pada algoritma pseudocode"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PengertianADDP" />
+
+                <TextView
+                    android:id="@+id/PengertianContohPenulisanPseudocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Struktur penulisan pseudocode secara umum sama dengan struktur penulisan
+algoritma dengan menggunakan kalimat deskriptif yaitu dimulai dari judul/header,
+deklarasi/kamus dan diakhiri dengan deskripsi. Meskipun tidak ada sintaks khusus dalam
+penulisan pseudocode, tetapi terkadang pseudocode dituliskan dengan menggunakan style
+atau gaya penulisan dari beberapa bahasa pemrograman yang ada, seperti Fortran, Pascal, C
+dan lain-lain. "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianContohPenulisanPseudocode" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!-- layout contoh penulisan pseudocode-->
+
+
+            <SeekBar
+                android:id="@+id/seekbarContohPenulisanPseudocode"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
+                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
+
+            <ImageView
+                android:id="@+id/imgContohPenulisanPseudocode"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/contohpenulisanpseudocode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPerbandinganADDP" />
+
+            <LinearLayout
+                android:id="@+id/LineaerLayoutContohPenulisanPseudocode"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarContohPenulisanPseudocode">
+
+                <TextView
+                    android:id="@+id/ETLContohPenulisanPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/RTLContohPenulisanPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnContohPenulisanPseudocode"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarContohPenulisanPseudocode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutContohPenulisanPseudocode"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutContohPenulisanPseudocode"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/JudulContohPenulisanPseudocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Penjelasan :"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/PenjelasanContohPenulisanPseudocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Perbandingannya antara algoritma deskriptif dan algoritma pseudecode tidaklah jauh karena struktur penggunaannya sama
+hanya berbeda pada cara penulisan, karena pada penulisan algoritma pseudocode, penulisannya lebih mendekati bahasa pemograman karena terdapat lambang istilah seperti  "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulContohPenulisanPseudocode" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
