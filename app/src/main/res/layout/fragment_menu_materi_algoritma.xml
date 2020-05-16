@@ -111,7 +111,7 @@
                 android:background="@color/colorAqua"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:text="Penulisan algoritma flowchart"
+                android:text="flowchart"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="18dp"

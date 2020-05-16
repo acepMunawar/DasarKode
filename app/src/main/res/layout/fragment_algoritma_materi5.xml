@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri4">
+    tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri5">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,28 +23,28 @@
             <!-- main layout -->
 
             <SeekBar
-                android:id="@+id/seekbarPembukaanPseudecode"
+                android:id="@+id/seekbarPembukaanFlowchart"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPengertianPseudecode"
-                app:layout_constraintTop_toBottomOf="@+id/imgJudulPseudocode" />
+                app:layout_constraintStart_toEndOf="@+id/btnPengertianFlowchart"
+                app:layout_constraintTop_toBottomOf="@+id/imgJudulFlowchart" />
 
             <ImageView
-                android:id="@+id/imgJudulPseudocode"
+                android:id="@+id/imgJudulFlowchart"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/judulpseudecode"
+                android:src="@drawable/flowchart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/LineaerLayoutPembukaanPseudocode"
+                android:id="@+id/LineaerLayoutPembukaanFlowchart"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -53,8 +53,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPengertianPseudecode"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanPseudecode">
+                app:layout_constraintStart_toEndOf="@+id/btnPengertianFlowchart"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanFlowchart">
 
                 <TextView
                     android:id="@+id/ETLpembukaanPseudocode"
@@ -63,7 +63,7 @@
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/RTLpembukaanPseudocode"
+                    android:id="@+id/RTLpembukaanFlowchart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -72,19 +72,19 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnPengertianPseudecode"
+                android:id="@+id/btnPengertianFlowchart"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarPembukaanPseudecode"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarPembukaanFlowchart"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgJudulPseudocode" />
+                app:layout_constraintTop_toBottomOf="@+id/imgJudulFlowchart" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutPengertianPseudocode"
+                android:id="@+id/layoutPengertianFlowchart"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
@@ -97,24 +97,24 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPembukaanPseudocode"
+                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPembukaanFlowchart"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
-                    android:id="@+id/JudulPengertianPseudocode"
+                    android:id="@+id/JudulPengertianFlowchart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Pengertian Pseudocode"
+                    android:text="Pengertian Flowchart"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/PengertianPseudocode"
+                    android:id="@+id/PengertianFlowchart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -123,31 +123,29 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Pseudocode adalah deskripsi tingkat tinggi informal serta ringkasan algoritma pemrograman komputer menggunakan konveksi struktural dalam bahasa pemrograman, dan juga ditampilkan supaya dibaca oleh manusia dan bukan untuk mesin.
-    Pseudocode juga merupakan kode yang mirip dengan pemrograman sebenarnya, karena Pseudocode merupakan gabungan dari kata Pseudo yang artinya imitasi, menyerupai, atau mirip, dan code berarti kode bahasa dari pemrograman.
-    dan juga tidak memiliki aturan baku dalam penulisannya, dan bahasa yang digunakan berbasis pada bahasa pemrograman seperti Pascal, Java, C++, dan lainnya."
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianPseudocode" />
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianFlowchart" />
 
                 <TextView
-                    android:id="@+id/JudulTujuanBelajarPseudocode"
+                    android:id="@+id/JudulTujuanBelajarFlowchart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Tujuan Belajar Pseudocode"
+                    android:text="Tujuan Belajar Flowchart"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/PengertianPseudocode" />
+                    app:layout_constraintTop_toBottomOf="@+id/PengertianFlowchart" />
 
                 <TextView
-                    android:id="@+id/TujuanBelajarPseudocode"
+                    android:id="@+id/TujuanBelajarFlowchart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -157,44 +155,41 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Tujuan belajar Algoritma Pseudocode yaitu agar memudahkan kita dalam mentranslasi ke notasi
-bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode dengan notasi bahasa pemrograman.Selain itu Algoritma Pseudocode dapat dijadikan alat dokumentasi dalam membuat algoritma dan penggunaan algoritma pseudocode relatif mudah karena tidak tergantung pada suatu sistem tertentu. "
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulTujuanBelajarPseudocode" />
+                    app:layout_constraintTop_toBottomOf="@+id/JudulTujuanBelajarFlowchart" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- layout perbandingan penulisan kata algoritma deskriptif dan pseudocode-->
-
-
+            <!-- layout simbol simbol flowchart-->
             <SeekBar
-                android:id="@+id/seekbarPerbandinganADDP"
+                android:id="@+id/seekbarSimbolFlowchart"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
-                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
+                app:layout_constraintStart_toEndOf="@+id/btnSimbolFlowchart"
+                app:layout_constraintTop_toBottomOf="@+id/imgSimbolFlowchart" />
 
             <ImageView
-                android:id="@+id/imgPerbandinganADDP"
+                android:id="@+id/imgSimbolFlowchart"
                 android:layout_width="match_parent"
-                android:layout_height="1000dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/perbandingankatapenulisanalgoritmadeskriptifdanpseudocodenew"
+                android:layout_height="1850dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/simbolflowchart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianPseudocode" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianFlowchart" />
 
             <LinearLayout
-                android:id="@+id/LineaerLayoutPerbandinganADDP"
+                android:id="@+id/LinearLayoutSimbolFlowchart"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -203,17 +198,17 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarPerbandinganADDP">
+                app:layout_constraintStart_toEndOf="@+id/btnSimbolFlowchart"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarSimbolFlowchart">
 
                 <TextView
-                    android:id="@+id/ETLPerbandinganADDP"
+                    android:id="@+id/ETLsimbolPseudocode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/RTLPerbandinganADDP"
+                    android:id="@+id/RTLSimbolFlowchart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -222,19 +217,19 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnPerbandinganADDP"
+                android:id="@+id/btnSimbolFlowchart"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarPerbandinganADDP"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarSimbolFlowchart"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
+                app:layout_constraintTop_toBottomOf="@+id/imgSimbolFlowchart" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutPerbandinganADDP"
+                android:id="@+id/layoutPengertianSimbolFlowchart"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
@@ -247,100 +242,68 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPerbandinganADDP"
+                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutSimbolFlowchart"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
-                    android:id="@+id/PengertianADDP"
+                    android:id="@+id/JudulPengertianSimbolFlowchart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pengertian Flowchart"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PengertianSimbolFlowchart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Perbandingannya antara algoritma deskriptif dan algoritma pseudecode tidaklah jauh karena struktur penggunaannya sama
-hanya berbeda pada cara penulisan, karena pada penulisan algoritma pseudocode, penulisannya lebih mendekati bahasa pemograman karena terdapat lambang istilah seperti  "
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.032" />
-
-                <TextView
-                    android:id="@+id/JudulPengertianContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:text="Penulisan pada algoritma pseudocode"
-                    android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/PengertianADDP" />
-
-                <TextView
-                    android:id="@+id/PengertianContohPenulisanPseudocode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:text="Struktur penulisan pseudocode secara umum sama dengan struktur penulisan
-algoritma dengan menggunakan kalimat deskriptif yaitu dimulai dari judul/header,
-deklarasi/kamus dan diakhiri dengan deskripsi. Meskipun tidak ada sintaks khusus dalam
-penulisan pseudocode, tetapi terkadang pseudocode dituliskan dengan menggunakan style
-atau gaya penulisan dari beberapa bahasa pemrograman yang ada, seperti Fortran, Pascal, C
-dan lain-lain. "
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianContohPenulisanPseudocode" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianSimbolFlowchart" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- layout contoh penulisan pseudocode-->
-
-
+            <!-- layout flowchart penentuan luas lingkaran-->
             <SeekBar
-                android:id="@+id/seekbarContohPenulisanPseudocode"
+                android:id="@+id/seekbarFlowchartPLL"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
+                app:layout_constraintStart_toEndOf="@+id/btnFlowchartPLL"
+                app:layout_constraintTop_toBottomOf="@+id/imgFlowchartPLL" />
 
             <ImageView
-                android:id="@+id/imgContohPenulisanPseudocode"
-                android:layout_width="match_parent"
-                android:layout_height="750dp"
+                android:id="@+id/imgFlowchartPLL"
+                android:layout_width="518dp"
+                android:layout_height="767dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/contohpenulisanpseudocode"
+                android:src="@drawable/flowchartluasdankelilinglingkaranblack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutPerbandinganADDP" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianSimbolFlowchart" />
 
             <LinearLayout
-                android:id="@+id/LinearLayoutContohPenulisanPseudocode"
+                android:id="@+id/LinearLayoutFlowchartPLL"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -349,17 +312,17 @@ dan lain-lain. "
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarContohPenulisanPseudocode">
+                app:layout_constraintStart_toEndOf="@+id/btnFlowchartPLL"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarFlowchartPLL">
 
                 <TextView
-                    android:id="@+id/ETLContohPenulisanPseudocode"
+                    android:id="@+id/ETLsimbolPPL"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/RTLContohPenulisanPseudocode"
+                    android:id="@+id/RTLSimbolPPL"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -368,19 +331,133 @@ dan lain-lain. "
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnContohPenulisanPseudocode"
+                android:id="@+id/btnFlowchartPLL"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarContohPenulisanPseudocode"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarFlowchartPLL"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
+                app:layout_constraintTop_toBottomOf="@+id/imgFlowchartPLL" />
+
+
+            <!-- layout flowchart bilangan ganjil genap-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutContohPenulisanPseudocode"
+                android:id="@+id/layoutPengertianFlowchartPPL"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFlowchartPLL"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/JudulPengertianFlowchartPPL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pengertian Flowchart"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PenjelasanFlowchartPPL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianFlowchartPPL" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <SeekBar
+                android:id="@+id/seekbarFlowchartBGG"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnFlowchartBGG"
+                app:layout_constraintTop_toBottomOf="@+id/imgFlowchartBGG" />
+
+            <ImageView
+                android:id="@+id/imgFlowchartBGG"
+                android:layout_width="518dp"
+                android:layout_height="767dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/flowchartbilanganganjilgenapblack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianFlowchartPPL" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutFlowchartBGG"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnFlowchartBGG"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarFlowchartBGG">
+
+                <TextView
+                    android:id="@+id/ETLsimbolBGG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/RTLSimbolBGG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnFlowchartBGG"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarFlowchartBGG"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFlowchartBGG" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianFlowchartBGG"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
@@ -393,25 +470,23 @@ dan lain-lain. "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutContohPenulisanPseudocode"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFlowchartBGG">
 
                 <TextView
-                    android:id="@+id/JudulContohPenulisanPseudocode"
+                    android:id="@+id/JudulPengertianFlowchartBGG"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Penjelasan :"
+                    android:text="Pengertian Flowchart"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
                 <TextView
-                    android:id="@+id/PenjelasanContohPenulisanPseudocode"
+                    android:id="@+id/PenjelasanFlowchartBGG"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -419,137 +494,18 @@ dan lain-lain. "
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulContohPenulisanPseudocode" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!-- layout contoh kedua penulisan pseudocode-->
-
-            <SeekBar
-                android:id="@+id/seekbarSecondContohPenulisanPseudocode"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSecondContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/imgSecondContohPenulisanPseudocode" />
-
-            <ImageView
-                android:id="@+id/imgSecondContohPenulisanPseudocode"
-                android:layout_width="match_parent"
-                android:layout_height="1000dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/contohkonversinilaiangkakehuruf"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutContohPenulisanPseudocode" />
-
-            <LinearLayout
-                android:id="@+id/LinearSecondLayoutContohPenulisanPseudocode"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSecondContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarSecondContohPenulisanPseudocode">
-
-                <TextView
-                    android:id="@+id/ETLSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnSecondContohPenulisanPseudocode"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarSecondContohPenulisanPseudocode"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgSecondContohPenulisanPseudocode" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutSecondContohPenulisanPseudocode"
-                android:layout_width="400dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearSecondLayoutContohPenulisanPseudocode"
-                app:layout_constraintVertical_bias="0.0">
-
-                <TextView
-                    android:id="@+id/JudulSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Penjelasan :"
-                    android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/PenjelasanSecondContohPenulisanPseudocode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna aliquam erat volutpat"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulSecondContohPenulisanPseudocode" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianFlowchartBGG" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import android.widget.Switch;
 import com.Education.dasarkode.R;
 
 public class FragmentMenuMateriAlgoritma extends Fragment {
-    Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri;
+    Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,6 +26,7 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
         btnSecondMateri = (Button) view.findViewById(R.id.button_second_materi);
         btnThirdMateri = (Button) view.findViewById(R.id.button_third_materi);
         btnFourthMateri = (Button) view.findViewById(R.id.button_fourth_materi);
+        btnFifthMateri = (Button) view.findViewById(R.id.button_fifth_materi);
 
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +65,16 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
                 FragmentTransaction fragmentTransactionFourth = getFragmentManager().beginTransaction();
                 fragmentTransactionFourth.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentFourthMateri);
                 fragmentTransactionFourth.commit();
+            }
+        });
+
+        btnFifthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentAlgoritmaMateri5 fragmentFifthMateri = new FragmentAlgoritmaMateri5();
+                FragmentTransaction fragmentTransactionFifth = getFragmentManager().beginTransaction();
+                fragmentTransactionFifth.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentFifthMateri);
+                fragmentTransactionFifth.commit();
             }
         });
 
