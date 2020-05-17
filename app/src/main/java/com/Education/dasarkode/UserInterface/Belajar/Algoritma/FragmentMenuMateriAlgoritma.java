@@ -9,12 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Switch;
 
+import com.Education.dasarkode.FragmentAlgoritmaMateri6;
 import com.Education.dasarkode.R;
 
 public class FragmentMenuMateriAlgoritma extends Fragment {
-    Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri;
+    Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri,btnSixthMateri;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +27,7 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
         btnThirdMateri = (Button) view.findViewById(R.id.button_third_materi);
         btnFourthMateri = (Button) view.findViewById(R.id.button_fourth_materi);
         btnFifthMateri = (Button) view.findViewById(R.id.button_fifth_materi);
+        btnSixthMateri = (Button) view.findViewById(R.id.button_sixth_materi);
 
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +76,16 @@ public class FragmentMenuMateriAlgoritma extends Fragment {
                 FragmentTransaction fragmentTransactionFifth = getFragmentManager().beginTransaction();
                 fragmentTransactionFifth.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentFifthMateri);
                 fragmentTransactionFifth.commit();
+            }
+        });
+
+        btnSixthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentAlgoritmaMateri6 fragmentSixthMateri = new FragmentAlgoritmaMateri6();
+                FragmentTransaction fragmentTransactionSixth = getFragmentManager().beginTransaction();
+                fragmentTransactionSixth.replace(R.id.fragmentLayoutBelajarAlgoritma,fragmentSixthMateri);
+                fragmentTransactionSixth.commit();
             }
         });
 
