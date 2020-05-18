@@ -167,6 +167,153 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+<!-- Layout Tipe Data -->
+
+            <SeekBar
+                android:id="@+id/seekbarPembukaanTD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnPengertianTD"
+                app:layout_constraintTop_toBottomOf="@+id/imgJudulTD" />
+
+            <ImageView
+                android:id="@+id/imgJudulTD"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tipedata"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianSD" />
+
+            <LinearLayout
+                android:id="@+id/LineaerLayoutPembukaanTD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnPengertianTD"
+                app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanTD">
+
+                <TextView
+                    android:id="@+id/ETLpembukaanTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/RTLpembukaanTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPengertianTD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/seekbarPembukaanTD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgJudulTD" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianTD"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPembukaanTD"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/JudulPengertianTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pengertian Tipe Data"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PengertianTD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulPengertianTD" />
+
+                <TextView
+                    android:id="@+id/JudulTujuanBelajarTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tujuan Belajar Tipe Data"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PengertianTD" />
+
+                <TextView
+                    android:id="@+id/TujuanBelajarTD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/JudulTujuanBelajarTD" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <!-- layout konstanta dan variable -->
 
             <SeekBar
@@ -188,7 +335,7 @@
                 android:src="@drawable/konstantadanvariable"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianSD" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianTD" />
 
             <LinearLayout
                 android:id="@+id/LineaerLayoutPembukaanKDV"
@@ -254,7 +401,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Pengertian Struktu data"
+                    android:text="Pengertian Konstanta dan varible"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -285,7 +432,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Tujuan Belajar Struktur Data"
+                    android:text="Tujuan Belajar Konstanta dan Variable"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
