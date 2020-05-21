@@ -1,4 +1,4 @@
-package com.Education.dasarkode;
+package com.Education.dasarkode.UserInterface.Belajar.Algoritma;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.Education.dasarkode.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentAlgoritmaMateri6 extends Fragment {
+public class FragmentAlgoritmaKasusTumpukanMateri15 extends Fragment {
 
-    public FragmentAlgoritmaMateri6() {
+    public FragmentAlgoritmaKasusTumpukanMateri15() {
         // Required empty public constructor
     }
 
@@ -23,6 +25,6 @@ public class FragmentAlgoritmaMateri6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_algoritma_materi6, container, false);
+        return inflater.inflate(R.layout.fragment_algoritma_kasus_tumpukan_materi15, container, false);
     }
 }
