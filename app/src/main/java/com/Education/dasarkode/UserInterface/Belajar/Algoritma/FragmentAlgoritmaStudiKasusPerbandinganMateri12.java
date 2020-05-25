@@ -14,9 +14,9 @@ import com.Education.dasarkode.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentStudiKasusPerbandinganMateri12 extends Fragment {
+public class FragmentAlgoritmaStudiKasusPerbandinganMateri12 extends Fragment {
 
-    public FragmentStudiKasusPerbandinganMateri12() {
+    public FragmentAlgoritmaStudiKasusPerbandinganMateri12() {
         // Required empty public constructor
     }
 
