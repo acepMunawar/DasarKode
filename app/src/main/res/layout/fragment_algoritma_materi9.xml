@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaTreeMateri9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/seekbarPembukaanGraph"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnPengertianGraph"
+            app:layout_constraintTop_toBottomOf="@+id/imgJudulGraph" />
+
+        <ImageView
+            android:id="@+id/imgJudulGraph"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/graph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LineaerLayoutPembukaanGraph"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnPengertianGraph"
+            app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanGraph">
+
+            <TextView
+                android:id="@+id/ETLpembukaanGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:11" />
+
+            <TextView
+                android:id="@+id/RTLpembukaanGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="265dp"
+                android:text="-1:49" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPengertianGraph"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/play_sound"
+            app:layout_constraintEnd_toStartOf="@+id/seekbarPembukaanGraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgJudulGraph" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutPengertianGraph"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/colorAegeanBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPembukaanGraph"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/JudulPengertianGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Pengertian Graph dalam Struktur Data"
+                android:textColor="@color/colorAqua"
+                android:textSize="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/PengertianSDDGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text=" graph adalah struktur yang
+menggambarkan relasi antar obyek dari sebuah koleksi obyek. Jika struktur linear;  misalnya
+array; memungkinkan pendefinisian keterhubungan sekuensial antara entitas data, struktur
+data tree memungkinkan pendefinisian keterhubungan hirarkis, maka struktur graph
+memungkinkan pendefinisian keterhubungan tak terbatas antara entitas data"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/JudulPengertianGraph" />
+
+            <TextView
+                android:id="@+id/JudulTujuanSDDGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Tujuan Belajar Array dalam struktur data"
+                android:textColor="@color/colorAqua"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PengertianSDDGraph" />
+
+            <TextView
+                android:id="@+id/TujuanBelajarSDDGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Array merupakan sebuah variable yang dapat menampung banyak data maka dengan belejar array developer atau programmer akan lebih \n
+mudah dalam penyusunan letak dan penyimpanan data. "
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/JudulTujuanSDDGraph" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--layout ilustrasi array-->
+
+        <SeekBar
+            android:id="@+id/seekbarIlustrasiGraph"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnIlustrasiGraph"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph" />
+
+        <ImageView
+            android:id="@+id/imgIlustrasiGraph"
+            android:layout_width="match_parent"
+            android:layout_height="223dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/graphmateri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPengertianGraph" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutIlustrasiGraph"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnIlustrasiGraph"
+            app:layout_constraintTop_toBottomOf="@+id/seekbarIlustrasiGraph">
+
+            <TextView
+                android:id="@+id/ETLIlustrasiGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:11" />
+
+            <TextView
+                android:id="@+id/RTLIlustrasiGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="265dp"
+                android:text="-1:49" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnIlustrasiGraph"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/play_sound"
+            app:layout_constraintEnd_toStartOf="@+id/seekbarIlustrasiGraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph"
+            tools:layout_editor_absoluteY="316dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutIlustrasiGraph"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/colorAegeanBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutIlustrasiGraph"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/JudulIlustrasiPengertianGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Ilustrasi Array"
+                android:textColor="@color/colorAqua"
+                android:textSize="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/PengertianIlustrasiGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Banyak obyek dalam masalah-masalah nyata secara alamiah memiliki keterhubungan
+langsung secara tak terbatas. Contohnya informasi topologi dan jarak antar kota-kota di suatu
+pulau. Dalam masalah ini kota x bisa berhubungan langsung dengan hanya satu atau lima
+kota lainnya. Untuk memeriksa keterhubungan dan jarak tidak langsung antara dua kota dapat
+diperoleh berdasarkan data keterhubungan langsung dari kota-kota lainnya yang
+memperantarainya. Contoh lain penggunaan graph adalah untuk menggambarkan jaringan
+dan jalur kereta api, lintasan pesawat, sistem permipaan, saluran telepon, koneksi elektrik,
+ketergantungan diantara task pada sistem manufaktur dan lain-lain.  Terdapat banyak hasil
+dan struktur penting yang didapatkan dari perhitungan dengan graph. \nRepresentasi data dengan struktur data linear  ataupun hirarkis pada masalah ini bisa
+digunakan namun membutuhkan operasi-operasi yang rumit sehingga kurang efisien. Struktur
+data graph secara eksplisit menyatakan keterhubungan ini sehingga pencariannya langsung
+dilakukan pada strukturnya sendiri.\nDefinisi dari suatu graph adalah himpunan obyek-obyek yang disebut node (atau
+vertek) yang terhubung oleh edge. Biasanya graph digambarkan secara grafis sebagai
+kumpulan lingkaran yang melambangkan node yang dihubungkan oleh garis yang
+melambangkan edge. Edge dalam suatu graph bisa berupa edge berarah atau tidak berarah.\nPada gambar tersebut terlihat bahwa graph
+memiliki 5 buah node.  Pada ilustrasi ini dimisalkan node mewakili sebuah kota. Maka dapat
+dilihat bahwa dari kota A menuju kota E bisa dilalui melalui path A-B-E atau path A-C-D-E.\n  "
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/JudulIlustrasiPengertianGraph" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
