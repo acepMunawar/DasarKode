@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/ruby"
+        android:id="@+id/cpp"
         android:layout_width="280px"
         android:layout_height="300px"
         android:layout_marginTop="190dp"
@@ -71,7 +71,7 @@
 
 
     <ImageButton
-        android:id="@+id/cpp"
+        android:id="@+id/js"
         android:layout_width="280px"
         android:layout_height="300px"
         android:layout_marginStart="90dp"

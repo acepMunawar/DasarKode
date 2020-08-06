@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserInterface.Belajar.python.menuBelajarPython">
+    tools:context=".UserInterface.Belajar.js.menuBelajarJs">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/nav_top_python"
+        android:id="@+id/nav_top_js"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,8 @@
         android:layout_marginTop="7dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:src="@drawable/icon_belajar_python"
-        app:layout_constraintEnd_toEndOf="@+id/nav_top_python"
+        android:src="@drawable/icon_belajar_js"
+        app:layout_constraintEnd_toEndOf="@+id/nav_top_js"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -49,17 +49,17 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="7dp"
         android:src="@drawable/back"
-        app:layout_constraintStart_toStartOf="@+id/nav_top_python"
+        app:layout_constraintStart_toStartOf="@+id/nav_top_js"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragmentLayoutBelajarPython"
+        android:id="@+id/fragmentLayoutBelajarJs"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_top_python" />
+        app:layout_constraintTop_toTopOf="@+id/nav_top_js" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

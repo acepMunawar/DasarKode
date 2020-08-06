@@ -16,8 +16,7 @@ import com.Education.dasarkode.UserInterface.Belajar.Java.menuBelajarJava;
 import com.Education.dasarkode.UserInterface.Belajar.cpp.menuBelajarCpp;
 import com.Education.dasarkode.UserInterface.Belajar.mysql.menuBelajarMysql;
 import com.Education.dasarkode.UserInterface.Belajar.python.menuBelajarPython;
-import com.Education.dasarkode.UserInterface.Belajar.ruby.menuBelajarRuby;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.Education.dasarkode.UserInterface.Belajar.js.menuBelajarJs;
 
 public class Fragment_dashboard_belajar extends Fragment {
 
@@ -67,11 +66,11 @@ public class Fragment_dashboard_belajar extends Fragment {
                 }
             });
 
-            ImageButton btnRuby = (ImageButton) view.findViewById(R.id.ruby);
+            ImageButton btnRuby = (ImageButton) view.findViewById(R.id.js);
             btnRuby.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intentRuby = new Intent(getActivity(), menuBelajarRuby.class);
+                    Intent intentRuby = new Intent(getActivity(), menuBelajarJs.class);
                     startActivity(intentRuby);
                     getActivity().overridePendingTransition(0,0);
                 }
