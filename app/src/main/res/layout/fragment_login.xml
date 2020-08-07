@@ -22,8 +22,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigasi_top">
 
-
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -43,11 +45,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigasi_top">
 
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Password"
+            android:padding="10dp" />
+
+
         <Button
-            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rounded_corners_aqua"
+            android:text="REGISTER"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rounded_corners_blue"
+            android:text="REGISTER"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="280dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="FORGOT YOUR PASSWORD"
+            android:textColor="@color/colorAqua"
+
+            />
+
+
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -131,6 +183,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

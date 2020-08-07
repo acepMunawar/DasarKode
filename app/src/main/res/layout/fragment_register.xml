@@ -42,12 +42,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigasi_top">
 
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Nama"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="210dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Password"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/hoby"
+            android:layout_width="220dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/label_round"
+            android:hint="Hoby"
+            android:padding="10dp" />
+
+
+
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/rounded_corners_aqua"
+            android:text="REGISTER"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"
@@ -76,10 +135,10 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginRight="161dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="REGISTER"
