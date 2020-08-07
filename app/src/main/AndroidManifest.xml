@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserInterface.Belajar.js.menuBelajarJs"></activity>
+        <activity android:name=".MainLogin">
+            <intent-filter>
+                <action android:name=".Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserInterface.Belajar.js.menuBelajarJs" />
         <activity android:name=".UserInterface.Belajar.mysql.menuBelajarMysql" />
         <activity android:name=".UserInterface.Belajar.python.menuBelajarPython" />
         <activity android:name=".UserInterface.Belajar.cpp.menuBelajarCpp" />
@@ -23,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
