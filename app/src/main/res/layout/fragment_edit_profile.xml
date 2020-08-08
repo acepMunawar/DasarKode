@@ -11,7 +11,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:layout_gravity="bottom"
         android:background="@color/colorAegeanBlue"
         app:itemIconSize="80px"
@@ -28,7 +28,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:layout_gravity="bottom"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
@@ -137,7 +137,7 @@
         android:layout_marginRight="155dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="EDITE PROFILE"
+        android:text="EDITE PROFIL"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"

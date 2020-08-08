@@ -12,7 +12,7 @@ public class MainLayoutStartKuis extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_layout_start_kuis);
-        getSupportFragmentManager().beginTransaction().replace(R.id.FragmentMenuKuis, new Fragment_dashboard_belajar()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.FragmentMenuKuis, new Fragment_dashboard_kuis()).commit();
 
     }
 }

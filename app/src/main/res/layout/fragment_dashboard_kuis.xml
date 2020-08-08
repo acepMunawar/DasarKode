@@ -79,6 +79,7 @@
         android:layout_marginTop="472dp"
         android:background="@drawable/cpp_ic"
         android:src="@drawable/js_ic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -89,8 +90,10 @@
         android:layout_marginTop="470dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
+        android:layout_marginBottom="74dp"
         android:background="@drawable/python_ic"
         android:src="@drawable/python_ic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,13 +116,13 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"
         android:layout_width="240dp"
         android:layout_height="200dp"
         android:layout_gravity="bottom"
         android:layout_marginLeft="100dp"
+        android:layout_marginTop="72dp"
         android:background="@color/colorAegeanBlue"
         app:itemIconSize="80px"
         app:itemIconTint="@drawable/state_btnnav"
@@ -128,25 +131,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpp_logo"
         app:menu="@menu/navigasi_top">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="155dp"
-        android:text="MENU KUIS"
-        android:textColor="@color/colorWhite"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="140dp"
+            android:text="MENU KUIS"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/history_ic"
-        android:layout_width="300px"
-        android:layout_height="350px"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/logo_kuis" />
+        <ImageView
+            android:id="@+id/history_ic"
+            android:layout_width="300px"
+            android:layout_height="350px"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo_kuis" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 

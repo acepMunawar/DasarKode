@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainLayoutStartKuis"></activity>
+        <activity android:name=".LayoutEditProfile"></activity>
+        <activity android:name=".MainLayoutStartKuis" />
         <activity android:name=".Profile" />
         <activity android:name=".MainLogin">
             <intent-filter>
