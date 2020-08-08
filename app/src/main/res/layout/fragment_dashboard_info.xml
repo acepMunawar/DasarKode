@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".UserInterface.Info.Fragment_dashboard_info">
 
@@ -21,6 +22,41 @@
             android:layout_height="match_parent">
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/nav_top_belajar"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorAegeanBlue"
+                    app:itemIconSize="80px"
+                    app:itemIconTint="@drawable/state_btnnav"
+                    app:itemTextColor="@drawable/state_btnnav"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:menu="@menu/navigasi_top" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/logo_info_ic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
             <!-- main layout -->
 
             <SeekBar
@@ -38,7 +74,7 @@
                 android:id="@+id/imgInfo"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/info2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +138,7 @@
                 android:id="@+id/imgInfo2"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/info3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -117,9 +153,12 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginBottom="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btnInfo2"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarInfo2">
+                app:layout_constraintTop_toBottomOf="@+id/seekbarInfo2"
+                app:layout_constraintVertical_bias="1.0">
 
                 <TextView
                     android:id="@+id/ETLInfo2"
@@ -143,12 +182,17 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/play_sound"
+                app:layout_constraintBottom_toBottomOf="@+id/LineaerLayoutInfo2"
                 app:layout_constraintEnd_toStartOf="@+id/seekbarInfo2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgInfo2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
     </ScrollView>
 
 
