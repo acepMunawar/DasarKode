@@ -27,7 +27,7 @@
     </FrameLayout>
 
     <ImageButton
-        android:id="@+id/kuisStart"
+        android:id="@+id/StoryKuis"
         android:layout_width="460px"
         android:layout_height="185dp"
         android:layout_marginStart="10dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/python"
+        android:id="@+id/StartKuis"
         android:layout_width="500px"
         android:layout_height="205dp"
         android:layout_marginTop="160dp"
