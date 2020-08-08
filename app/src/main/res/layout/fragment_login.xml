@@ -67,17 +67,19 @@
 
 
         <Button
+            android:id="@+id/BtnLogin"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="200dp"
             android:background="@drawable/rounded_corners_aqua"
-            android:text="REGISTER"
+            android:text="LOGIN"
             android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/BtnRegister"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginLeft="170dp"
@@ -109,8 +111,8 @@
         android:layout_gravity="bottom"
         android:layout_marginStart="205dp"
         android:layout_marginLeft="205dp"
-        android:layout_marginEnd="190dp"
-        android:layout_marginRight="200dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginRight="205dp"
         android:layout_marginBottom="-60dp"
         android:background="@color/colorWhite"
         app:itemIconSize="80px"
@@ -118,7 +120,6 @@
         app:itemTextColor="@drawable/state_btnnav"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigasi_top">
 
@@ -141,7 +142,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -160,7 +160,7 @@
         app:itemTextColor="@drawable/state_btnnav"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0"
@@ -179,7 +179,6 @@
         android:src="@drawable/logo_dk_home"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
