@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new Fragment_dashboard_belajar();
                             break;
                         case R.id.nav_kuis:
-                            selectedFragment = new Fragment_dashboard_kuis();
+                            selectedFragment = new MainKuis();
                             break;
                         case R.id.nav_info:
                             selectedFragment = new Fragment_dashboard_info();

@@ -50,7 +50,6 @@
             android:background="@drawable/label_round"
             android:layout_marginLeft="47dp"
             android:layout_marginTop="40dp"
-
             />
 
 
