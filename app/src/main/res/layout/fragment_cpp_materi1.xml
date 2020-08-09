@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CppMateri1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:id="@+id/FirstSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheoryAD" />
+
+            <ImageView
+                android:id="@+id/FirstTheoryAD"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/cpp_first"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/firstlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
+
+                <TextView
+                    android:id="@+id/firstelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/firstremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheoryAD" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianAD"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayoutAD"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/TujuanBelajarAlgoritmaAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tujuan Belajar CPP"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PenjelasanTujuanBelajarAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Tujuan dari belajar C++ adalah agar kita semua bisa membangun berbagai aplikasi./nSeperti membuat Game,
+                    Aplikasi Desktop, Web, aplikasi jaringan, aplikasi untuk hacking, bahkan juga Mobile."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TujuanBelajarAlgoritmaAD" />
+
+                <TextView
+                    android:id="@+id/KalimatDeskriptif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Apa itu C++"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PenjelasanTujuanBelajarAD" />
+
+                <TextView
+                    android:id="@+id/PenjelasanKalimatDeskrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Seperti namanya, Simbol “++” pada huruf C berarti increment dari C.Sebenarnya C++ sama seperti bahasa C, tapi memiliki fitur yang lebih banyak dibandingkan C.
+Karena itulah dinamakan C++ (dibaca si plus plus).Lalu apa bedanya dengan C#?\nBahasa C# dibuat oleh Microsoft dan berjalan di atas mesin virtual .Net. Sedangkan C++ berjalan secara native seperti C.
+Dari segi sintaks, C++ dengan C# cukup berbeda. Menurut saya, C++ lebih mirip C dan C# lebih mirip Java.
+Ada juga yang beranggapan kalau C# adalah peningkatan dari C++.  "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/KalimatDeskriptif" />
+
+                <TextView
+                    android:id="@+id/DefinisiAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Kalimat Deskriptif"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PenjelasanKalimatDeskrip" />
+
+                <TextView
+                    android:id="@+id/PenjelasanAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Algoritma dengan bahasa deskriptif biasa menggunakan kata kerja yang pendek ,seperti tulis, baca, hitung, tampilkan,
+ulangi, bandingkan, dan lain-lain.\n\nPada dasarnya teks algoritma dengan bahasa deskriptif disusun
+oleh tiga bagian utama yaitu:
+\n1. Bagian judul (header)
+\n2. Bagian deklarasi (kamus)
+\n3. Bagian deskripsi
+\nSetiap bagian disertai dengan komentar untuk memperjelas maksud teks yang
+dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{’ dan
+‘}’)."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DefinisiAD" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--second layout -->
+
+            <SeekBar
+                android:id="@+id/SecondSeekBarAD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD" />
+
+            <ImageView
+                android:id="@+id/SecondTheoryAD"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/sejarahcpp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAD" />
+
+            <LinearLayout
+                android:id="@+id/SecondlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutPengertianJudulAD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBarAD">
+
+                <TextView
+                    android:id="@+id/SecondelapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SecondremainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SecondBtnPlayAD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianJudulAD"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondBtnPlayAD">
+
+                <TextView
+                    android:id="@+id/DefinisiJudulAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Sejarah c++"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutPengertianJudulAD" />
+
+                <TextView
+                    android:id="@+id/PenjelasanJudulAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pada tahun 1979, seorang ilmuan komputer asal Denmark bernama Bjarne Stroustrup mulai membuat bahasa pemrograman C++.
+Motivasi awalnya sih, karena pengalaman beliau saat tesis dulu.
+Waktu itu, saat mengerjakan tesis..\nBeliau memiliki temuan.. kalau fitur bahasa Simula sangat membantu untuk membuat aplikasi dalam sekala besar.Tapi bahasa Simula sangat lambat.
+Cerita berikutnya dimulai saat ia bekerja di ATdanT Bell Labs.Ia mendapatkan masalah saat menganalisis kernel Unix yang berhubungan dengan komputasi terdistirbusi.Sejak saat itu, ia mengingat kembali pengalaman waktu mengerjakan tesis.
+Akhirnya ia membuat bahasa baru dengan mengembangkan bahasa C dan memiliki fitur seperti Simula.
+Selain Simula, bahasa C juga terinspirasi dari bahasa ALGOL 86, Ada, CLU, dan ML.
+Pada Tahun 1982, bahasa baru ciptaan Bjarne ini diberi nama C++ dan juga ditambahkan beberapa fitur seperti class, virtual function, operator overloading, references, constants, dll.
+Pada tahun 1985, Buku The C++ Programming Language diterbitkan dan menjadi satu-satunya referensi bahasa C++ saat itu.Pada tahun 1989, C++ versi 2.0 dirilis dan diikuti rilis buku The C++ Prigramming Language Second Edition. Beberapa fitur juga ditambahkan pada versi ini, seperti abstract dan protected member.
+
+Pada tahun 1998, C++ memiliki standar bahasa yang dinamakan C++98."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DefinisiJudulAD" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
