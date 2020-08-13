@@ -269,12 +269,12 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                 android:id="@+id/SecondTheoryAD1"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="45dp"
                 android:src="@drawable/programcpppertama"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
 
             <LinearLayout
                 android:id="@+id/SecondlinearLayoutAD1"
