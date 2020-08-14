@@ -15,12 +15,16 @@ import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritma
 import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri3;
 import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri4;
 import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri5;
+import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri6;
+import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri7;
+import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaQueueMater8;
+import com.Education.dasarkode.UserInterface.Belajar.Algoritma.FragmentAlgoritmaTreeMateri9;
 
 
 public class FragmentMenuMateriCpp extends Fragment {
     Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri,btnSixthMateri;
     Button btnSeventhMateri,btnEightMateri,btnNineMateri,btnTenthMateri,btnEleventhMateri;
-    Button btnTwelfth,btnThirtennthMateri,btnFourteenthMateri,btnFifteenthMateri;
+    Button btnTwelfthMateri,btnThirtennthMateri,btnFourteenthMateri,btnFifteenthMateri;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class FragmentMenuMateriCpp extends Fragment {
         btnNineMateri = (Button) view.findViewById(R.id.button_nineth_materi);
         btnTenthMateri = (Button) view.findViewById(R.id.button_tenth_materi);
         btnEleventhMateri = (Button) view.findViewById(R.id.button_eleventh_materi);
-        btnTwelfth = (Button) view.findViewById(R.id.button_twelfth_materi);
+        btnTwelfthMateri = (Button) view.findViewById(R.id.button_twelfth_materi);
 
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +94,75 @@ public class FragmentMenuMateriCpp extends Fragment {
             }
         });
 
+        btnSixthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri6 fragmentSixthMateri = new CppMateri6();
+                FragmentTransaction fragmentTransactionSixth = getFragmentManager().beginTransaction();
+                fragmentTransactionSixth.replace(R.id.fragmentLayoutBelajarCpp,fragmentSixthMateri);
+                fragmentTransactionSixth.commit();
+            }
+        });
 
+        btnSeventhMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri7 fragmentSeventhMateri = new CppMateri7();
+                FragmentTransaction fragmentTransactionSeventh = getFragmentManager().beginTransaction();
+                fragmentTransactionSeventh.replace(R.id.fragmentLayoutBelajarCpp,fragmentSeventhMateri);
+                fragmentTransactionSeventh.commit();
+            }
+        });
+
+        btnEightMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri8 fragmentEigthMateri = new CppMateri8();
+                FragmentTransaction fragmentTransactionEigth = getFragmentManager().beginTransaction();
+                fragmentTransactionEigth.replace(R.id.fragmentLayoutBelajarCpp,fragmentEigthMateri);
+                fragmentTransactionEigth.commit();
+            }
+        });
+
+        btnNineMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri9 fragmentNineMateri = new CppMateri9();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentNineMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnTenthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri10 fragmentTenMateri = new CppMateri10();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTenMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnEleventhMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri11 fragmentTreeMateri = new CppMateri11();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnTwelfthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CppMateri12 fragmentTreeMateri = new CppMateri12();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
 
 
 

@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- operator operator aritmatika-->
+            <!-- inputan -->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -33,9 +33,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="790dp"
+                android:layout_height="8.5in"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/definisoperatorcpp"
+                android:src="@drawable/cppinput"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -80,7 +80,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
-            <!-- operator penugasan-->
+            <!-- cout-->
 
             <SeekBar
                 android:id="@+id/SecondSeekBar"
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="9.5in"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/cppoperatoraritmatika"
+                android:src="@drawable/coutcpp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
@@ -143,70 +143,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
-            <!-- operator pembanding-->
-
-            <SeekBar
-                android:id="@+id/ThirdSeekBar"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+<!-- contoh program cout-->
 
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="7.5in"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/cppoperatorpembanding"
+                android:layout_height="7in"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/prgoramcoutcpp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar" />
 
-            <LinearLayout
-                android:id="@+id/ThirdLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
-
-                <TextView
-                    android:id="@+id/ThirdElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/ThirdRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/ThirdBtnPlay"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
-
-            <!-- operator logika -->
+  <!-- output printf-->
 
             <SeekBar
                 android:id="@+id/FourthSeekBar"
@@ -222,12 +171,12 @@
             <ImageView
                 android:id="@+id/FourthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9.5in"
-                android:layout_marginTop="65dp"
-                android:src="@drawable/cppoperatorlogika"
+                android:layout_height="5in"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/printf"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
 
             <LinearLayout
                 android:id="@+id/FourthLinearLayout"
@@ -269,6 +218,91 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
 
+            <!-- contoh program printf-->
+
+            <ImageView
+                android:id="@+id/FifthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="4.5in"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/cppprogramprintf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBar" />
+
+            <!-- output cin-->
+
+            <SeekBar
+                android:id="@+id/SixthSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+
+            <ImageView
+                android:id="@+id/SixthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="5in"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/cppcint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
+
+            <LinearLayout
+                android:id="@+id/SixthLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBar">
+
+                <TextView
+                    android:id="@+id/SixthElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SixthRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SixthBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SixthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+
+            <!-- contoh program cin-->
+            <ImageView
+                android:id="@+id/SeventhTheory"
+                android:layout_width="match_parent"
+                android:layout_height="4.5in"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/cppcin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBar" />
 
 
 

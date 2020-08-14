@@ -15,5 +15,5 @@ public class menuBelajarCpp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_cpp);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarCpp, new FragmentMenuMateriCpp()).commit();
-    }
+    } 
 }

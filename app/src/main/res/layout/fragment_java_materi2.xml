@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CppMateri9">
-
+    tools:context=".JavaMateri2">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,12 +13,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- definisi percabangan -->
+            <!-- java install 1 -->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -34,9 +32,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="4.5in"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/cppdefinisipercabangan"
+                android:src="@drawable/javainstall1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -81,8 +79,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
-            <!-- percabangan if-->
-
+            <!-- java install 2 -->
             <SeekBar
                 android:id="@+id/SecondSeekBar"
                 android:layout_width="350dp"
@@ -98,8 +95,8 @@
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
                 android:layout_height="6.5in"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/cpppercabanganif"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
@@ -110,12 +107,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
 
                 <TextView
                     android:id="@+id/SecondElapsedTimeLabel"
@@ -144,21 +142,71 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
-            <!-- contoh program percabangan if-->
+
+            <!-- java install 3 -->
+            <SeekBar
+                android:id="@+id/ThirdSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
 
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9.2in"
-                android:layout_marginTop="65dp"
-                android:src="@drawable/cppprogrampercabanganif"
+                android:layout_height="3.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
 
+            <LinearLayout
+                android:id="@+id/ThirdLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory">
 
-            <!-- percabangan if else-->
+                <TextView
+                    android:id="@+id/ThirdElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
+                <TextView
+                    android:id="@+id/ThirdRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ThirdBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+
+            <!-- java install 4 -->
             <SeekBar
                 android:id="@+id/FourthSeekBar"
                 android:layout_width="350dp"
@@ -173,12 +221,12 @@
             <ImageView
                 android:id="@+id/FourthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="10in"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/cpppercabanganifelse"
+                android:layout_height="3.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/ThirdLinearLayout" />
 
             <LinearLayout
                 android:id="@+id/FourthLinearLayout"
@@ -186,12 +234,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/FourthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBar">
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheory">
 
                 <TextView
                     android:id="@+id/FourthElapsedTimeLabel"
@@ -220,21 +269,70 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
 
-            <!-- contoh program if else-->
+            <!-- java install 5 -->
+            <SeekBar
+                android:id="@+id/FifthSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8.5in"
-                android:layout_marginTop="65dp"
-                android:src="@drawable/cppprogrampercabanganifelse"
+                android:layout_height="3.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/FourthLinearLayout" />
 
+            <LinearLayout
+                android:id="@+id/FifthLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheory">
 
-            <!-- percabangan if else if-->
+                <TextView
+                    android:id="@+id/FifthElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
+                <TextView
+                    android:id="@+id/FifthRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FifthBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FifthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
+
+            <!-- java install 6 -->
             <SeekBar
                 android:id="@+id/SixthSeekBar"
                 android:layout_width="350dp"
@@ -249,12 +347,12 @@
             <ImageView
                 android:id="@+id/SixthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8.5in"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/cpppercabanganifelseif"
+                android:layout_height="3.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
 
             <LinearLayout
                 android:id="@+id/SixthLinearLayout"
@@ -262,12 +360,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/SixthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBar">
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheory">
 
                 <TextView
                     android:id="@+id/SixthElapsedTimeLabel"
@@ -296,97 +395,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
 
-            <!-- contoh program if else if-->
+            <!-- java install 7 -->
+
             <ImageView
                 android:id="@+id/SeventhTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9in"
-                android:layout_marginTop="65dp"
-                android:src="@drawable/cppprogrampercabanganifelseif"
+                android:layout_height="1.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javainstall8"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SixthSeekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/SixthLinearLayout" />
 
 
-            <!-- percabangan switch case-->
-
-            <SeekBar
-                android:id="@+id/EigthSeekBar"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
-
-            <ImageView
-                android:id="@+id/EigthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="8in"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/cpppercabanganswitchcase"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
-
-            <LinearLayout
-                android:id="@+id/EigthLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/EigthSeekBar">
-
-                <TextView
-                    android:id="@+id/EigthElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/EigthRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/EigthBtnPlay"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/EigthSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
-
-            <!-- contoh program switch case-->
-            <ImageView
-                android:id="@+id/NinethTheory"
-                android:layout_width="match_parent"
-                android:layout_height="11in"
-                android:layout_marginTop="65dp"
-                android:src="@drawable/cppprogrampercabanganswitchcase"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EigthSeekBar" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

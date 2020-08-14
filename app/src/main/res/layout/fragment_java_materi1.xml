@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CppMateri12">
+    tools:context=".JavaMateri1">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,12 +13,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- definisi oop -->
+            <!-- pengertian java-->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -32,9 +32,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="4.4in"
+                android:layout_height="6.5in"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/cppclassesatauobject"
+                android:src="@drawable/javapengertian"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -79,7 +79,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
-            <!-- class method -->
+
+            <!-- alasan menggunakan java -->
+
             <SeekBar
                 android:id="@+id/SecondSeekBar"
                 android:layout_width="350dp"
@@ -94,11 +96,10 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5.2in"
-                android:layout_marginTop="44dp"
-                android:src="@drawable/cppprogramclassesatauobject"
+                android:layout_height="5in"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/javaalasan"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
 
@@ -143,6 +144,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
 
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
