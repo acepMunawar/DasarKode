@@ -1,14 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PyMateri2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</FrameLayout>
+
+            <!-- install 1-->
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+
+            <ImageView
+                android:id="@+id/FirstTheory"
+                android:layout_width="match_parent"
+                android:layout_height="4.5in"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pyinstall1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/FirstLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+
+
+            <!-- intall py 2-->
+            <SeekBar
+                android:id="@+id/SecondSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
+
+            <ImageView
+                android:id="@+id/SecondTheory"
+                android:layout_width="match_parent"
+                android:layout_height="6in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pyinstall2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/SecondLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
+
+                <TextView
+                    android:id="@+id/SecondElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SecondRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SecondBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SecondSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
+
+            <!--py install 3 -->
+            <ImageView
+                android:id="@+id/ThirdTheory"
+                android:layout_width="match_parent"
+                android:layout_height="7in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pyinstall3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+
+            <!--install 4  -->
+            <ImageView
+                android:id="@+id/FourthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="2.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pyinstall5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

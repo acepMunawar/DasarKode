@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PyMateri3">
+    tools:context=".JavaMateri11">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- py idle 1-->
+            <!-- oop 1-->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -31,10 +32,11 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.4in"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/pyidle1"
+                android:layout_height="5.5in"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/javaoop"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,7 +81,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
 
-            <!-- py idle 2-->
+            <!-- oop 2-->
             <SeekBar
                 android:id="@+id/SecondSeekBar"
                 android:layout_width="350dp"
@@ -94,9 +96,9 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5in"
+                android:layout_height="10.5in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyidle2"
+                android:src="@drawable/javaoop1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +145,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
-            <!-- py idle 3-->
+
+            <!-- oop 3-->
             <SeekBar
                 android:id="@+id/FifthSeekBar"
                 android:layout_width="350dp"
@@ -158,9 +161,9 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5.5in"
+                android:layout_height="6.5in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyidle3"
+                android:src="@drawable/javaoop2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
@@ -206,7 +209,81 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
+            <ImageView
+                android:id="@+id/SixthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="8in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javabelajaroop1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
+
+            <!-- oop 4 -->
+            <SeekBar
+                android:id="@+id/SeventhSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
+
+            <ImageView
+                android:id="@+id/SeventhTheory"
+                android:layout_width="match_parent"
+                android:layout_height="8in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javabelajaroop2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+
+            <LinearLayout
+                android:id="@+id/SeventhLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
+
+                <TextView
+                    android:id="@+id/SeventhElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SeventhRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SeventhBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SeventhSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>

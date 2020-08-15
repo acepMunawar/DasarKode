@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PyMateri1">
+    tools:context=".JavaMateri12">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,8 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
-            <!-- perulangan definisi-->
+            <!-- method -->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -33,9 +32,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
+                android:layout_height="6in"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/pypengertianpy"
+                android:src="@drawable/javamethod"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -79,9 +78,6 @@
                 app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
-
-
-
 
 
 

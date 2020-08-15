@@ -4,19 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PyMateri3">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    tools:context=".JavaMateri10">
 
-            <!-- py idle 1-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            <!-- perulangan definisi-->
             <SeekBar
                 android:id="@+id/FirstSeekBar"
                 android:layout_width="350dp"
@@ -31,9 +32,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.4in"
+                android:layout_height="8.5in"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/pyidle1"
+                android:src="@drawable/javadefinisiperulangan"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -79,7 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
 
 
-            <!-- py idle 2-->
+            <!-- perulangan for-->
             <SeekBar
                 android:id="@+id/SecondSeekBar"
                 android:layout_width="350dp"
@@ -94,9 +95,9 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5in"
+                android:layout_height="7in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyidle2"
+                android:src="@drawable/javaperulanganfor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +144,29 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
-            <!-- py idle 3-->
+            <!--perulangan foreach -->
+            <ImageView
+                android:id="@+id/ThirdTheory"
+                android:layout_width="match_parent"
+                android:layout_height="7in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javaperulanganforeach"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+
+            <!--definisi perulangan while  -->
+            <ImageView
+                android:id="@+id/FourthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="4.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javawhile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+
+            <!-- program perulangan while-->
             <SeekBar
                 android:id="@+id/FifthSeekBar"
                 android:layout_width="350dp"
@@ -158,12 +181,12 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5.5in"
+                android:layout_height="6.5in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyidle3"
+                android:src="@drawable/javaprogramperulanganwhile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
 
             <LinearLayout
                 android:id="@+id/FifthLinearLayout"
@@ -206,7 +229,81 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
+            <ImageView
+                android:id="@+id/SixthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javadowhile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
+
+            <!-- definisi perulangan do while-->
+            <SeekBar
+                android:id="@+id/SeventhSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
+
+            <ImageView
+                android:id="@+id/SeventhTheory"
+                android:layout_width="match_parent"
+                android:layout_height="5.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/javaprogramperulangandowhile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+
+            <LinearLayout
+                android:id="@+id/SeventhLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
+
+                <TextView
+                    android:id="@+id/SeventhElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SeventhRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SeventhBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SeventhSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
