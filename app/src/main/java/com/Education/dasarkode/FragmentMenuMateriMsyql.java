@@ -3,62 +3,165 @@ package com.Education.dasarkode;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FragmentMenuMateriMsyql#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class FragmentMenuMateriMsyql extends Fragment {
+    Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri,btnSixthMateri;
+    Button btnSeventhMateri,btnEightMateri,btnNineMateri,btnTenthMateri,btnEleventhMateri;
+    Button btnTwelfthMateri,btnThirtennthMateri,btnFourteenthMateri,btnFifteenthMateri;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public FragmentMenuMateriMsyql() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentMenuMateriMsyql.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static FragmentMenuMateriMsyql newInstance(String param1, String param2) {
-        FragmentMenuMateriMsyql fragment = new FragmentMenuMateriMsyql();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_materi_msyql, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_menu_materi_msyql, container, false);
+
+        btnFirstMateri = (Button) view.findViewById(R.id.button_first_materi);
+        btnSecondMateri = (Button) view.findViewById(R.id.button_second_materi);
+        btnThirdMateri = (Button) view.findViewById(R.id.button_third_materi);
+        btnFourthMateri = (Button) view.findViewById(R.id.button_fourth_materi);
+        btnFifthMateri = (Button) view.findViewById(R.id.button_fifth_materi);
+        btnSixthMateri = (Button) view.findViewById(R.id.button_sixth_materi);
+        btnSeventhMateri = (Button) view.findViewById(R.id.button_seventh_materi);
+        btnEightMateri = (Button) view.findViewById(R.id.button_eighth_materi);
+        btnNineMateri = (Button) view.findViewById(R.id.button_nineth_materi);
+        btnTenthMateri = (Button) view.findViewById(R.id.button_tenth_materi);
+        btnEleventhMateri = (Button) view.findViewById(R.id.button_eleventh_materi);
+        btnTwelfthMateri = (Button) view.findViewById(R.id.button_twelfth_materi);
+
+        btnFirstMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri1 fragmentFirstMateri = new MysqlMateri1();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentLayoutBelajarMysql,fragmentFirstMateri);
+                fragmentTransaction.commit();
+            }
+        });
+
+        btnSecondMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri2 fragmentSecondMateri = new MysqlMateri2();
+                FragmentTransaction fragmentTransactionSecond = getFragmentManager().beginTransaction();
+                fragmentTransactionSecond.replace(R.id.fragmentLayoutBelajarMysql,fragmentSecondMateri);
+                fragmentTransactionSecond.commit();
+            }
+        });
+
+        btnThirdMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri3 fragmentThirdMateri = new MysqlMateri3();
+                FragmentTransaction fragmentTransactionThird = getFragmentManager().beginTransaction();
+                fragmentTransactionThird.replace(R.id.fragmentLayoutBelajarMysql,fragmentThirdMateri);
+                fragmentTransactionThird.commit();
+            }
+        });
+
+        btnFourthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri4 fragmentFourthMateri = new MysqlMateri4();
+                FragmentTransaction fragmentTransactionFourth = getFragmentManager().beginTransaction();
+                fragmentTransactionFourth.replace(R.id.fragmentLayoutBelajarMysql,fragmentFourthMateri);
+                fragmentTransactionFourth.commit();
+            }
+        });
+
+        btnFifthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri5 fragmentFifthMateri = new MysqlMateri5();
+                FragmentTransaction fragmentTransactionFifth = getFragmentManager().beginTransaction();
+                fragmentTransactionFifth.replace(R.id.fragmentLayoutBelajarMysql,fragmentFifthMateri);
+                fragmentTransactionFifth.commit();
+            }
+        });
+
+        btnSixthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri6 fragmentSixthMateri = new MysqlMateri6();
+                FragmentTransaction fragmentTransactionSixth = getFragmentManager().beginTransaction();
+                fragmentTransactionSixth.replace(R.id.fragmentLayoutBelajarMysql,fragmentSixthMateri);
+                fragmentTransactionSixth.commit();
+            }
+        });
+
+        btnSeventhMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri7 fragmentSeventhMateri = new MysqlMateri7();
+                FragmentTransaction fragmentTransactionSeventh = getFragmentManager().beginTransaction();
+                fragmentTransactionSeventh.replace(R.id.fragmentLayoutBelajarMysql,fragmentSeventhMateri);
+                fragmentTransactionSeventh.commit();
+            }
+        });
+
+        btnEightMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri8 fragmentEigthMateri = new MysqlMateri8();
+                FragmentTransaction fragmentTransactionEigth = getFragmentManager().beginTransaction();
+                fragmentTransactionEigth.replace(R.id.fragmentLayoutBelajarMysql,fragmentEigthMateri);
+                fragmentTransactionEigth.commit();
+            }
+        });
+
+        btnNineMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri9 fragmentNineMateri = new MysqlMateri9();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentNineMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnTenthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri12 fragmentTenMateri = new MysqlMateri12();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentTenMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnEleventhMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri12 fragmentTreeMateri = new MysqlMateri12();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+        btnTwelfthMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MysqlMateri12 fragmentTreeMateri = new MysqlMateri12();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
+
+
+
+
+        return view;
+
+
+
     }
 }
