@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JsMateri11">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- -->
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+
+            <ImageView
+                android:id="@+id/FirstTheory"
+                android:layout_width="match_parent"
+                android:layout_height="12in"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/jspercabangan1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/FirstLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
+
+
+            <!-- -->
+            <SeekBar
+                android:id="@+id/SecondSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
+
+            <ImageView
+                android:id="@+id/SecondTheory"
+                android:layout_width="match_parent"
+                android:layout_height="7.5in"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/jspercabangan2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/SecondLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
+
+                <TextView
+                    android:id="@+id/SecondElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/SecondRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SecondBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/SecondSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
+
+            <!-- -->
+            <SeekBar
+                android:id="@+id/ThirdSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+
+            <ImageView
+                android:id="@+id/ThirdTheory"
+                android:layout_width="match_parent"
+                android:layout_height="7.5in"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/jspercabangan3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/ThirdLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory">
+
+                <TextView
+                    android:id="@+id/ThirdElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/ThirdRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ThirddBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+
+            <!-- -->
+            <SeekBar
+                android:id="@+id/FourthSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
+
+            <ImageView
+                android:id="@+id/FourthTheory"
+                android:layout_width="match_parent"
+                android:layout_height="12.5in"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/jspercabangan4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/FourthLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheory">
+
+                <TextView
+                    android:id="@+id/FourthElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FourthRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FourthBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/FourthSeekBarAD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
