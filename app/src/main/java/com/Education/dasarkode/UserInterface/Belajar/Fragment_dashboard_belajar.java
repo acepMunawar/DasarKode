@@ -66,8 +66,8 @@ public class Fragment_dashboard_belajar extends Fragment {
                 }
             });
 
-            ImageButton btnRuby = (ImageButton) view.findViewById(R.id.js);
-            btnRuby.setOnClickListener(new View.OnClickListener() {
+            ImageButton btnJs = (ImageButton) view.findViewById(R.id.js);
+            btnJs.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intentRuby = new Intent(getActivity(), menuBelajarJs.class);

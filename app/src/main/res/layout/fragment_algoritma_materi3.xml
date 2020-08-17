@@ -53,13 +53,13 @@
             app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
             <TextView
-                android:id="@+id/firstelapsedTimeLabelAD"
+                android:id="@+id/FirstelapsedTimeLabelAD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0:11" />
 
             <TextView
-                android:id="@+id/firstremainingTimeLabelAD"
+                android:id="@+id/FirstremainingTimeLabelAD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="265dp"

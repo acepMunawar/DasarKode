@@ -55,13 +55,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
                 <TextView
-                    android:id="@+id/firstelapsedTimeLabelAD"
+                    android:id="@+id/FirstelapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/firstremainingTimeLabelAD"
+                    android:id="@+id/FirstremainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -152,7 +152,8 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/KalimatDeskriptif" />
+                    app:layout_constraintTop_toBottomOf="@+id/KalimatDeskriptif"
+                    app:layout_constraintVertical_bias="1.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -254,16 +255,6 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
 
             <!--second layout -->
 
-            <SeekBar
-                android:id="@+id/SecondSeekBarAD1"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD1"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD1" />
 
             <ImageView
                 android:id="@+id/SecondTheoryAD1"
@@ -276,45 +267,6 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
 
-            <LinearLayout
-                android:id="@+id/SecondlinearLayoutAD1"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/layoutPengertianJudulAD1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD1"
-                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBarAD1">
-
-                <TextView
-                    android:id="@+id/SecondelapsedTimeLabelAD1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/SecondremainingTimeLabelAD1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/SecondBtnPlayAD1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/SecondSeekBarAD1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD1" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianJudulAD1"
@@ -322,14 +274,14 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondBtnPlayAD1">
+                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD1">
 
                 <TextView
                     android:id="@+id/DefinisiJudulAD1"

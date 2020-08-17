@@ -26,9 +26,6 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-
         View view = inflater.inflate(R.layout.fragment_algoritma_materi1, container, false);
         FirstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         ElapsedTimeLabel = (TextView) view.findViewById(R.id.elapsedTimeLabel);
@@ -36,8 +33,12 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
         FirstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.tes);
         FirstMediaPlayer.seekTo(0);
         totalTime = FirstMediaPlayer.getDuration();
-
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
+        btn1();
+        return view;
+    }
+
+    public void btn1(){
         firstSeekBar.setMax(totalTime);
         firstSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -47,35 +48,27 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
                     firstSeekBar.setProgress(progress);
                 }
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
-
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         });
-
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while (FirstMediaPlayer != null){
-                        try {
-                            Message msg =new Message();
-                            msg.what = FirstMediaPlayer.getCurrentPosition();
-                            handler.sendMessage(msg);
-                            Thread.sleep(1000);
-                        }catch (InterruptedException e){
-
-                        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (FirstMediaPlayer != null){
+                    try {
+                        Message msg =new Message();
+                        msg.what = FirstMediaPlayer.getCurrentPosition();
+                        handler.sendMessage(msg);
+                        Thread.sleep(1000);
+                    }catch (InterruptedException e){
                     }
                 }
-
-            }).start();
-
+            }
+        }).start();
         FirstButtonPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,8 +81,6 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
                 }
             }
         });
-
-            return view;
     }
 
 private Handler handler = new Handler(){
@@ -100,7 +91,6 @@ private Handler handler = new Handler(){
             firstSeekBar.setProgress(currentPosition);
             String elapsedTime = createTimeLabel(currentPosition);
             ElapsedTimeLabel.setText(elapsedTime);
-
             String remainingTime = createTimeLabel(totalTime-currentPosition);
             RemainingTimeLabel.setText("-" + remainingTime);
     }
@@ -113,7 +103,6 @@ public String createTimeLabel(int time){
                 timeLabel = min + "";
             if(sec <10) timeLabel +="0";
                 timeLabel += sec;
-
         return timeLabel;
 }
 

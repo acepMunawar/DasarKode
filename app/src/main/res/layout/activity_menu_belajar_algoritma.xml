@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="@+id/nav_top_algoritma"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/back"
         android:layout_width="60dp"
         android:layout_height="100px"
@@ -49,6 +49,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="7dp"
         android:src="@drawable/back"
+        android:background="@color/colorAegeanBlue"
         app:layout_constraintStart_toStartOf="@+id/nav_top_algoritma"
         app:layout_constraintTop_toTopOf="parent" />
 

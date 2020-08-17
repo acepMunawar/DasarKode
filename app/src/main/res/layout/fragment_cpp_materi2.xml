@@ -52,13 +52,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
                 <TextView
-                    android:id="@+id/firstelapsedTimeLabelAD"
+                    android:id="@+id/FirstelapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/firstremainingTimeLabelAD"
+                    android:id="@+id/FirstremainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -87,13 +87,13 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
+                android:layout_marginBottom="24dp"
                 android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/SecondTheoryAD"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayoutAD"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayoutAD">
 
                 <TextView
                     android:id="@+id/TujuanBelajarAlgoritmaAD"
@@ -149,7 +149,9 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
                 android:src="@drawable/mingw_install"
+                app:layout_constraintBottom_toTopOf="@+id/SecondBtnPlayAD"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -247,18 +249,6 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <!--third layout -->
 
-            <SeekBar
-                android:id="@+id/ThirdSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheoryAD" />
-
-
             <ImageView
                 android:id="@+id/ThirdTheoryAD"
                 android:layout_width="437dp"
@@ -269,45 +259,6 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
 
-            <LinearLayout
-                android:id="@+id/ThirdlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBarAD">
-
-                <TextView
-                    android:id="@+id/ThirdelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/ThirdremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/ThirdBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheoryAD" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianContohJudulAD"
@@ -322,7 +273,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdBtnPlayAD">
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheoryAD">
 
                 <TextView
                     android:id="@+id/DefinisiContohJudulAD"
@@ -360,70 +311,19 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <!--Fourth layout-->
 
-            <SeekBar
-                android:id="@+id/FourthSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
-
-
             <ImageView
                 android:id="@+id/FourthTheoryAD"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/installcpp2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianContohJudulAD" />
 
-            <LinearLayout
-                android:id="@+id/FourthlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBarAD">
-
-                <TextView
-                    android:id="@+id/FourthelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/FourthremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/FourthBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/LayoutPengertianAlgoritmaDeskriptif"
+                android:id="@+id/Install2"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
@@ -435,7 +335,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthBtnPlayAD">
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD">
 
                 <TextView
                     android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
@@ -448,7 +348,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/LayoutPengertianAlgoritmaDeskriptif" />
+                    app:layout_constraintTop_toTopOf="@id/Install2" />
 
                 <TextView
                     android:id="@+id/DefenisiPengertianAlgoritmaDes"
@@ -473,18 +373,6 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <!--Fifth layout-->
 
-            <SeekBar
-                android:id="@+id/FifthSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD" />
-
-
             <ImageView
                 android:id="@+id/FifthTheoryAD"
                 android:layout_width="437dp"
@@ -493,51 +381,11 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:src="@drawable/install4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif" />
-
-            <LinearLayout
-                android:id="@+id/FifthlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FifthSeekBarAD">
-
-                <TextView
-                    android:id="@+id/FifthelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/FifthremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/FifthBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/FifthSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD" />
+                app:layout_constraintTop_toBottomOf="@+id/Install2" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/LayoutJudulContohAlgoritmaDeskriptif"
+                android:id="@+id/LayoutInstall"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
@@ -549,7 +397,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FifthlinearLayoutAD">
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheoryAD">
 
                 <TextView
                     android:id="@+id/DefenisiContohAlgoritmaDes"
@@ -575,33 +423,21 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <!--Sixth layout-->
 
-            <SeekBar
-                android:id="@+id/SixthSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
-
-
             <ImageView
                 android:id="@+id/SixthTheoryAD"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
+                android:layout_height="300dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/cppinstall4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />
+                app:layout_constraintTop_toBottomOf="@+id/LayoutInstall" />
 
             <ImageView
                 android:id="@+id/Theory8"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
-                android:layout_marginTop="100dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/cppinstall7"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -642,10 +478,11 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Theory11" />
+
             <ImageView
                 android:id="@+id/Theory13"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="32dp"
                 android:src="@drawable/install12"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -655,7 +492,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
             <ImageView
                 android:id="@+id/Theory14"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="32dp"
                 android:src="@drawable/install14"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -665,52 +502,12 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
             <ImageView
                 android:id="@+id/Theory15"
                 android:layout_width="437dp"
-                android:layout_height="338dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="32dp"
                 android:src="@drawable/install15"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Theory14" />
-
-            <LinearLayout
-                android:id="@+id/SixthlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/Theory13"
-                app:layout_constraintTop_toBottomOf="@+id/Theory13">
-
-                <TextView
-                    android:id="@+id/SixthelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/SixthremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/SixthBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/SixthSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -719,14 +516,14 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Theory15"
-                tools:layout_editor_absoluteY="900dp">
+                app:layout_constraintTop_toBottomOf="@+id/Theory15">
 
 
                 <TextView
@@ -754,7 +551,6 @@ Buka commandPrompt, lalu ketik gcc –version . jika outputnya seperti pada tamp
                     app:layout_constraintVertical_bias="1.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!--Seventh layout PENGERTIAN DESKRIPSI PADA ALGORITMA DESKRIPTIF-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
