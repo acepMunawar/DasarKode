@@ -93,7 +93,7 @@ public class CppMateri6 extends Fragment {
         btnSound1();
         btnSound2();
 //        btnSound3();
-//        btnSound4();
+        btnSound4();
 //        btnSound5();
         btnSound6();
 //        btnSound7();
@@ -310,7 +310,7 @@ public class CppMateri6 extends Fragment {
 //    }
 
 
-//    //    method btn sound 4
+    //    method btn sound 4
     public void btnSound4(){
         fourthSeekBar.setMax(fourthTotalTime);
         fourthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

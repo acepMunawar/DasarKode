@@ -229,7 +229,7 @@
                 android:background="@drawable/play_sound"
                 app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
             <!-- cpp program perulangan for-->
 
