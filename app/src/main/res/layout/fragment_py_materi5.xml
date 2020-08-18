@@ -235,17 +235,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
 
             <!-- operator pembanding-->
-            <SeekBar
-                android:id="@+id/TenthSeekBar"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/TenthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/TenthTheory" />
-
             <ImageView
                 android:id="@+id/TenthTheory"
                 android:layout_width="match_parent"
@@ -256,28 +245,50 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EigthLinearLayout" />
 
+                <!-- logika-->
+
+            <SeekBar
+                android:id="@+id/thirdSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/thirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/thirdTheory" />
+
+            <ImageView
+                android:id="@+id/thirdTheory"
+                android:layout_width="match_parent"
+                android:layout_height="3.9in"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pyoperatorlogika"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TenthTheory"  />
+
             <LinearLayout
-                android:id="@+id/TenthLinearLayout"
+                android:id="@+id/thirdLinearLayout"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/TenthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/TenthTheory">
+                app:layout_constraintStart_toEndOf="@+id/thirdBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/thirdSeekBar">
 
                 <TextView
-                    android:id="@+id/TenthElapsedTimeLabel"
+                    android:id="@+id/thirdElapsedTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/TenthRemainingTimeLabel"
+                    android:id="@+id/thirdRemainingTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -286,29 +297,17 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/TenthBtnPlay"
+                android:id="@+id/thirdBtnPlay"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/TenthSeekBar"
+                app:layout_constraintEnd_toStartOf="@+id/thirdSeekBar"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TenthTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/thirdTheory" />
 
-<!--            logika-->
-
-
-            <ImageView
-                android:id="@+id/EleventTheory"
-                android:layout_width="match_parent"
-                android:layout_height="8in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/pyoperatorlogika"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TenthLinearLayout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

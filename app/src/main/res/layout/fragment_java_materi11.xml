@@ -234,7 +234,7 @@
             <ImageView
                 android:id="@+id/SeventhTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8in"
+                android:layout_height="6.5in"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javabelajaroop2"
                 app:layout_constraintEnd_toEndOf="parent"

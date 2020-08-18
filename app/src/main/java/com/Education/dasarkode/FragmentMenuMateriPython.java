@@ -39,7 +39,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri1 fragmentFirstMateri = new JavaMateri1();
+                PyMateri1 fragmentFirstMateri = new PyMateri1();
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentLayoutBelajarPython,fragmentFirstMateri);
                 fragmentTransaction.commit();
@@ -49,7 +49,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnSecondMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri2 fragmentSecondMateri = new JavaMateri2();
+                PyMateri2 fragmentSecondMateri = new PyMateri2();
                 FragmentTransaction fragmentTransactionSecond = getFragmentManager().beginTransaction();
                 fragmentTransactionSecond.replace(R.id.fragmentLayoutBelajarPython,fragmentSecondMateri);
                 fragmentTransactionSecond.commit();
@@ -59,7 +59,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnThirdMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri3 fragmentThirdMateri = new JavaMateri3();
+                PyMateri3 fragmentThirdMateri = new PyMateri3();
                 FragmentTransaction fragmentTransactionThird = getFragmentManager().beginTransaction();
                 fragmentTransactionThird.replace(R.id.fragmentLayoutBelajarPython,fragmentThirdMateri);
                 fragmentTransactionThird.commit();
@@ -69,7 +69,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnFourthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri4 fragmentFourthMateri = new JavaMateri4();
+                PyMateri4 fragmentFourthMateri = new PyMateri4();
                 FragmentTransaction fragmentTransactionFourth = getFragmentManager().beginTransaction();
                 fragmentTransactionFourth.replace(R.id.fragmentLayoutBelajarPython,fragmentFourthMateri);
                 fragmentTransactionFourth.commit();
@@ -79,7 +79,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnFifthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri5 fragmentFifthMateri = new JavaMateri5();
+                PyMateri5 fragmentFifthMateri = new PyMateri5();
                 FragmentTransaction fragmentTransactionFifth = getFragmentManager().beginTransaction();
                 fragmentTransactionFifth.replace(R.id.fragmentLayoutBelajarPython,fragmentFifthMateri);
                 fragmentTransactionFifth.commit();
@@ -89,7 +89,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnSixthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri6 fragmentSixthMateri = new JavaMateri6();
+                PyMateri6 fragmentSixthMateri = new PyMateri6();
                 FragmentTransaction fragmentTransactionSixth = getFragmentManager().beginTransaction();
                 fragmentTransactionSixth.replace(R.id.fragmentLayoutBelajarPython,fragmentSixthMateri);
                 fragmentTransactionSixth.commit();
@@ -99,7 +99,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnSeventhMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri7 fragmentSeventhMateri = new JavaMateri7();
+                PyMateri7 fragmentSeventhMateri = new PyMateri7();
                 FragmentTransaction fragmentTransactionSeventh = getFragmentManager().beginTransaction();
                 fragmentTransactionSeventh.replace(R.id.fragmentLayoutBelajarPython,fragmentSeventhMateri);
                 fragmentTransactionSeventh.commit();
@@ -109,7 +109,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnEightMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri8 fragmentEigthMateri = new JavaMateri8();
+                PyMateri8 fragmentEigthMateri = new PyMateri8();
                 FragmentTransaction fragmentTransactionEigth = getFragmentManager().beginTransaction();
                 fragmentTransactionEigth.replace(R.id.fragmentLayoutBelajarPython,fragmentEigthMateri);
                 fragmentTransactionEigth.commit();
@@ -119,7 +119,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnNineMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri9 fragmentNineMateri = new JavaMateri9();
+                PyMateri9 fragmentNineMateri = new PyMateri9();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarPython,fragmentNineMateri);
                 fragmentTransactionTree.commit();
@@ -129,7 +129,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnTenthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri10 fragmentTenMateri = new JavaMateri10();
+                PyMateri10 fragmentTenMateri = new PyMateri10();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarPython,fragmentTenMateri);
                 fragmentTransactionTree.commit();
@@ -139,7 +139,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnEleventhMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri11 fragmentTreeMateri = new JavaMateri11();
+                PyMateri11 fragmentTreeMateri = new PyMateri11();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarPython,fragmentTreeMateri);
                 fragmentTransactionTree.commit();
@@ -149,7 +149,7 @@ public class FragmentMenuMateriPython extends Fragment {
         btnTwelfthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JavaMateri12 fragmentTreeMateri = new JavaMateri12();
+                PyMateri12 fragmentTreeMateri = new PyMateri12();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarPython,fragmentTreeMateri);
                 fragmentTransactionTree.commit();

@@ -584,9 +584,9 @@ public class CppMateri9 extends Fragment {
 //            super.handleMessage(msg);
 //            int currentPosition = msg.what;
 //            seventhSeekBar.setProgress(currentPosition);
-//            String elapsedTime = fifthCreateTimeLabel(currentPosition);
+//            String elapsedTime = seventhCreateTimeLabel(currentPosition);
 //            seventhElapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = fifthCreateTimeLabel(seventhTotalTime-currentPosition);
+//            String remainingTime = seventhCreateTimeLabel(seventhTotalTime-currentPosition);
 //            seventhRemainingTimeLabel.setText("-" + remainingTime);
 //        }
 //    };
@@ -669,7 +669,5 @@ public class CppMateri9 extends Fragment {
         timeLabel += sec;
         return timeLabel;
     }
-
-
 
 }

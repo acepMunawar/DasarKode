@@ -96,9 +96,9 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3in"
+                android:layout_height="6.8in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyperulanganfor"
+                android:src="@drawable/pylambada2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />

@@ -244,7 +244,7 @@
             <ImageView
                 android:id="@+id/SixthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="7in"
+                android:layout_height="6.5in"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javaprogrampembanding"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -299,7 +299,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="7.5in"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/javacontohprogrampenugasan"
+                android:src="@drawable/contohprogramoperatorpembanding"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SixthLinearLayout" />
@@ -363,7 +363,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/EigthSeekBarAD"
+                app:layout_constraintEnd_toStartOf="@+id/EigthSeekBar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
 
