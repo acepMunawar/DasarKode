@@ -46,6 +46,8 @@ public class PyMateri11 extends Fragment {
         secondMediaPlayer.seekTo(0);
         secondTotalTime = secondMediaPlayer.getDuration();
         secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBar);
+
+        btnSound1();
     return view;
     }
 

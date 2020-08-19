@@ -322,7 +322,7 @@ public class CppMateri9 extends Fragment {
 //    }
 
 
-    //    //    method btn sound 4
+        //    method btn sound 4
     public void btnSound4(){
         fourthSeekBar.setMax(fourthTotalTime);
         fourthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

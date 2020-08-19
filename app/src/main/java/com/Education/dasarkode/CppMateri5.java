@@ -57,14 +57,6 @@ public class CppMateri5 extends Fragment {
         thirdTotalTime = thirdMediaPlayer.getDuration();
         thirdSeekBar =(SeekBar) view.findViewById(R.id.ThirdSeekBar);
 
-//        fourthButtonPlaying = (Button) view.findViewById(R.id.FourthBtnPlay);
-//        fourthElapsedTimeLabel = (TextView) view.findViewById(R.id.FourthElapsedTimeLabel);
-//        fourthRemainingTimeLabel = (TextView) view.findViewById(R.id.FourthRemainingTimeLabel);
-//        fourthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.teshp);
-//        fourthMediaPlayer.seekTo(0);
-//        fourthTotalTime = fourthMediaPlayer.getDuration();
-//        fourthSeekBar =(SeekBar) view.findViewById(R.id.FourthSeekBar);
-
         //Fifth sound button
         fifthButtonPlaying = (Button) view.findViewById(R.id.FifthBtnPlay);
         fifthElapsedTimeLabel = (TextView) view.findViewById(R.id.FifthElapsedTimeLabel);

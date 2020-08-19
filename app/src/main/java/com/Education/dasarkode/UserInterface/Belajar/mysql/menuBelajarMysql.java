@@ -19,6 +19,7 @@ public class menuBelajarMysql extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_mysql);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarMysql, new FragmentMenuMateriMsyql()).commit();
+    BtnImage();
     }
 
     public void BtnImage(){
