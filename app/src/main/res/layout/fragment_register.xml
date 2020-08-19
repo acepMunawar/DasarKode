@@ -68,6 +68,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="210dp"
             android:layout_height="50dp"
+            android:inputType="textPassword"
             android:background="@drawable/label_round"
             android:hint="Password"
             android:padding="10dp" />
@@ -85,6 +86,7 @@
 
 
         <Button
+            android:id="@+id/buttonRegister"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginLeft="50dp"
