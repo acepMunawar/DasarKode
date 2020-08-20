@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,7 +15,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.education.dasarkode.models.Quiz;
-import com.google.android.material.card.MaterialCardView;
 
 public class QuizFragment extends Fragment {
 
@@ -33,10 +33,10 @@ public class QuizFragment extends Fragment {
     private TextView textViewAnswerB;
     private TextView textViewAnswerC;
     private TextView textViewAnswerD;
-    private MaterialCardView answerACardView;
-    private MaterialCardView answerBCardView;
-    private MaterialCardView answerCCardView;
-    private MaterialCardView answerDCardView;
+    private CardView answerACardView;
+    private CardView answerBCardView;
+    private CardView answerCCardView;
+    private CardView answerDCardView;
 
     public static QuizFragment newInstance(Quiz quiz, String quizName) {
         QuizFragment fragment = new QuizFragment();
@@ -90,11 +90,11 @@ public class QuizFragment extends Fragment {
 
     private void loadData() {
         textViewTitle.setText(quizName);
-        textViewQuestion.setText(quiz.question);
-        textViewAnswerA.setText(quiz.answer_a);
-        textViewAnswerB.setText(quiz.answer_b);
-        textViewAnswerC.setText(quiz.answer_c);
-        textViewAnswerD.setText(quiz.answer_d);
+        textViewQuestion.setText(quiz.question.replace("\\n", "\n"));
+        textViewAnswerA.setText(quiz.answer_a.replace("\\n", "\n"));
+        textViewAnswerB.setText(quiz.answer_b.replace("\\n", "\n"));
+        textViewAnswerC.setText(quiz.answer_c.replace("\\n", "\n"));
+        textViewAnswerD.setText(quiz.answer_d.replace("\\n", "\n"));
 
         // load image from url
         Glide.with(this).load(quiz.question_image_url).into(imageViewQuestion);

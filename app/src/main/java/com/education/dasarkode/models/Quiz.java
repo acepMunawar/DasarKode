@@ -12,6 +12,10 @@ public class Quiz implements Parcelable {
     public String answer_d;
     public String correct_answer;
 
+    public Quiz() {
+
+    }
+
     protected Quiz(Parcel in) {
         question_image_url = in.readString();
         question = in.readString();
