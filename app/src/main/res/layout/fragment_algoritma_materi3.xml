@@ -53,13 +53,13 @@
             app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
             <TextView
-                android:id="@+id/FirstElapsedTimeLabel"
+                android:id="@+id/FirstElapsedTimeLabelAD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0:11" />
 
             <TextView
-                android:id="@+id/FirstRemainingTimeLabel"
+                android:id="@+id/FirstRemainingTimeLabelAD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="265dp"
@@ -982,17 +982,6 @@ bagian deskripsi inilah letak tiga struktur algoritma tersebut.  "
 
 <!--Nineth layout CONTOH PENYELESAIAN MASALAH MENGHITUNG LUAS LINGKARAN MENGGUNA AD-->
 
-            <SeekBar
-                android:id="@+id/NinethSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/NinethTheoryAD" />
-
 
             <ImageView
                 android:id="@+id/NinethTheoryAD"
@@ -1003,47 +992,6 @@ bagian deskripsi inilah letak tiga struktur algoritma tersebut.  "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutContohpenggunaandeskripsiAD" />
-
-            <LinearLayout
-                android:id="@+id/NinethlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/NinethSeekBarAD">
-
-                <TextView
-                    android:id="@+id/NinethelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/NinethremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/NinethBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/NinethSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/NinethTheoryAD" />
-
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LayoutContohpenggunaanADPK"
@@ -1058,7 +1006,7 @@ bagian deskripsi inilah letak tiga struktur algoritma tersebut.  "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/NinethlinearLayoutAD">
+                app:layout_constraintTop_toBottomOf="@+id/NinethTheoryAD">
 
 
                 <TextView

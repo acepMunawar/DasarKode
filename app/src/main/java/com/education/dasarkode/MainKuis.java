@@ -28,8 +28,6 @@ public class MainKuis extends Fragment {
                 getActivity().overridePendingTransition(0,0);
             }
         });
-
-
         return view;
     }
 }

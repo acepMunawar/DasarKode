@@ -171,18 +171,6 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
 
             <!-- layout perbandingan penulisan kata algoritma deskriptif dan pseudocode-->
 
-
-            <SeekBar
-                android:id="@+id/seekbarPerbandinganADDP"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
-                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
-
             <ImageView
                 android:id="@+id/imgPerbandinganADDP"
                 android:layout_width="match_parent"
@@ -193,45 +181,7 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianPseudocode" />
 
-            <LinearLayout
-                android:id="@+id/LineaerLayoutPerbandinganADDP"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnPerbandinganADDP"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarPerbandinganADDP">
 
-                <TextView
-                    android:id="@+id/ETLPerbandinganADDP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLPerbandinganADDP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnPerbandinganADDP"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarPerbandinganADDP"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPerbandinganADDP"
@@ -247,7 +197,7 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LineaerLayoutPerbandinganADDP"
+                app:layout_constraintTop_toBottomOf="@+id/imgPerbandinganADDP"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
@@ -318,16 +268,6 @@ dan lain-lain. "
             <!-- layout contoh penulisan pseudocode-->
 
 
-            <SeekBar
-                android:id="@+id/seekbarContohPenulisanPseudocode"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
 
             <ImageView
                 android:id="@+id/imgContohPenulisanPseudocode"
@@ -339,45 +279,6 @@ dan lain-lain. "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPerbandinganADDP" />
 
-            <LinearLayout
-                android:id="@+id/LinearLayoutContohPenulisanPseudocode"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarContohPenulisanPseudocode">
-
-                <TextView
-                    android:id="@+id/ETLContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnContohPenulisanPseudocode"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarContohPenulisanPseudocode"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutContohPenulisanPseudocode"
@@ -393,7 +294,7 @@ dan lain-lain. "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutContohPenulisanPseudocode"
+                app:layout_constraintTop_toBottomOf="@+id/imgContohPenulisanPseudocode"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
@@ -408,147 +309,7 @@ dan lain-lain. "
                     android:textSize="22dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/PenjelasanContohPenulisanPseudocode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulContohPenulisanPseudocode" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!-- layout contoh kedua penulisan pseudocode-->
-
-            <SeekBar
-                android:id="@+id/seekbarSecondContohPenulisanPseudocode"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSecondContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/imgSecondContohPenulisanPseudocode" />
-
-            <ImageView
-                android:id="@+id/imgSecondContohPenulisanPseudocode"
-                android:layout_width="match_parent"
-                android:layout_height="1000dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/contohkonversinilaiangkakehuruf"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutContohPenulisanPseudocode" />
-
-            <LinearLayout
-                android:id="@+id/LinearSecondLayoutContohPenulisanPseudocode"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSecondContohPenulisanPseudocode"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarSecondContohPenulisanPseudocode">
-
-                <TextView
-                    android:id="@+id/ETLSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnSecondContohPenulisanPseudocode"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarSecondContohPenulisanPseudocode"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgSecondContohPenulisanPseudocode" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutSecondContohPenulisanPseudocode"
-                android:layout_width="400dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearSecondLayoutContohPenulisanPseudocode"
-                app:layout_constraintVertical_bias="0.0">
-
-                <TextView
-                    android:id="@+id/JudulSecondContohPenulisanPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Penjelasan :"
-                    android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/PenjelasanSecondContohPenulisanPseudocode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna aliquam erat volutpat"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/JudulSecondContohPenulisanPseudocode" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
