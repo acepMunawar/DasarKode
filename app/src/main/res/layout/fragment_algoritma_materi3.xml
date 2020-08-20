@@ -53,13 +53,13 @@
             app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
             <TextView
-                android:id="@+id/FirstelapsedTimeLabelAD"
+                android:id="@+id/FirstElapsedTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0:11" />
 
             <TextView
-                android:id="@+id/FirstremainingTimeLabelAD"
+                android:id="@+id/FirstRemainingTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="265dp"
@@ -250,13 +250,13 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                 app:layout_constraintTop_toBottomOf="@+id/SecondSeekBarAD">
 
                 <TextView
-                    android:id="@+id/SecondelapsedTimeLabelAD"
+                    android:id="@+id/SecondElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/SecondremainingTimeLabelAD"
+                    android:id="@+id/SecondRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -365,13 +365,13 @@ menggambarkan apa yang dilakukan algoritma tersebut."
                     app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBarAD">
 
                     <TextView
-                        android:id="@+id/ThirdelapsedTimeLabelAD"
+                        android:id="@+id/ThirdElapsedTimeLabelAD"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0:11" />
 
                     <TextView
-                        android:id="@+id/ThirdremainingTimeLabelAD"
+                        android:id="@+id/ThirdRemainingTimeLabelAD"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="265dp"
@@ -481,13 +481,13 @@ sesuai dengan spesifikasi yang didefinisikan."
                 app:layout_constraintTop_toBottomOf="@+id/FourthSeekBarAD">
 
                 <TextView
-                    android:id="@+id/FourthelapsedTimeLabelAD"
+                    android:id="@+id/FourthElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/FourthremainingTimeLabelAD"
+                    android:id="@+id/FourthRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -601,13 +601,13 @@ parameternya."
                 app:layout_constraintTop_toBottomOf="@+id/FifthSeekBarAD">
 
                 <TextView
-                    android:id="@+id/FifthelapsedTimeLabelAD"
+                    android:id="@+id/FifthElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/FifthremainingTimeLabelAD"
+                    android:id="@+id/FifthRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -705,13 +705,13 @@ membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan ti
                 app:layout_constraintTop_toBottomOf="@+id/SixthSeekBarAD">
 
                 <TextView
-                    android:id="@+id/SixthelapsedTimeLabelAD"
+                    android:id="@+id/SixthElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/SixthremainingTimeLabelAD"
+                    android:id="@+id/SixthRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -809,13 +809,13 @@ akan di jumlahkan dan pada hasil penjumlahan nilai tersebut, bisa menjadi nilai 
                 app:layout_constraintTop_toBottomOf="@+id/SixthSeekBarAD">
 
                 <TextView
-                    android:id="@+id/SeventhelapsedTimeLabelAD"
+                    android:id="@+id/SeventhElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/SeventhremainingTimeLabelAD"
+                    android:id="@+id/SeventhRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -916,13 +916,13 @@ bagian deskripsi inilah letak tiga struktur algoritma tersebut.  "
                 app:layout_constraintTop_toBottomOf="@+id/EigthSeekBarAD">
 
                 <TextView
-                    android:id="@+id/EigthelapsedTimeLabelAD"
+                    android:id="@+id/EigthElapsedTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/EigthremainingTimeLabelAD"
+                    android:id="@+id/EigthRemainingTimeLabelAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"

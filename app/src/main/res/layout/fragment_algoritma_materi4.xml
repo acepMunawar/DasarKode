@@ -57,13 +57,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/seekbarPembukaanPseudecode">
 
                 <TextView
-                    android:id="@+id/ETLpembukaanPseudocode"
+                    android:id="@+id/FirstElapsedTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/RTLpembukaanPseudocode"
+                    android:id="@+id/FirstRemainingTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
