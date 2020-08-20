@@ -10,9 +10,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragmentDashboardBelajar"
         android:layout_width="match_parent"
-        android:layout_height="790dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bottom_dasarkode"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
