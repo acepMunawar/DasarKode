@@ -83,6 +83,7 @@ public class Login extends Fragment {
         String email = editTextEmail.getText().toString();
         String password = editTextPassword.getText().toString();
 
+        if (email.isEmpty() || password.isEmpty()) return;
         firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
