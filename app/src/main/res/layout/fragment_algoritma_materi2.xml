@@ -42,7 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/firstlinearLayout"
+                android:id="@+id/FirstLinearLayout"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -55,13 +55,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
                 <TextView
-                    android:id="@+id/firstelapsedTimeLabel"
+                    android:id="@+id/FirstElapsedTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/firstremainingTimeLabel"
+                    android:id="@+id/FirstRemainingTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -95,7 +95,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout"
                 app:layout_constraintVertical_bias="0.0">
 
 
@@ -225,13 +225,13 @@ dan dapat &#160;&#160;&#160;&#160;&#160;diterapkan di semua kejadian &#160;&#160
                         app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
 
                         <TextView
-                            android:id="@+id/elapsedSD"
+                            android:id="@+id/SecondElapsedTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0:11" />
 
                         <TextView
-                            android:id="@+id/remainingSD"
+                            android:id="@+id/SecondRemainingTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="240dp"
@@ -418,13 +418,13 @@ sudah dilakukan.
                         app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
 
                         <TextView
-                            android:id="@+id/elapsedPPL"
+                            android:id="@+id/ThirdElapsedTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0:11" />
 
                         <TextView
-                            android:id="@+id/remainingPPL"
+                            android:id="@+id/ThirdRemainingTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="240dp"

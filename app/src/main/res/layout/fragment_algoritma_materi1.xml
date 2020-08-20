@@ -55,13 +55,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
                 <TextView
-                    android:id="@+id/elapsedTimeLabel"
+                    android:id="@+id/FirstElapsedTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0:11" />
 
                 <TextView
-                    android:id="@+id/remainingTimeLabel"
+                    android:id="@+id/FirstRemainingTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="265dp"
@@ -316,13 +316,13 @@ gelas A kopi dan gelas &#160;&#160;&#160;&#160;&#160;B Teh. Ilustrasi permasalah
                         app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
 
                         <TextView
-                            android:id="@+id/elapsedLRPM"
+                            android:id="@+id/SecondElapsedTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0:11" />
 
                         <TextView
-                            android:id="@+id/remainingLRPM"
+                            android:id="@+id/SecondRemainingTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="240dp"
@@ -462,13 +462,13 @@ dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n
                         app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
 
                         <TextView
-                            android:id="@+id/elapsedSA"
+                            android:id="@+id/ThirdElapsedTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0:11" />
 
                         <TextView
-                            android:id="@+id/remainingSA"
+                            android:id="@+id/ThirdRemaining"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="240dp"
