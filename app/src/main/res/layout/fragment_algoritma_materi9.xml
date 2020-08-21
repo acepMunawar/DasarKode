@@ -172,16 +172,7 @@ mudah dalam penyusunan letak dan penyimpanan data. "
 
         <!--layout ilustrasi array-->
 
-        <SeekBar
-            android:id="@+id/seekbarIlustrasiGraph"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnIlustrasiGraph"
-            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph" />
+
 
         <ImageView
             android:id="@+id/imgIlustrasiGraph"
@@ -193,45 +184,7 @@ mudah dalam penyusunan letak dan penyimpanan data. "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutPengertianGraph" />
 
-        <LinearLayout
-            android:id="@+id/LinearLayoutIlustrasiGraph"
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnIlustrasiGraph"
-            app:layout_constraintTop_toBottomOf="@+id/seekbarIlustrasiGraph">
 
-            <TextView
-                android:id="@+id/ETLIlustrasiGraph"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0:11" />
-
-            <TextView
-                android:id="@+id/RTLIlustrasiGraph"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="265dp"
-                android:text="-1:49" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnIlustrasiGraph"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:background="@drawable/play_sound"
-            app:layout_constraintEnd_toStartOf="@+id/seekbarIlustrasiGraph"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph"
-            tools:layout_editor_absoluteY="316dp" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -248,7 +201,7 @@ mudah dalam penyusunan letak dan penyimpanan data. "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutIlustrasiGraph"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph"
             app:layout_constraintVertical_bias="0.0">
 
             <TextView
