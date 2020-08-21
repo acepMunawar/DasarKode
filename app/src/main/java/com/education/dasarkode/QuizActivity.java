@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.education.dasarkode.models.Quiz;
@@ -29,6 +31,8 @@ public class QuizActivity extends AppCompatActivity {
     private List<Quiz> quizzes;
     private int currentQuizIndex = 0;
 
+    private ProgressBar progressBar;
+
     public static Intent newIntent(Context context, String collectionName, String quizName) {
         Intent intent = new Intent(context, QuizActivity.class);
         intent.putExtra(COLLECTION_NAME, collectionName);
@@ -41,6 +45,7 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         firebaseFirestore = FirebaseFirestore.getInstance();
+        progressBar = findViewById(R.id.progressBar);
 
         loadData();
     }
@@ -96,9 +101,12 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void loadScoreFragment() {
+        progressBar.setVisibility(View.GONE);
+        float scorePerQuestion = 100f / quizzes.size();
+        float score = scorePerQuestion * correctAnswer;
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.quizFrame, new hasilkuis())
+                .replace(R.id.quizFrame, hasilkuis.newInstance(String.valueOf(correctAnswer), String.valueOf(wrongAnswer), String.format("%.2f", score)))
                 .commit();
     }
 }

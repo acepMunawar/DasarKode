@@ -22,4 +22,6 @@
     <string name="answer_b">B).</string>
     <string name="answer_c">C).</string>
     <string name="answer_d">D).</string>
+    <string name="score">Score</string>
+    <string name="finish">Finish</string>
 </resources>
