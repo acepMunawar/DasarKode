@@ -11,12 +11,13 @@
         android:id="@+id/processor_logo"
         android:layout_width="450px"
         android:layout_height="450px"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
         android:src="@drawable/processor_logo_ic"
+        app:layout_constraintBottom_toTopOf="@+id/javascript_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,9 +28,11 @@
         android:layout_height="300px"
         android:layout_marginStart="90dp"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/algoritma_ic"
         android:src="@drawable/algoritma_ic"
+        app:layout_constraintBottom_toTopOf="@+id/mysql_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,13 +40,15 @@
         android:id="@+id/cpp_logo"
         android:layout_width="280px"
         android:layout_height="300px"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="178dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:background="@drawable/ruby_ic"
         android:src="@drawable/cpp_ic"
+        app:layout_constraintBottom_toTopOf="@+id/java_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/mysql_logo"
@@ -52,8 +57,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="330dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/mysql_ic"
         android:src="@drawable/mysql_ic"
+        app:layout_constraintBottom_toTopOf="@+id/javascript_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,11 +68,13 @@
         android:id="@+id/java_logo"
         android:layout_width="280px"
         android:layout_height="300px"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="325dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/java_ic"
         android:src="@drawable/java_ic"
+        app:layout_constraintBottom_toTopOf="@+id/python_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,24 +85,25 @@
         android:layout_height="300px"
         android:layout_marginStart="90dp"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/cpp_ic"
         android:src="@drawable/js_ic"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
 
     <ImageButton
         android:id="@+id/python_logo"
         android:layout_width="280px"
         android:layout_height="300px"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="410dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
-        android:layout_marginBottom="74dp"
         android:background="@drawable/python_ic"
         android:src="@drawable/python_ic"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -122,7 +132,7 @@
         android:layout_height="200dp"
         android:layout_gravity="bottom"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="100dp"
         android:background="@color/colorAegeanBlue"
         app:itemIconSize="80px"
         app:itemIconTint="@drawable/state_btnnav"
@@ -132,6 +142,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cpp_logo"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/navigasi_top">
 
         <TextView
