@@ -32,85 +32,85 @@ public class FragmentAlgoritmaMateri3 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_algoritma_materi3, container, false);
         //first sound button
-        firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
-        firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
-        firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
+        firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlayAD);
+        firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabelAD);
+        firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabelAD);
         firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
-        firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
+        firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBarAD);
 
         //second sound button
-        secondButtonPlaying= (Button) view.findViewById(R.id.SecondBtnPlay);
-        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.SecondElapsedTimeLabel);
-        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.SecondRemainingTimeLabel);
+        secondButtonPlaying= (Button) view.findViewById(R.id.SecondBtnPlayAD);
+        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.SecondElapsedTimeLabelAD);
+        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.SecondRemainingTimeLabelAD);
         secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
         secondMediaPlayer.seekTo(0);
         secondTotalTime = secondMediaPlayer.getDuration();
-        secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBar);
+        secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBarAD);
 
         //Third sound button
-        thirdButtonPlaying = (Button) view.findViewById(R.id.ThirdBtnPlay);
-        thirdElapsedTimeLabel = (TextView) view.findViewById(R.id.ThirdElapsedTimeLabel);
-        thirdRemainingTimeLabel = (TextView) view.findViewById(R.id.ThirdRemainingTimeLabel);
+        thirdButtonPlaying = (Button) view.findViewById(R.id.ThirdBtnPlayAD);
+        thirdElapsedTimeLabel = (TextView) view.findViewById(R.id.ThirdElapsedTimeLabelAD);
+        thirdRemainingTimeLabel = (TextView) view.findViewById(R.id.ThirdRemainingTimeLabelAD);
         thirdMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
         thirdMediaPlayer.seekTo(0);
         thirdTotalTime = thirdMediaPlayer.getDuration();
-        thirdSeekBar =(SeekBar) view.findViewById(R.id.ThirdSeekBar);
+        thirdSeekBar =(SeekBar) view.findViewById(R.id.ThirdSeekBarAD);
 
         //Fourth sound button
-        fourthButtonPlaying = (Button) view.findViewById(R.id.FourthBtnPlay);
-        fourthElapsedTimeLabel = (TextView) view.findViewById(R.id.FourthElapsedTimeLabel);
-        fourthRemainingTimeLabel = (TextView) view.findViewById(R.id.FourthRemainingTimeLabel);
+        fourthButtonPlaying = (Button) view.findViewById(R.id.FourthBtnPlayAD);
+        fourthElapsedTimeLabel = (TextView) view.findViewById(R.id.FourthElapsedTimeLabelAD);
+        fourthRemainingTimeLabel = (TextView) view.findViewById(R.id.FourthRemainingTimeLabelAD);
         fourthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.teshp);
         fourthMediaPlayer.seekTo(0);
         fourthTotalTime = fourthMediaPlayer.getDuration();
-        fourthSeekBar =(SeekBar) view.findViewById(R.id.FourthSeekBar);
+        fourthSeekBar =(SeekBar) view.findViewById(R.id.FourthSeekBarAD);
 
         //Fifth sound button
-        fifthButtonPlaying = (Button) view.findViewById(R.id.FifthBtnPlay);
-        fifthElapsedTimeLabel = (TextView) view.findViewById(R.id.FifthElapsedTimeLabel);
-        fifthRemainingTimeLabel = (TextView) view.findViewById(R.id.FifthRemainingTimeLabel);
+        fifthButtonPlaying = (Button) view.findViewById(R.id.FifthBtnPlayAD);
+        fifthElapsedTimeLabel = (TextView) view.findViewById(R.id.FifthElapsedTimeLabelAD);
+        fifthRemainingTimeLabel = (TextView) view.findViewById(R.id.FifthRemainingTimeLabelAD);
         fifthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
         fifthMediaPlayer.seekTo(0);
         fifthTotalTime = fifthMediaPlayer.getDuration();
-        fifthSeekBar =(SeekBar) view.findViewById(R.id.FifthSeekBar);
+        fifthSeekBar =(SeekBar) view.findViewById(R.id.FifthSeekBarAD);
 
         //Sixth sound button
-        sixthButtonPlaying = (Button) view.findViewById(R.id.SixthBtnPlay);
-        sixthElapsedTimeLabel = (TextView) view.findViewById(R.id.SixthElapsedTimeLabel);
-        sixthRemainingTimeLabel = (TextView) view.findViewById(R.id.SixthRemainingTimeLabel);
-        sixthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        sixthMediaPlayer.seekTo(0);
-        sixthTotalTime = sixthMediaPlayer.getDuration();
-        sixthSeekBar =(SeekBar) view.findViewById(R.id.SixthSeekBar);
+//        sixthButtonPlaying = (Button) view.findViewById(R.id.SixthBtnPlayAD);
+//        sixthElapsedTimeLabel = (TextView) view.findViewById(R.id.SixthElapsedTimeLabelAD);
+//        sixthRemainingTimeLabel = (TextView) view.findViewById(R.id.SixthRemainingTimeLabel6);
+//        sixthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+//        sixthMediaPlayer.seekTo(0);
+//        sixthTotalTime = sixthMediaPlayer.getDuration();
+//        sixthSeekBar =(SeekBar) view.findViewById(R.id.SixthSeekBarAD);
 
-
-        //Seventh sound button
-        seventhButtonPlaying = (Button) view.findViewById(R.id.SeventhBtnPlay);
-        seventhElapsedTimeLabel = (TextView) view.findViewById(R.id.SeventhElapsedTimeLabel);
-        seventhRemainingTimeLabel = (TextView) view.findViewById(R.id.SeventhRemainingTimeLabel);
-        seventhMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        seventhMediaPlayer.seekTo(0);
-        seventhTotalTime = seventhMediaPlayer.getDuration();
-        seventhSeekBar =(SeekBar) view.findViewById(R.id.SeventhSeekBar);
-
-        //Eigth sound button
-        eigthButtonPlaying = (Button) view.findViewById(R.id.EigthBtnPlay);
-        eigthElapsedTimeLabel = (TextView) view.findViewById(R.id.EigthElapsedTimeLabel);
-        eigthRemainingTimeLabel = (TextView) view.findViewById(R.id.EigthRemainingTimeLabel);
-        eigthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        eigthMediaPlayer.seekTo(0);
-        eigthTotalTime = eigthMediaPlayer.getDuration();
-        eigthSeekBar =(SeekBar) view.findViewById(R.id.EigthSeekBar);
+//
+//        //Seventh sound button
+//        seventhButtonPlaying = (Button) view.findViewById(R.id.SeventhBtnPlay);
+//        seventhElapsedTimeLabel = (TextView) view.findViewById(R.id.SeventhElapsedTimeLabel);
+//        seventhRemainingTimeLabel = (TextView) view.findViewById(R.id.SeventhRemainingTimeLabel);
+//        seventhMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+//        seventhMediaPlayer.seekTo(0);
+//        seventhTotalTime = seventhMediaPlayer.getDuration();
+//        seventhSeekBar =(SeekBar) view.findViewById(R.id.SeventhSeekBar);
+//
+//        //Eigth sound button
+//        eigthButtonPlaying = (Button) view.findViewById(R.id.EigthBtnPlay);
+//        eigthElapsedTimeLabel = (TextView) view.findViewById(R.id.EigthElapsedTimeLabel);
+//        eigthRemainingTimeLabel = (TextView) view.findViewById(R.id.EigthRemainingTimeLabel);
+//        eigthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+//        eigthMediaPlayer.seekTo(0);
+//        eigthTotalTime = eigthMediaPlayer.getDuration();
+//        eigthSeekBar =(SeekBar) view.findViewById(R.id.EigthSeekBar);
         btnSound1();
         btnSound2();
         btnSound3();
         btnSound4();
         btnSound5();
-        btnSound6();
-        btnSound7();
-        btnSound8();
+//        btnSound6();
+//        btnSound7();
+//        btnSound8();
         return view;
     }
 
@@ -534,142 +534,142 @@ public class FragmentAlgoritmaMateri3 extends Fragment {
 
 
 
-    //    method btn sound 7
-    public void btnSound7(){
-        seventhSeekBar.setMax(thirdTotalTime);
-        seventhSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser){
-                    seventhMediaPlayer.seekTo(progress);
-                    seventhSeekBar.setProgress(progress);
-                }
-            }
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-        });
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (seventhMediaPlayer != null){
-                    try {
-                        Message msg =new Message();
-                        msg.what = seventhMediaPlayer.getCurrentPosition();
-                        handler7.sendMessage(msg);
-                        Thread.sleep(1000);
-                    }catch (InterruptedException e){
-                    }
-                }
-            }
-        }).start();
-        seventhButtonPlaying.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!seventhMediaPlayer.isPlaying()){
-                    seventhMediaPlayer.start();
-                    seventhButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-                }else{
-                    seventhMediaPlayer.pause();
-                    seventhButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-                }
-            }
-        });
-    }
-
-    private Handler handler7 = new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            int currentPosition = msg.what;
-            seventhSeekBar.setProgress(currentPosition);
-            String elapsedTime = seventhCreateTimeLabel(currentPosition);
-            seventhElapsedTimeLabel.setText(elapsedTime);
-            String remainingTime = seventhCreateTimeLabel(seventhTotalTime-currentPosition);
-            seventhRemainingTimeLabel.setText("-" + remainingTime);
-        }
-    };
-
-    public String seventhCreateTimeLabel(int time){
-        String timeLabel = "";
-        int min = time / 1000 /60;
-        int sec =time /1000 % 60;
-        timeLabel = min + "";
-        if(sec <10) timeLabel +="0";
-        timeLabel += sec;
-        return timeLabel;
-    }
-
-    //    method btn sound 8
-    public void btnSound8(){
-        eigthSeekBar.setMax(eigthTotalTime);
-        eigthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser){
-                    eigthMediaPlayer.seekTo(progress);
-                    eigthSeekBar.setProgress(progress);
-                }
-            }
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-        });
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (eigthMediaPlayer != null){
-                    try {
-                        Message msg =new Message();
-                        msg.what = eigthMediaPlayer.getCurrentPosition();
-                        handler8.sendMessage(msg);
-                        Thread.sleep(1000);
-                    }catch (InterruptedException e){
-                    }
-                }
-            }
-        }).start();
-        eigthButtonPlaying.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!eigthMediaPlayer.isPlaying()){
-                    eigthMediaPlayer.start();
-                    eigthButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-                }else{
-                    eigthMediaPlayer.pause();
-                    eigthButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-                }
-            }
-        });
-    }
-
-    private Handler handler8 = new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            int currentPosition = msg.what;
-            eigthSeekBar.setProgress(currentPosition);
-            String elapsedTime = eigthCreateTimeLabel(currentPosition);
-            eigthElapsedTimeLabel.setText(elapsedTime);
-            String remainingTime = eigthCreateTimeLabel(eigthTotalTime-currentPosition);
-            eigthRemainingTimeLabel.setText("-" + remainingTime);
-        }
-    };
-
-    public String eigthCreateTimeLabel(int time){
-        String timeLabel = "";
-        int min = time / 1000 /60;
-        int sec =time /1000 % 60;
-        timeLabel = min + "";
-        if(sec <10) timeLabel +="0";
-        timeLabel += sec;
-        return timeLabel;
-    }
+//    //    method btn sound 7
+//    public void btnSound7(){
+//        seventhSeekBar.setMax(thirdTotalTime);
+//        seventhSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                if(fromUser){
+//                    seventhMediaPlayer.seekTo(progress);
+//                    seventhSeekBar.setProgress(progress);
+//                }
+//            }
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//            }
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//            }
+//        });
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (seventhMediaPlayer != null){
+//                    try {
+//                        Message msg =new Message();
+//                        msg.what = seventhMediaPlayer.getCurrentPosition();
+//                        handler7.sendMessage(msg);
+//                        Thread.sleep(1000);
+//                    }catch (InterruptedException e){
+//                    }
+//                }
+//            }
+//        }).start();
+//        seventhButtonPlaying.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(!seventhMediaPlayer.isPlaying()){
+//                    seventhMediaPlayer.start();
+//                    seventhButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
+//                }else{
+//                    seventhMediaPlayer.pause();
+//                    seventhButtonPlaying.setBackgroundResource(R.drawable.play_sound);
+//                }
+//            }
+//        });
+//    }
+//
+//    private Handler handler7 = new Handler(){
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            int currentPosition = msg.what;
+//            seventhSeekBar.setProgress(currentPosition);
+//            String elapsedTime = seventhCreateTimeLabel(currentPosition);
+//            seventhElapsedTimeLabel.setText(elapsedTime);
+//            String remainingTime = seventhCreateTimeLabel(seventhTotalTime-currentPosition);
+//            seventhRemainingTimeLabel.setText("-" + remainingTime);
+//        }
+//    };
+//
+//    public String seventhCreateTimeLabel(int time){
+//        String timeLabel = "";
+//        int min = time / 1000 /60;
+//        int sec =time /1000 % 60;
+//        timeLabel = min + "";
+//        if(sec <10) timeLabel +="0";
+//        timeLabel += sec;
+//        return timeLabel;
+//    }
+//
+//    //    method btn sound 8
+//    public void btnSound8(){
+//        eigthSeekBar.setMax(eigthTotalTime);
+//        eigthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                if(fromUser){
+//                    eigthMediaPlayer.seekTo(progress);
+//                    eigthSeekBar.setProgress(progress);
+//                }
+//            }
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//            }
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//            }
+//        });
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (eigthMediaPlayer != null){
+//                    try {
+//                        Message msg =new Message();
+//                        msg.what = eigthMediaPlayer.getCurrentPosition();
+//                        handler8.sendMessage(msg);
+//                        Thread.sleep(1000);
+//                    }catch (InterruptedException e){
+//                    }
+//                }
+//            }
+//        }).start();
+//        eigthButtonPlaying.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(!eigthMediaPlayer.isPlaying()){
+//                    eigthMediaPlayer.start();
+//                    eigthButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
+//                }else{
+//                    eigthMediaPlayer.pause();
+//                    eigthButtonPlaying.setBackgroundResource(R.drawable.play_sound);
+//                }
+//            }
+//        });
+//    }
+//
+//    private Handler handler8 = new Handler(){
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            int currentPosition = msg.what;
+//            eigthSeekBar.setProgress(currentPosition);
+//            String elapsedTime = eigthCreateTimeLabel(currentPosition);
+//            eigthElapsedTimeLabel.setText(elapsedTime);
+//            String remainingTime = eigthCreateTimeLabel(eigthTotalTime-currentPosition);
+//            eigthRemainingTimeLabel.setText("-" + remainingTime);
+//        }
+//    };
+//
+//    public String eigthCreateTimeLabel(int time){
+//        String timeLabel = "";
+//        int min = time / 1000 /60;
+//        int sec =time /1000 % 60;
+//        timeLabel = min + "";
+//        if(sec <10) timeLabel +="0";
+//        timeLabel += sec;
+//        return timeLabel;
+//    }
 
 }

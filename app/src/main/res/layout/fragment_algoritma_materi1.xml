@@ -468,7 +468,7 @@ dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n
                             android:text="0:11" />
 
                         <TextView
-                            android:id="@+id/ThirdRemaining"
+                            android:id="@+id/ThirdRemainingTimeLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="240dp"

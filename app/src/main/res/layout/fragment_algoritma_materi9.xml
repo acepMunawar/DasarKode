@@ -172,37 +172,28 @@ mudah dalam penyusunan letak dan penyimpanan data. "
 
         <!--layout ilustrasi array-->
 
-
-
         <ImageView
             android:id="@+id/imgIlustrasiGraph"
             android:layout_width="match_parent"
-            android:layout_height="223dp"
+            android:layout_height="400dp"
             android:layout_marginTop="16dp"
             android:src="@drawable/graphmateri"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutPengertianGraph" />
 
-
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layoutIlustrasiGraph"
             android:layout_width="400dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="18dp"
-            android:layout_marginLeft="18dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="14dp"
             android:layout_marginRight="14dp"
             android:background="@color/colorAegeanBlue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgIlustrasiGraph"
-            app:layout_constraintVertical_bias="0.0">
+
+            app:layout_constraintTop_toBottomOf="@id/imgIlustrasiGraph">
 
             <TextView
                 android:id="@+id/JudulIlustrasiPengertianGraph"
@@ -250,7 +241,6 @@ dilihat bahwa dari kota A menuju kota E bisa dilalui melalui path A-B-E atau pat
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/JudulIlustrasiPengertianGraph" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

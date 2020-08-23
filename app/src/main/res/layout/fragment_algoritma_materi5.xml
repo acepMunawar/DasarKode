@@ -167,66 +167,17 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!-- layout simbol simbol flowchart-->
-            <SeekBar
-                android:id="@+id/seekbarSimbolFlowchart"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSimbolFlowchart"
-                app:layout_constraintTop_toBottomOf="@+id/imgSimbolFlowchart" />
 
             <ImageView
                 android:id="@+id/imgSimbolFlowchart"
                 android:layout_width="match_parent"
                 android:layout_height="1850dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
                 android:src="@drawable/simbolflowchart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianFlowchart" />
-
-            <LinearLayout
-                android:id="@+id/LinearLayoutSimbolFlowchart"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnSimbolFlowchart"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarSimbolFlowchart">
-
-                <TextView
-                    android:id="@+id/ETLsimbolPseudocode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLSimbolFlowchart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnSimbolFlowchart"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarSimbolFlowchart"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgSimbolFlowchart" />
 
 
             <!-- layout flowchart penentuan luas lingkaran-->
@@ -249,7 +200,7 @@
                 android:src="@drawable/flowchartluasdankelilinglingkaranblack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayoutSimbolFlowchart" />
+                app:layout_constraintTop_toBottomOf="@+id/imgSimbolFlowchart" />
 
             <LinearLayout
                 android:id="@+id/LinearLayoutFlowchartPLL"

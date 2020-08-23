@@ -41,13 +41,13 @@ public class FragmentAlgoritmaMateri5 extends Fragment {
         firstSeekBar = (SeekBar) view.findViewById(R.id.seekbarPembukaanFlowchart);
 
         //second sound button
-        secondButtonPlaying = (Button) view.findViewById(R.id.SecondBtnPlay);
-        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.ETLsimbolPseudocode);
-        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.RTLSimbolFlowchart);
+        secondButtonPlaying = (Button) view.findViewById(R.id.btnFlowchartPLL);
+        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.ETLsimbolPPL);
+        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.RTLSimbolPPL);
         secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
         secondMediaPlayer.seekTo(0);
         secondTotalTime = secondMediaPlayer.getDuration();
-        secondSeekBar = (SeekBar) view.findViewById(R.id.seekbarSimbolFlowchart);
+        secondSeekBar = (SeekBar) view.findViewById(R.id.seekbarFlowchartPLL);
         btnSound1();
         btnSound2();
         return view;

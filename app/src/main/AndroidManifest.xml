@@ -3,6 +3,8 @@
     package="com.education.dasarkode">
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:name=".DasarKodeApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +15,7 @@
         <activity android:name=".QuizActivity"></activity>
         <activity android:name=".LayoutEditProfile" />
         <activity android:name=".MainLayoutStartKuis" />
-        <activity android:name=".Profile" />
+<!--        <activity android:name=".Profile" />-->
         <activity android:name=".MainLogin">
             <intent-filter>
                 <action android:name=".Login" />
