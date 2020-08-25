@@ -78,7 +78,6 @@ public class CppMateri5 extends Fragment {
         btnSound1();
         btnSound2();
         btnSound3();
-//        btnSound4();
         btnSound5();
         btnSound7();
         return view;
@@ -292,76 +291,6 @@ public class CppMateri5 extends Fragment {
         timeLabel += sec;
         return timeLabel;
     }
-
-//
-//    //    method btn sound 4
-//    public void btnSound4(){
-//        fourthSeekBar.setMax(fourthTotalTime);
-//        fourthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-//            @Override
-//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if(fromUser){
-//                    fourthMediaPlayer.seekTo(progress);
-//                    fourthSeekBar.setProgress(progress);
-//                }
-//            }
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//            }
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//            }
-//        });
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (fourthMediaPlayer != null){
-//                    try {
-//                        Message msg =new Message();
-//                        msg.what = fourthMediaPlayer.getCurrentPosition();
-//                        handler4.sendMessage(msg);
-//                        Thread.sleep(1000);
-//                    }catch (InterruptedException e){
-//                    }
-//                }
-//            }
-//        }).start();
-//        fourthButtonPlaying.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(!fourthMediaPlayer.isPlaying()){
-//                    fourthMediaPlayer.start();
-//                    fourthButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-//                }else{
-//                    fourthMediaPlayer.pause();
-//                    fourthButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-//                }
-//            }
-//        });
-//    }
-//
-//    private Handler handler4 = new Handler(){
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            int currentPosition = msg.what;
-//            fourthSeekBar.setProgress(currentPosition);
-//            String elapsedTime = fourthCreateTimeLabel(currentPosition);
-//            fourthElapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = fourthCreateTimeLabel(fourthTotalTime-currentPosition);
-//            fourthRemainingTimeLabel.setText("-" + remainingTime);
-//        }
-//    };
-//
-//    public String fourthCreateTimeLabel(int time){
-//        String timeLabel = "";
-//        int min = time / 1000 /60;
-//        int sec =time /1000 % 60;
-//        timeLabel = min + "";
-//        if(sec <10) timeLabel +="0";
-//        timeLabel += sec;
-//        return timeLabel;
-//    }
 
     //    method btn sound 5
     public void btnSound5(){

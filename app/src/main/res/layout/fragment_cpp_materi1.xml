@@ -44,7 +44,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -87,13 +86,13 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
+                android:layout_marginBottom="24dp"
                 android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/SecondTheoryAD"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayoutAD"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/firstlinearLayoutAD">
 
                 <TextView
                     android:id="@+id/TujuanBelajarAlgoritmaAD"
@@ -235,7 +234,6 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/layoutPengertianJudulAD"
@@ -278,7 +276,9 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
+                android:layout_marginBottom="16dp"
                 android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"

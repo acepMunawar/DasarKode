@@ -141,7 +141,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Code::Blocks atau Code Blocks adalah IDE (Integrated Development Environment) untuk bahasa pemrograman C, C++ dan Fortran.
 Dengan menggunakan Code::Blocks, kita sudah mendapati aplikasi teks editor, compiler, linker dan debugger untuk bahasa pemrograman C dalam sekali install, sehingga bisa langsung digunakan.
@@ -227,7 +227,7 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
@@ -258,15 +258,14 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
 
             <ImageView
                 android:id="@+id/SecondTheoryAD1"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="265dp"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/programcpppertama"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.459"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
-
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianJudulAD1"
@@ -277,7 +276,9 @@ Code::Blocks sendiri merupakan aplikasi Open Source yang bisa didapat dengan gra
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
+                android:layout_marginBottom="24dp"
                 android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
