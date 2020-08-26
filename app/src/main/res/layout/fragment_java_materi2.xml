@@ -32,7 +32,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="4.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/javainstall1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +82,7 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javainstall2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +94,7 @@
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javainstall3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +106,7 @@
             <ImageView
                 android:id="@+id/FourthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javainstall4"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +117,7 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javainstall5"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +129,7 @@
             <ImageView
                 android:id="@+id/SixthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/javainstall6"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -142,9 +141,11 @@
             <ImageView
                 android:id="@+id/SeventhTheory"
                 android:layout_width="match_parent"
-                android:layout_height="1.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
                 android:src="@drawable/javainstall8"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />

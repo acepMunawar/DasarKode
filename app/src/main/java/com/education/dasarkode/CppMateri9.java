@@ -47,15 +47,6 @@ public class CppMateri9 extends Fragment {
         secondTotalTime = secondMediaPlayer.getDuration();
         secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBar);
 
-        //Third sound button
-//        thirdButtonPlaying = (Button) view.findViewById(R.id.ThirdBtnPlay);
-//        thirdElapsedTimeLabel = (TextView) view.findViewById(R.id.ThirdElapsedTimeLabel);
-//        thirdRemainingTimeLabel = (TextView) view.findViewById(R.id.ThirdRemainingTimeLabel);
-//        thirdMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-//        thirdMediaPlayer.seekTo(0);
-//        thirdTotalTime = thirdMediaPlayer.getDuration();
-//        thirdSeekBar =(SeekBar) view.findViewById(R.id.ThirdSeekBar);
-
         //Fourth sound button
         fourthButtonPlaying = (Button) view.findViewById(R.id.FourthBtnPlay);
         fourthElapsedTimeLabel = (TextView) view.findViewById(R.id.FourthElapsedTimeLabel);
@@ -64,15 +55,6 @@ public class CppMateri9 extends Fragment {
         fourthMediaPlayer.seekTo(0);
         fourthTotalTime = fourthMediaPlayer.getDuration();
         fourthSeekBar =(SeekBar) view.findViewById(R.id.FourthSeekBar);
-
-        //Fifth sound button
-//        fifthButtonPlaying = (Button) view.findViewById(R.id.FifthBtnPlay);
-//        fifthElapsedTimeLabel = (TextView) view.findViewById(R.id.FifthElapsedTimeLabel);
-//        fifthRemainingTimeLabel = (TextView) view.findViewById(R.id.FifthRemainingTimeLabel);
-//        fifthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-//        fifthMediaPlayer.seekTo(0);
-//        fifthTotalTime = fifthMediaPlayer.getDuration();
-//        fifthSeekBar =(SeekBar) view.findViewById(R.id.FifthSeekBar);
 
         //Sixth sound button
         sixthButtonPlaying = (Button) view.findViewById(R.id.SixthBtnPlay);
@@ -83,17 +65,7 @@ public class CppMateri9 extends Fragment {
         sixthTotalTime = sixthMediaPlayer.getDuration();
         sixthSeekBar =(SeekBar) view.findViewById(R.id.SixthSeekBar);
 
-
-        //Seventh sound button
-//        seventhButtonPlaying = (Button) view.findViewById(R.id.SeventhBtnPlay);
-//        seventhElapsedTimeLabel = (TextView) view.findViewById(R.id.SeventhElapsedTimeLabel);
-//        seventhRemainingTimeLabel = (TextView) view.findViewById(R.id.SeventhRemainingTimeLabel);
-//        seventhMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-//        seventhMediaPlayer.seekTo(0);
-//        seventhTotalTime = seventhMediaPlayer.getDuration();
-//        seventhSeekBar =(SeekBar) view.findViewById(R.id.SeventhSeekBar);
-
-        //Eigth sound button
+   //Eigth sound button
         eigthButtonPlaying = (Button) view.findViewById(R.id.EigthBtnPlay);
         eigthElapsedTimeLabel = (TextView) view.findViewById(R.id.EigthElapsedTimeLabel);
         eigthRemainingTimeLabel = (TextView) view.findViewById(R.id.EigthRemainingTimeLabel);
@@ -103,11 +75,8 @@ public class CppMateri9 extends Fragment {
         eigthSeekBar =(SeekBar) view.findViewById(R.id.EigthSeekBar);
         btnSound1();
         btnSound2();
-//        btnSound3();
         btnSound4();
-//        btnSound5();
         btnSound6();
-//        btnSound7();
         btnSound8();
         return view;
     }
@@ -252,76 +221,6 @@ public class CppMateri9 extends Fragment {
         return timeLabel;
     }
 
-    //    method btn sound 3
-//    public void btnSound3(){
-//        thirdSeekBar.setMax(thirdTotalTime);
-//        thirdSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-//            @Override
-//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if(fromUser){
-//                    thirdMediaPlayer.seekTo(progress);
-//                    thirdSeekBar.setProgress(progress);
-//                }
-//            }
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//            }
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//            }
-//        });
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (thirdMediaPlayer != null){
-//                    try {
-//                        Message msg =new Message();
-//                        msg.what = thirdMediaPlayer.getCurrentPosition();
-//                        handler3.sendMessage(msg);
-//                        Thread.sleep(1000);
-//                    }catch (InterruptedException e){
-//                    }
-//                }
-//            }
-//        }).start();
-//        thirdButtonPlaying.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(!thirdMediaPlayer.isPlaying()){
-//                    thirdMediaPlayer.start();
-//                    thirdButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-//                }else{
-//                    thirdMediaPlayer.pause();
-//                    thirdButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-//                }
-//            }
-//        });
-//    }
-//
-//    private Handler handler3 = new Handler(){
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            int currentPosition = msg.what;
-//            thirdSeekBar.setProgress(currentPosition);
-//            String elapsedTime = thirdCreateTimeLabel(currentPosition);
-//            thirdElapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = thirdCreateTimeLabel(thirdTotalTime-currentPosition);
-//            thirdRemainingTimeLabel.setText("-" + remainingTime);
-//        }
-//    };
-//
-//    public String thirdCreateTimeLabel(int time){
-//        String timeLabel = "";
-//        int min = time / 1000 /60;
-//        int sec =time /1000 % 60;
-//        timeLabel = min + "";
-//        if(sec <10) timeLabel +="0";
-//        timeLabel += sec;
-//        return timeLabel;
-//    }
-
-
         //    method btn sound 4
     public void btnSound4(){
         fourthSeekBar.setMax(fourthTotalTime);
@@ -390,75 +289,6 @@ public class CppMateri9 extends Fragment {
         timeLabel += sec;
         return timeLabel;
     }
-
-    //    method btn sound 5
-//    public void btnSound5(){
-//        fifthSeekBar.setMax(thirdTotalTime);
-//        fifthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-//            @Override
-//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if(fromUser){
-//                    fifthMediaPlayer.seekTo(progress);
-//                    fifthSeekBar.setProgress(progress);
-//                }
-//            }
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//            }
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//            }
-//        });
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (fifthMediaPlayer != null){
-//                    try {
-//                        Message msg =new Message();
-//                        msg.what = fifthMediaPlayer.getCurrentPosition();
-//                        handler5.sendMessage(msg);
-//                        Thread.sleep(1000);
-//                    }catch (InterruptedException e){
-//                    }
-//                }
-//            }
-//        }).start();
-//        fifthButtonPlaying.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(!fifthMediaPlayer.isPlaying()){
-//                    fifthMediaPlayer.start();
-//                    fifthButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-//                }else{
-//                    fifthMediaPlayer.pause();
-//                    fifthButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-//                }
-//            }
-//        });
-//    }
-//
-//    private Handler handler5 = new Handler(){
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            int currentPosition = msg.what;
-//            fifthSeekBar.setProgress(currentPosition);
-//            String elapsedTime = fifthCreateTimeLabel(currentPosition);
-//            fifthElapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = fifthCreateTimeLabel(fifthTotalTime-currentPosition);
-//            fifthRemainingTimeLabel.setText("-" + remainingTime);
-//        }
-//    };
-//
-//    public String fifthCreateTimeLabel(int time){
-//        String timeLabel = "";
-//        int min = time / 1000 /60;
-//        int sec =time /1000 % 60;
-//        timeLabel = min + "";
-//        if(sec <10) timeLabel +="0";
-//        timeLabel += sec;
-//        return timeLabel;
-//    }
 
 
     //    method btn sound 6
@@ -529,77 +359,6 @@ public class CppMateri9 extends Fragment {
         timeLabel += sec;
         return timeLabel;
     }
-
-
-
-    //    method btn sound 7
-//    public void btnSound7(){
-//        seventhSeekBar.setMax(thirdTotalTime);
-//        seventhSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-//            @Override
-//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if(fromUser){
-//                    seventhMediaPlayer.seekTo(progress);
-//                    seventhSeekBar.setProgress(progress);
-//                }
-//            }
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//            }
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//            }
-//        });
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (seventhMediaPlayer != null){
-//                    try {
-//                        Message msg =new Message();
-//                        msg.what = seventhMediaPlayer.getCurrentPosition();
-//                        handler7.sendMessage(msg);
-//                        Thread.sleep(1000);
-//                    }catch (InterruptedException e){
-//                    }
-//                }
-//            }
-//        }).start();
-//        seventhButtonPlaying.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(!seventhMediaPlayer.isPlaying()){
-//                    seventhMediaPlayer.start();
-//                    seventhButtonPlaying.setBackgroundResource(R.drawable.pause_sound);
-//                }else{
-//                    seventhMediaPlayer.pause();
-//                    seventhButtonPlaying.setBackgroundResource(R.drawable.play_sound);
-//                }
-//            }
-//        });
-//    }
-//
-//    private Handler handler7 = new Handler(){
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            int currentPosition = msg.what;
-//            seventhSeekBar.setProgress(currentPosition);
-//            String elapsedTime = seventhCreateTimeLabel(currentPosition);
-//            seventhElapsedTimeLabel.setText(elapsedTime);
-//            String remainingTime = seventhCreateTimeLabel(seventhTotalTime-currentPosition);
-//            seventhRemainingTimeLabel.setText("-" + remainingTime);
-//        }
-//    };
-//
-//    public String seventhCreateTimeLabel(int time){
-//        String timeLabel = "";
-//        int min = time / 1000 /60;
-//        int sec =time /1000 % 60;
-//        timeLabel = min + "";
-//        if(sec <10) timeLabel +="0";
-//        timeLabel += sec;
-//        return timeLabel;
-//    }
 
     //    method btn sound 8
     public void btnSound8(){

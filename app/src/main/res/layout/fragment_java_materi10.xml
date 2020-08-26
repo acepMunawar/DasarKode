@@ -32,40 +32,39 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/javadefinisiperulangan"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:id="@+id/FirstLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+                    <LinearLayout
+                        android:id="@+id/FirstLinearLayout"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                        app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
-                <TextView
-                    android:id="@+id/FirstElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                        <TextView
+                            android:id="@+id/FirstElapsedTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
 
-                <TextView
-                    android:id="@+id/FirstRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                        <TextView
+                            android:id="@+id/FirstRemainingTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="265dp"
+                            android:text="-1:49" />
 
-            </LinearLayout>
+                    </LinearLayout>
 
             <Button
                 android:id="@+id/FirstBtnPlay"
@@ -92,45 +91,44 @@
                 app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
-            <ImageView
-                android:id="@+id/SecondTheory"
-                android:layout_width="match_parent"
-                android:layout_height="7in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javaperulanganfor"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
+                    <ImageView
+                        android:id="@+id/SecondTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javaperulanganfor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/FirstLinearLayout" />
 
-            <LinearLayout
-                android:id="@+id/SecondLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
+                    <LinearLayout
+                        android:id="@+id/SecondLinearLayout"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
+                        app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
 
-                <TextView
-                    android:id="@+id/SecondElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                        <TextView
+                            android:id="@+id/SecondElapsedTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
 
-                <TextView
-                    android:id="@+id/SecondRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                        <TextView
+                            android:id="@+id/SecondRemainingTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="265dp"
+                            android:text="-1:49" />
 
-            </LinearLayout>
+                    </LinearLayout>
 
             <Button
                 android:id="@+id/SecondBtnPlay"
@@ -145,26 +143,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/SecondTheory" />
 
             <!--perulangan foreach -->
-            <ImageView
-                android:id="@+id/ThirdTheory"
-                android:layout_width="match_parent"
-                android:layout_height="7in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javaperulanganforeach"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
+                    <ImageView
+                        android:id="@+id/ThirdTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javaperulanganforeach"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/SecondLinearLayout" />
 
             <!--definisi perulangan while  -->
-            <ImageView
-                android:id="@+id/FourthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="4.5in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javawhile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
+                    <ImageView
+                        android:id="@+id/FourthTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javawhile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
 
             <!-- program perulangan while-->
             <SeekBar
@@ -178,44 +176,43 @@
                 app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
-            <ImageView
-                android:id="@+id/FifthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="6.5in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javaprogramperulanganwhile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
+                    <ImageView
+                        android:id="@+id/FifthTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javaprogramperulanganwhile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
 
-            <LinearLayout
-                android:id="@+id/FifthLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FifthTheory">
+                    <LinearLayout
+                        android:id="@+id/FifthLinearLayout"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
+                        app:layout_constraintTop_toBottomOf="@+id/FifthTheory">
 
-                <TextView
-                    android:id="@+id/FifthElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                        <TextView
+                            android:id="@+id/FifthElapsedTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
 
-                <TextView
-                    android:id="@+id/FifthRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                        <TextView
+                            android:id="@+id/FifthRemainingTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="265dp"
+                            android:text="-1:49" />
 
-            </LinearLayout>
+                    </LinearLayout>
 
             <Button
                 android:id="@+id/FifthBtnPlay"
@@ -229,15 +226,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
-            <ImageView
-                android:id="@+id/SixthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="3in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javadowhile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
+                    <!-- definisi perulangan do while-->
+                    <ImageView
+                        android:id="@+id/SixthTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javadowhile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
 
             <!-- definisi perulangan do while-->
             <SeekBar
@@ -251,44 +249,43 @@
                 app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
                 app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
 
-            <ImageView
-                android:id="@+id/SeventhTheory"
-                android:layout_width="match_parent"
-                android:layout_height="5.5in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/javaprogramperulangandowhile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+                    <ImageView
+                        android:id="@+id/SeventhTheory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/javaprogramperulangandowhile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
 
-            <LinearLayout
-                android:id="@+id/SeventhLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
+                    <LinearLayout
+                        android:id="@+id/SeventhLinearLayout"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
+                        app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
 
-                <TextView
-                    android:id="@+id/SeventhElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                        <TextView
+                            android:id="@+id/SeventhElapsedTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0:11" />
 
-                <TextView
-                    android:id="@+id/SeventhRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                        <TextView
+                            android:id="@+id/SeventhRemainingTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="265dp"
+                            android:text="-1:49" />
 
-            </LinearLayout>
+                    </LinearLayout>
 
             <Button
                 android:id="@+id/SeventhBtnPlay"

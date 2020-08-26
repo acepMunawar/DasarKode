@@ -31,7 +31,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/javainstallvc"
                 app:layout_constraintEnd_toEndOf="parent"

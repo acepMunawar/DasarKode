@@ -34,7 +34,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/cppdefinisipercabangan"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,8 +96,8 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
-                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/cpppercabanganif"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +109,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -149,7 +147,7 @@
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9.2in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="65dp"
                 android:src="@drawable/cppprogrampercabanganif"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -173,8 +171,8 @@
             <ImageView
                 android:id="@+id/FourthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="10in"
-                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/cpppercabanganifelse"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -186,7 +184,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -225,7 +222,7 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="65dp"
                 android:src="@drawable/cppprogrampercabanganifelse"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -249,8 +246,8 @@
             <ImageView
                 android:id="@+id/SixthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8.5in"
-                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/cpppercabanganifelseif"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -300,7 +297,7 @@
             <ImageView
                 android:id="@+id/SeventhTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="65dp"
                 android:src="@drawable/cppprogrampercabanganifelseif"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -324,8 +321,8 @@
             <ImageView
                 android:id="@+id/EigthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="8in"
-                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/cpppercabanganswitchcase"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -337,7 +334,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -375,14 +371,14 @@
             <ImageView
                 android:id="@+id/NinethTheory"
                 android:layout_width="match_parent"
-                android:layout_height="11in"
-                android:layout_marginTop="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
                 android:src="@drawable/cppprogrampercabanganswitchcase"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EigthSeekBar" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
