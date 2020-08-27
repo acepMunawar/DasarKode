@@ -114,7 +114,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheory">
+                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
 
                 <TextView
                     android:id="@+id/SecondElapsedTimeLabel"
@@ -177,7 +177,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/FifthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FifthTheory">
+                app:layout_constraintTop_toBottomOf="@+id/FifthSeekBar">
 
                 <TextView
                     android:id="@+id/FifthElapsedTimeLabel"
@@ -206,16 +206,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
 
-            <ImageView
-                android:id="@+id/SixthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:src="@drawable/javabelajaroop1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
-
             <!-- oop 4 -->
             <SeekBar
                 android:id="@+id/SeventhSeekBar"
@@ -236,7 +226,7 @@
                 android:src="@drawable/javabelajaroop2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SixthTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
 
             <LinearLayout
                 android:id="@+id/SeventhLinearLayout"
@@ -246,10 +236,12 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
+                app:layout_constraintTop_toBottomOf="@+id/SeventhSeekBar">
 
                 <TextView
                     android:id="@+id/SeventhElapsedTimeLabel"

@@ -39,33 +39,32 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/firstlinearLayoutAD"
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/FirstBtnPlayAD"
-            app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
-
-            <TextView
-                android:id="@+id/FirstElapsedTimeLabelAD"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/firstlinearLayoutAD"
+                android:layout_width="340dp"
                 android:layout_height="wrap_content"
-                android:text="0:11" />
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBarAD">
 
-            <TextView
-                android:id="@+id/FirstRemainingTimeLabelAD"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="265dp"
-                android:text="-1:49" />
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
 
         <Button
             android:id="@+id/FirstBtnPlayAD"
@@ -227,8 +226,8 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
             <ImageView
                 android:id="@+id/SecondTheoryAD"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/judulalgoritmadeskriptifnew"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -241,7 +240,6 @@ dituliskan seperti Komentar yang diapit oleh pasangan tanda kurung kurawal (‘{
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/layoutPengertianJudulAD"
@@ -345,41 +343,40 @@ menggambarkan apa yang dilakukan algoritma tersebut."
 
             <ImageView
                 android:id="@+id/ThirdTheoryAD"
-                android:layout_width="437dp"
-                android:layout_height="338dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/contohjudulalgoritmadanspesifikasifinisnew"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
 
-                <LinearLayout
-                    android:id="@+id/ThirdlinearLayoutAD"
-                    android:layout_width="340dp"
+            <LinearLayout
+                android:id="@+id/ThirdlinearLayoutAD"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlayAD"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBarAD">
+
+                <TextView
+                    android:id="@+id/ThirdElapsedTimeLabelAD"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlayAD"
-                    app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBarAD">
+                    android:text="0:11" />
 
-                    <TextView
-                        android:id="@+id/ThirdElapsedTimeLabelAD"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0:11" />
+                <TextView
+                    android:id="@+id/ThirdRemainingTimeLabelAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
 
-                    <TextView
-                        android:id="@+id/ThirdRemainingTimeLabelAD"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="265dp"
-                        android:text="-1:49" />
-
-                </LinearLayout>
+            </LinearLayout>
 
                 <Button
                     android:id="@+id/ThirdBtnPlayAD"
@@ -399,7 +396,7 @@ menggambarkan apa yang dilakukan algoritma tersebut."
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
@@ -461,9 +458,9 @@ sesuai dengan spesifikasi yang didefinisikan."
 
             <ImageView
                 android:id="@+id/FourthTheoryAD"
-                android:layout_width="437dp"
-                android:layout_height="338dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/deklarasialgoritmadeskriptif"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -515,14 +512,14 @@ sesuai dengan spesifikasi yang didefinisikan."
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthBtnPlayAD">
+                app:layout_constraintTop_toBottomOf="@+id/FourthlinearLayoutAD">
 
                 <TextView
                     android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
@@ -581,9 +578,9 @@ parameternya."
 
             <ImageView
                 android:id="@+id/FifthTheoryAD"
-                android:layout_width="437dp"
-                android:layout_height="1000dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/contohdeklarasialgoritmanew5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -636,7 +633,7 @@ parameternya."
                 android:layout_height="match_parent"
                 android:layout_marginStart="18dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
@@ -657,7 +654,7 @@ parameternya."
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pada pendeklarasian algoritma deskriptif yang sudah di jelaskan pada contoh di atas kita dapat
-membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan tipe data \n&#160;&#160;&#160;&#160;&#160;dasar seperti waktu yang dimana &#160;&#160;&#160;&#160;&#160;di dalamnya terdapat 3 data macam &#160;&#160;&#160;&#160;&#160;masukan yaitu, “hh” sebagai jam, “mm” &#160;&#160;&#160;&#160;&#160;sebagai menit, dan “ss” sebagai detik.
+membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan tipe data \n&#160;&#160;&#160;&#160;&#160;dasar seperti waktu yang dimana &#160;&#160;&#160;&#160;&#160;di dalamnya terdapat 3 data macam &#160;&#160;&#160;&#160;&#160;masukan yaitu, “hh” sebagai jam, &#160;&#160;&#160;&#160;&#160;“mm” sebagai menit, dan “ss” sebagai &#160;&#160;&#160;&#160;&#160;detik.
 \n2. Menggunakan konstanta yang &#160;&#160;&#160;&#160;&#160;menyebutkan tipe data dan &#160;&#160;&#160;&#160;&#160;nilai seperti constant PHI: real = &#160;&#160;&#160;&#160;&#160;3.141592653589793. \n3. Menggunakan nama type variable &#160;&#160;&#160;&#160;&#160;dengan tipe data dasar yang \n&#160;&#160;&#160;&#160;&#160;di dalamnya terdapat tipe data Int, \n&#160;&#160;&#160;&#160;&#160;String, Boolean, Double \n&#160;&#160;&#160;&#160;&#160;dan sebagainya."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
@@ -685,9 +682,11 @@ membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan ti
             <ImageView
                 android:id="@+id/SixthTheoryAD"
                 android:layout_width="match_parent"
-                android:layout_height="338dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:src="@drawable/algoritmadeklarasi"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />

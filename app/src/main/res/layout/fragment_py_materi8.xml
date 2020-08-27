@@ -34,7 +34,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="4in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/pyperulangandefinisi"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +96,7 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="3in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/pyperulanganfor"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +109,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +159,7 @@
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="4in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/pyperulanganwhile"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -174,13 +172,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory">
+                app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
 
                 <TextView
                     android:id="@+id/ThirdElapsedTimeLabel"

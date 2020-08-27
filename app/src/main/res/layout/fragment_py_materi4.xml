@@ -32,7 +32,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/pypengertianvar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,8 +84,8 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5in"
-                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/pytipedata"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -98,9 +97,9 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/pytipedata"
+                android:src="@drawable/pymacammacamtipedata"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -122,9 +121,9 @@
             <ImageView
                 android:id="@+id/SeventhTheory"
                 android:layout_width="match_parent"
-                android:layout_height="7in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/pymacammacamtipedata"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pytipedataboolean"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthTheory" />
@@ -135,13 +134,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/SeventhBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/SeventhTheory">
+                app:layout_constraintTop_toBottomOf="@+id/SeventhSeekBar">
 
                 <TextView
                     android:id="@+id/SeventhElapsedTimeLabel"
@@ -170,80 +170,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SeventhTheory" />
 
-            <!-- tipe data-->
-            <SeekBar
-                android:id="@+id/EigthSeekBar"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
-
-            <ImageView
-                android:id="@+id/EigthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="5.5in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/pytipedataboolean"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SeventhLinearLayout" />
-
-            <LinearLayout
-                android:id="@+id/EigthLinearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/EigthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory">
-
-                <TextView
-                    android:id="@+id/EigthElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/EigthRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/EigthBtnPlay"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/EigthSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
-
-<!-- contoh program tipe data-->
-
-            <ImageView
-                android:id="@+id/NinethTheory"
-                android:layout_width="match_parent"
-                android:layout_height="5.5in"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/pytipedataboolean"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EigthLinearLayout" />
 
 
 

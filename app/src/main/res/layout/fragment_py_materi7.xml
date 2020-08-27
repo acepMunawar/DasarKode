@@ -33,9 +33,9 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/pypercabanganif"
+                android:src="@drawable/pydefinisipercabangan"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +46,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -86,9 +85,9 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="5.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyprogrampercabanganif"
+                android:src="@drawable/pypercabanganif"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,9 +109,9 @@
             <ImageView
                 android:id="@+id/FifthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/pypercabanganifelse"
+                android:src="@drawable/pyprogrampercabanganif"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +123,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -174,9 +172,9 @@
             <ImageView
                 android:id="@+id/EigthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="6.4in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pypercabanganielifelse"
+                android:src="@drawable/pypercabanganifelse"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FifthLinearLayout" />
@@ -187,13 +185,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/EigthBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/EigthTheory">
+                app:layout_constraintTop_toBottomOf="@+id/EigthSeekBar">
 
                 <TextView
                     android:id="@+id/EigthElapsedTimeLabel"
@@ -222,17 +219,67 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EigthTheory" />
 
-            <!-- operator pembanding-->
+            <!-- percabangan if elif else-->
+            <SeekBar
+                android:id="@+id/NinethSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/NinethTheory" />
 
             <ImageView
-                android:id="@+id/TenthTheory"
+                android:id="@+id/NinethTheory"
                 android:layout_width="match_parent"
-                android:layout_height="4.5in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pyprogrampercabanganifelifelse"
+                android:src="@drawable/pypercabanganifelifelse"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EigthLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/NinethLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/NinethBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/NinethSeekBar">
+
+                <TextView
+                    android:id="@+id/NinethElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/NinethRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/NinethBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintEnd_toStartOf="@+id/NinethSeekBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NinethTheory" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

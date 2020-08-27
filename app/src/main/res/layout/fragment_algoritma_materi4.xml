@@ -173,7 +173,7 @@ bahasa pemrograman, karena terdapat korespondensi antara setiap pseudocode denga
             <ImageView
                 android:id="@+id/imgPerbandinganADDP"
                 android:layout_width="match_parent"
-                android:layout_height="1000dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/perbandingankatapenulisanalgoritmadeskriptifdanpseudocodenew"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -271,7 +271,7 @@ dan lain-lain. "
             <ImageView
                 android:id="@+id/imgContohPenulisanPseudocode"
                 android:layout_width="match_parent"
-                android:layout_height="750dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/contohpenulisanpseudocode"
                 app:layout_constraintEnd_toEndOf="parent"

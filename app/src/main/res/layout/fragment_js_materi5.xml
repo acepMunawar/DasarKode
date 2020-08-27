@@ -33,7 +33,7 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="12in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/jsoperator1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +96,7 @@
             <ImageView
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
-                android:layout_height="11in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/jsoperator2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +159,7 @@
             <ImageView
                 android:id="@+id/ThirdTheory"
                 android:layout_width="match_parent"
-                android:layout_height="14in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:src="@drawable/jsoperator3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -222,7 +222,7 @@
             <ImageView
                 android:id="@+id/FourthTheory"
                 android:layout_width="match_parent"
-                android:layout_height="9in"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:src="@drawable/jsoperator4"
                 app:layout_constraintEnd_toEndOf="parent"
