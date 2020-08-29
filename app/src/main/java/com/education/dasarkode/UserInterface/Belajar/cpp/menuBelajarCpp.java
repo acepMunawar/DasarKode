@@ -17,17 +17,17 @@ public class menuBelajarCpp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_cpp);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarCpp, new FragmentMenuMateriCpp()).commit();
-    BtnImage();
+//    BtnImage();
     }
 
-    public void BtnImage(){
-        ImageButton btnCpp = (ImageButton) findViewById(R.id.back);
-        btnCpp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(menuBelajarCpp.this, menuBelajarCpp.class));
-                finish();
-            }
-        });
-    }
+//    public void BtnImage(){
+//        ImageButton btnCpp = (ImageButton) findViewById(R.id.back);
+//        btnCpp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(menuBelajarCpp.this, menuBelajarCpp.class));
+//                finish();
+//            }
+//        });
+//    }
 }

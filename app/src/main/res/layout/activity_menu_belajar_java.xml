@@ -5,62 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserInterface.Belajar.Java.menuBelajarJava">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/nav_top_java"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="8dp"
-            android:background="@color/colorAegeanBlue"
-            app:itemIconSize="80px"
-            app:itemIconTint="@drawable/state_btnnav"
-            app:itemTextColor="@drawable/state_btnnav"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/navigasi_top">
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:layout_width="300px"
-        android:layout_height="100px"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:src="@drawable/icon_belajar_java"
-        app:layout_constraintEnd_toEndOf="@+id/nav_top_java"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="60dp"
-        android:layout_height="100px"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="7dp"
-        android:src="@drawable/back"
-        android:background="@color/colorAegeanBlue"
-        app:layout_constraintStart_toStartOf="@+id/nav_top_java"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragmentLayoutBelajarJava"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_top_java" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 

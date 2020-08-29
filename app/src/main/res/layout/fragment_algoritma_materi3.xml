@@ -679,17 +679,17 @@ membuat pendeklarasian menggunakan 3 cara yaitu : \n1. Menggunakan yang bukan ti
 <!--                app:layout_constraintStart_toEndOf="@+id/SixthBtnPlayAD"-->
 <!--                app:layout_constraintTop_toBottomOf="@+id/SixthTheoryAD" />-->
 
-            <ImageView
-                android:id="@+id/SixthTheoryAD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:src="@drawable/algoritmadeklarasi"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />
+<!--            <ImageView-->
+<!--                android:id="@+id/SixthTheoryAD"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:src="@drawable/algo"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohAlgoritmaDeskriptif" />-->
 
 <!--            <LinearLayout-->
 <!--                android:id="@+id/SixthlinearLayoutAD"-->
