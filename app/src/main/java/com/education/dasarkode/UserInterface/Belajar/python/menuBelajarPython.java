@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 import com.education.dasarkode.FragmentMenuMateriPython;
 import com.education.dasarkode.R;
+import com.education.dasarkode.UserInterface.Belajar.Fragment_dashboard_belajar;
 
 public class menuBelajarPython extends AppCompatActivity {
 
@@ -17,17 +18,6 @@ public class menuBelajarPython extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_python);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarPython, new FragmentMenuMateriPython()).commit();
-        BtnImage();
-    }
-
-    public void BtnImage(){
-        ImageButton btnPy = (ImageButton) findViewById(R.id.back);
-        btnPy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(menuBelajarPython.this, menuBelajarPython.class));
-                finish();
-            }
-        });
     }
 }
+

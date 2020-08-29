@@ -1,5 +1,7 @@
 package com.education.dasarkode;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,13 +11,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import com.education.dasarkode.UserInterface.Belajar.Fragment_dashboard_belajar;
 
 
 public class FragmentMenuMateriMsyql extends Fragment {
     Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri,btnSixthMateri;
     Button btnSeventhMateri,btnEightMateri,btnNineMateri,btnTenthMateri,btnEleventhMateri;
-    Button btnTwelfthMateri,btnThirtennthMateri,btnFourteenthMateri,btnFifteenthMateri;
-
+    Button btnTwelfthMateri;
+    ImageButton imgBtnBack;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,7 +40,7 @@ public class FragmentMenuMateriMsyql extends Fragment {
         btnTenthMateri = (Button) view.findViewById(R.id.button_tenth_materi);
         btnEleventhMateri = (Button) view.findViewById(R.id.button_eleventh_materi);
         btnTwelfthMateri = (Button) view.findViewById(R.id.button_twelfth_materi);
-
+        imgBtnBack = (ImageButton) view.findViewById(R.id.back);
         btnFirstMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -156,6 +161,14 @@ public class FragmentMenuMateriMsyql extends Fragment {
             }
         });
 
+        imgBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), MainActivity.class);
+                startActivity(i);
+                ((Activity) getActivity()).overridePendingTransition(0, 0);
+            }
+        });
 
 
 

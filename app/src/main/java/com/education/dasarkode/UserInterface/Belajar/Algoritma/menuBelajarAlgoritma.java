@@ -17,18 +17,8 @@ public class menuBelajarAlgoritma extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_algoritma);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarAlgoritma, new FragmentMenuMateriAlgoritma()).commit();
-//    BtnImage();
+
     }
 
-//    public void BtnImage(){
-//        ImageButton btnAlgoritma = (ImageButton) findViewById(R.id.back);
-//        btnAlgoritma.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(menuBelajarAlgoritma.this, menuBelajarAlgoritma.class));
-//                finish();
-//            }
-//        });
-//    }
 
 }

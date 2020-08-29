@@ -1,5 +1,7 @@
 package com.education.dasarkode;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,18 +11,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import com.education.dasarkode.UserInterface.Belajar.Fragment_dashboard_belajar;
 
 
 public class FragmentMenuMateriJs extends Fragment {
     Button btnFirstMateri,btnSecondMateri,btnThirdMateri,btnFourthMateri,btnFifthMateri,btnSixthMateri;
     Button btnSeventhMateri,btnEightMateri,btnNineMateri,btnTenthMateri,btnEleventhMateri;
     Button btnTwelfthMateri,btnThirtennthMateri,btnFourteenthMateri,btnFifteenthMateri;
+    ImageButton imgBtnBack;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_menu_materi_js, container, false);
 
+        imgBtnBack = (ImageButton) view.findViewById(R.id.back);
         btnFirstMateri = (Button) view.findViewById(R.id.button_first_materi);
         btnSecondMateri = (Button) view.findViewById(R.id.button_second_materi);
         btnThirdMateri = (Button) view.findViewById(R.id.button_third_materi);
@@ -154,7 +161,14 @@ public class FragmentMenuMateriJs extends Fragment {
             }
         });
 
-
+        imgBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), MainActivity.class);
+                startActivity(i);
+                ((Activity) getActivity()).overridePendingTransition(0, 0);
+            }
+        });
 
 
         return view;

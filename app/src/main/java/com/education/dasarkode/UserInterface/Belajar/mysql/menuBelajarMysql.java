@@ -17,17 +17,6 @@ public class menuBelajarMysql extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_mysql);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarMysql, new FragmentMenuMateriMsyql()).commit();
-    BtnImage();
-    }
-
-    public void BtnImage(){
-        ImageButton btnMysql = (ImageButton) findViewById(R.id.back);
-        btnMysql.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(menuBelajarMysql.this, menuBelajarMysql.class));
-                finish();
-            }
-        });
     }
 }
+

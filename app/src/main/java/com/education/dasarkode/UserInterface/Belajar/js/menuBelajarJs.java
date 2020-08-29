@@ -17,18 +17,6 @@ public class menuBelajarJs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_belajar_js);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayoutBelajarJs, new FragmentMenuMateriJs()).commit();
-        BtnImage();
     }
 
-    public void BtnImage(){
-        ImageButton btnJs = (ImageButton) findViewById(R.id.back);
-        btnJs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                moveTaskToBack(true);
-                startActivity(new Intent(menuBelajarJs.this, menuBelajarJs.class));
-                finish();
-            }
-        });
-    }
 }

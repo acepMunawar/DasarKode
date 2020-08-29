@@ -37,10 +37,10 @@
         android:src="@drawable/icon_belajar_cpp"
         app:layout_constraintBottom_toBottomOf="@+id/nav_top_cpp"
         app:layout_constraintEnd_toEndOf="@+id/nav_top_cpp"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="@+id/nav_top_cpp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.42" />
 
     <ImageButton
         android:id="@+id/back"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="@+id/nav_top_cpp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24000001" />
+        app:layout_constraintVertical_bias="0.42" />
 
 
     <ImageView
