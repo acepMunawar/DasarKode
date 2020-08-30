@@ -49,26 +49,17 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageView
-                android:layout_width="300px"
-                android:layout_height="100px"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
                 android:src="@drawable/logo_info_ic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <!-- main layout -->
-
-            <SeekBar
-                android:id="@+id/seekbarInfo"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnInfo"
-                app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
+                app:layout_constraintHorizontal_bias="0.89"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998" />
+            <!-- main layout -->
 
             <ImageView
                 android:id="@+id/imgInfo"
@@ -80,46 +71,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:id="@+id/LineaerLayoutInfo"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnInfo"
-                app:layout_constraintTop_toBottomOf="@+id/seekbarInfo">
-
-                <TextView
-                    android:id="@+id/ETLInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/RTLInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnInfo"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarInfo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
-
 
             <!-- layout -->
 
@@ -127,19 +78,19 @@
                 android:id="@+id/seekbarInfo2"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnInfo2"
-                app:layout_constraintTop_toBottomOf="@+id/imgInfo2" />
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgInfo2"
+                app:layout_constraintVertical_bias="0.26" />
 
             <ImageView
                 android:id="@+id/imgInfo2"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="100dp"
                 android:src="@drawable/info3"
+                app:layout_constraintBottom_toTopOf="@+id/btnInfo2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
@@ -148,15 +99,10 @@
                 android:id="@+id/LineaerLayoutInfo2"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="80dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnInfo2"
+                app:layout_constraintHorizontal_bias="0.60"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/seekbarInfo2"
                 app:layout_constraintVertical_bias="1.0">
 
@@ -179,13 +125,10 @@
                 android:id="@+id/btnInfo2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
                 android:background="@drawable/play_sound"
                 app:layout_constraintBottom_toBottomOf="@+id/LineaerLayoutInfo2"
-                app:layout_constraintEnd_toStartOf="@+id/seekbarInfo2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgInfo2" />
 
