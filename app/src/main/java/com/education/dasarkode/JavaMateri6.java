@@ -3,24 +3,29 @@ package com.education.dasarkode;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Handler;
 import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
+
 
 public class JavaMateri6 extends Fragment {
-    Button firstButtonPlaying,secondButtonPlaying,thirdButtonPlaying,fourthButtonPlaying,fifthButtonPlaying,sixthButtonPlaying,seventhButtonPlaying,eigthButtonPlaying ;
-    SeekBar firstSeekBar,secondSeekBar,thirdSeekBar,fourthSeekBar,fifthSeekBar,sixthSeekBar,seventhSeekBar,eigthSeekBar;
-    TextView firstElapsedTimeLabel,secondElapsedTimeLabel,thirdElapsedTimeLabel,fourthElapsedTimeLabel,fifthElapsedTimeLabel,sixthElapsedTimeLabel,seventhElapsedTimeLabel,eigthElapsedTimeLabel;
-    TextView firstRemainingTimeLabel,secondRemainingTimeLabel,thirdRemainingTimeLabel,fourthRemainingTimeLabel,fifthRemainingTimeLabel,sixthRemainingTimeLabel,seventhRemainingTimeLabel,eigthRemainingTimeLabel;
-    MediaPlayer firstMediaPlayer,secondMediaPlayer,thirdMediaPlayer,fourthMediaPlayer,fifthMediaPlayer,sixthMediaPlayer,seventhMediaPlayer,eigthMediaPlayer;
-    int firstTotalTime, secondTotalTime,thirdTotalTime,fourthTotalTime,fifthTotalTime,sixthTotalTime,seventhTotalTime,eigthTotalTime;
-
+    Button firstButtonPlaying;
+    SeekBar firstSeekBar;
+    TextView firstElapsedTimeLabel;
+    TextView firstRemainingTimeLabel;
+    MediaPlayer firstMediaPlayer;
+    int firstTotalTime;
+    ImageButton imgBtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -34,36 +39,16 @@ public class JavaMateri6 extends Fragment {
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar = (SeekBar) view.findViewById(R.id.FirstSeekBar);
-
-        //second sound button
-        secondButtonPlaying = (Button) view.findViewById(R.id.SecondBtnPlay);
-        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.SecondElapsedTimeLabel);
-        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.SecondRemainingTimeLabel);
-        secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        secondMediaPlayer.seekTo(0);
-        secondTotalTime = secondMediaPlayer.getDuration();
-        secondSeekBar = (SeekBar) view.findViewById(R.id.SecondSeekBar);
-
-
-        //Fourth sound button
-        fourthButtonPlaying = (Button) view.findViewById(R.id.FourthBtnPlay);
-        fourthElapsedTimeLabel = (TextView) view.findViewById(R.id.FourthElapsedTimeLabel);
-        fourthRemainingTimeLabel = (TextView) view.findViewById(R.id.FourthRemainingTimeLabel);
-        fourthMediaPlayer = MediaPlayer.create(getActivity(), R.raw.teshp);
-        fourthMediaPlayer.seekTo(0);
-        fourthTotalTime = fourthMediaPlayer.getDuration();
-        fourthSeekBar = (SeekBar) view.findViewById(R.id.FourthSeekBar);
-
-
-        //Seventh sound button
-        seventhButtonPlaying = (Button) view.findViewById(R.id.SeventhBtnPlay);
-        seventhElapsedTimeLabel = (TextView) view.findViewById(R.id.SeventhElapsedTimeLabel);
-        seventhRemainingTimeLabel = (TextView) view.findViewById(R.id.SeventhRemainingTimeLabel);
-        seventhMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        seventhMediaPlayer.seekTo(0);
-        seventhTotalTime = seventhMediaPlayer.getDuration();
-        seventhSeekBar = (SeekBar) view.findViewById(R.id.SeventhSeekBar);
-
+        imgBtn = (ImageButton) view.findViewById(R.id.back);
+        imgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentMenuJava fragmentTreeMateri = new FragmentMenuJava();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarJava,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
         btnSound1();
         return view;
     }

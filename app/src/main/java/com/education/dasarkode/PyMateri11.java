@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Handler;
 import android.os.Message;
@@ -11,8 +12,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
 
 
 public class PyMateri11 extends Fragment {
@@ -22,8 +26,7 @@ public class PyMateri11 extends Fragment {
     TextView firstRemainingTimeLabel,secondRemainingTimeLabel,thirdRemainingTimeLabel,fourthRemainingTimeLabel,fifthRemainingTimeLabel,sixthRemainingTimeLabel,seventhRemainingTimeLabel,eigthRemainingTimeLabel;
     MediaPlayer firstMediaPlayer,secondMediaPlayer,thirdMediaPlayer,fourthMediaPlayer,fifthMediaPlayer,sixthMediaPlayer,seventhMediaPlayer,eigthMediaPlayer;
     int firstTotalTime, secondTotalTime,thirdTotalTime,fourthTotalTime,fifthTotalTime,sixthTotalTime,seventhTotalTime,eigthTotalTime;
-
-
+    ImageButton imgBtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,16 +40,16 @@ public class PyMateri11 extends Fragment {
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
-
-        //second sound button
-        secondButtonPlaying= (Button) view.findViewById(R.id.SecondBtnPlay);
-        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.SecondElapsedTimeLabel);
-        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.SecondRemainingTimeLabel);
-        secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
-        secondMediaPlayer.seekTo(0);
-        secondTotalTime = secondMediaPlayer.getDuration();
-        secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBar);
-
+        imgBtn = (ImageButton) view.findViewById(R.id.back);
+        imgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentMenuMateriPython fragmentTreeMateri = new FragmentMenuMateriPython();
+                FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarPython,fragmentTreeMateri);
+                fragmentTransactionTree.commit();
+            }
+        });
         btnSound1();
     return view;
     }
