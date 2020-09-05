@@ -9,6 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +22,7 @@
             <ImageView
                 android:id="@+id/FirstTheoryAD"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
                 android:src="@drawable/tipedatadanvariable1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,18 +31,11 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianAD"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:layout_marginBottom="8dp"
                 android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toTopOf="@+id/SecondTheoryAD"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheoryAD">
 
@@ -76,7 +69,7 @@ Bagaiaman cara program menyimpan nilai ke RAM?
 Jawabannya dengan menggunakan variabel.
 Semakin banyak variabel yang kamu buat semakin besar pula memori yang akan digunakan di dalam RAM.\n\nJadi dapat kita simpulkan…
 Variabel adalah sebuah nama lokasi penyimpanan di dalam memori.
-Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel."
+Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUntuk lebih jelas bisa kunjungi dokumentasi C++ di link tersebut http://www.cplusplus.com/doc/tutorial/variables/"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -86,122 +79,24 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel."
                     app:layout_constraintTop_toBottomOf="@+id/TujuanBelajarAlgoritmaAD" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!--second layout -->
-
-            <SeekBar
-                android:id="@+id/SecondSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD" />
-
-            <ImageView
-                android:id="@+id/SecondTheoryAD"
-                android:layout_width="match_parent"
-                android:layout_height="600dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/tipedatadanvariable2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAD" />
-
-            <LinearLayout
-                android:id="@+id/SecondlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/layoutPengertianJudulAD"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/SecondBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/SecondSeekBarAD">
-
-                <TextView
-                    android:id="@+id/SecondelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/SecondremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/SecondBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondTheoryAD" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layoutPengertianJudulAD"
-                android:layout_width="400dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:background="@color/colorAegeanBlue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SecondBtnPlayAD">
-
-                <TextView
-                    android:id="@+id/DefinisiJudulAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:text="Untuk lebih jelas bisa kunjungi dokumentasi C++ di link tersebut http://www.cplusplus.com/doc/tutorial/variables/"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/layoutPengertianJudulAD" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <!--third layout -->
 
             <ImageView
                 android:id="@+id/ThirdTheoryAD"
-                android:layout_width="437dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:src="@drawable/tipedatadanvariable3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianJudulAD" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAD" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianContohJudulAD"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ThirdTheoryAD">
 
@@ -241,83 +136,28 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel."
 
             <!--Fourth layout-->
 
-            <SeekBar
-                android:id="@+id/FourthSeekBarAD"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
-
 
             <ImageView
                 android:id="@+id/FourthTheoryAD"
-                android:layout_width="437dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:src="@drawable/tipedatadanvariable4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianContohJudulAD" />
 
-            <LinearLayout
-                android:id="@+id/FourthlinearLayoutAD"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FourthBtnPlayAD"
-                app:layout_constraintTop_toBottomOf="@+id/FourthSeekBarAD">
-
-                <TextView
-                    android:id="@+id/FourthelapsedTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/FourthremainingTimeLabelAD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/FourthBtnPlayAD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/ThirdSeekBarAD"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LayoutPengertianAlgoritmaDeskriptif"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="32dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthBtnPlayAD">
+                app:layout_constraintTop_toBottomOf="@+id/FourthTheoryAD"
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
                     android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
@@ -352,10 +192,99 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel."
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/JudulPengertianAlgoritmaDeskriptif" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif" />
+            <LinearLayout
+                android:id="@+id/FirstLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif"
+                app:layout_constraintVertical_bias="0.23000002" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_top_cpp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAegeanBlue"
+            app:itemIconSize="80px"
+            app:itemIconTint="@drawable/state_btnnav"
+            app:itemTextColor="@drawable/state_btnnav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/navigasi_top"></com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_belajar_cpp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_cpp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAegeanBlue"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_cpp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/nav_top_cpp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
 </androidx.constraintlayout.widget.ConstraintLayout>

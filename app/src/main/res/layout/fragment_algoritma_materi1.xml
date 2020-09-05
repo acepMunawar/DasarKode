@@ -9,6 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -20,82 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <SeekBar
-                android:id="@+id/FirstSeekBar"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
-
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:src="@drawable/materi1_lg_ic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
-                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
-
-                <TextView
-                    android:id="@+id/FirstElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
-
-                <TextView
-                    android:id="@+id/FirstRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/FirstBtnPlay"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/play_sound"
-                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianAL"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
@@ -104,7 +49,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
                     android:text="Tujuan Belajar Logika dan Algoritma"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
@@ -286,75 +230,6 @@ gelas A kopi dan gelas &#160;&#160;&#160;&#160;&#160;B Teh. Ilustrasi permasalah
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/FirststudiKasus" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/plyRecorderSecond"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/glasscoffeeandteh">
-
-                    <SeekBar
-                        android:id="@+id/SecondSeekBar"
-                        android:layout_width="330dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/SecondBtnPlay"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <LinearLayout
-                        android:id="@+id/LLRecorderPM"
-                        android:layout_width="340dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginLeft="32dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/SecondSeekBar"
-                        app:layout_constraintTop_toBottomOf="@+id/SecondSeekBar">
-
-                        <TextView
-                            android:id="@+id/SecondElapsedTimeLabel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0:11" />
-
-                        <TextView
-                            android:id="@+id/SecondRemainingTimeLabel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="240dp"
-                            android:text="-1:49" />
-
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/SecondBtnPlay"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:background="@drawable/play_sound"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:id="@+id/penyelesaianMasalah"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="40dp"
-                    android:text="Penyelesaian masalah :"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/plyRecorderSecond" />
-
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -369,7 +244,7 @@ gelas A kopi dan gelas &#160;&#160;&#160;&#160;&#160;B Teh. Ilustrasi permasalah
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalah" />
+                    app:layout_constraintTop_toBottomOf="@+id/glasscoffeeandteh" />
 
                 <TextView
                     android:id="@+id/penyelesaianMasalahJawaban"
@@ -426,101 +301,107 @@ dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginBottom="32dp"
                     android:src="@drawable/solusialgoritma"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/SolusiAlgoritma" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/plyRecorderThird"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/imageSolusi">
-
-                    <SeekBar
-                        android:id="@+id/ThirdSeekBar"
-                        android:layout_width="330dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/ThirdBtnPlay"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <LinearLayout
-                        android:id="@+id/LLRecorderSA"
-                        android:layout_width="340dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginLeft="32dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/ThirdSeekBar"
-                        app:layout_constraintTop_toBottomOf="@+id/ThirdSeekBar">
-
-                        <TextView
-                            android:id="@+id/ThirdElapsedTimeLabel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0:11" />
-
-                        <TextView
-                            android:id="@+id/ThirdRemainingTimeLabel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="240dp"
-                            android:text="-1:49" />
-
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/ThirdBtnPlay"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:background="@drawable/play_sound"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/definisiTeoriAlgoritma"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginTop="32dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:lineSpacingMultiplier="1.5"
-                        android:text="Saat menggunakan logika, sebaiknya jangan berfikir terlalu rumit tentang
-sebuah masalah, karena belum tentu masalah itu serumit yang kita pikir. Pikirkan hal yang
-paling sederhana untuk menyelesaikan masalah itu, sehingga tidak terjebak dalam pikiran
-rumit yang dibuat sendiri. Meski demikian jangan meremehkan masalah sekecil apapun, tapi
-berfikir sederhana untuk menghasilkan solusi yang efektif. \n\nDalam menentukan algoritma untuk menyelesaikan suatu permasalahan, mungkin kita
-dihadapkan oleh beberapa pilihan algoritma.\nOleh karen itu kita harus memiliki pertimbangan dalam pemilihan algoritma seperti berikut : \n\n&#160;&#160;&#160;&#160;&#160;1. algoritma haruslah benar. Artinya &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma akan memberikan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;keluaran sesuai
-seperti yang &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;diharapkan dari sejumlah masukan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;yang diberikan. \n&#160;&#160;&#160;&#160;&#160;2. Harus mengetahui seberapa &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;baik hasil yang dicapai oleh &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma
-tersebut. Algoritma yang &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;baik harus mampu
-memberikan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hasil yang sedekat mungkin dengan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nilai yang sebenarnya. \n&#160;&#160;&#160;&#160;&#160;3. Efisiensi algoritma dimana &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;algoritma dapat ditinjau dari dua hal &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;yaitu efisiensi waktu dan memori.   "
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ThirdBtnPlay" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAL" />
+            <LinearLayout
+                android:id="@+id/FirstLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
 
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAL"
+                app:layout_constraintVertical_bias="0.23000002" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </ScrollView>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_top_algoritma"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAegeanBlue"
+            app:itemIconSize="80px"
+            app:itemIconTint="@drawable/state_btnnav"
+            app:itemTextColor="@drawable/state_btnnav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/navigasi_top"></com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_belajar_algoritma"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_algoritma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAegeanBlue"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_algoritma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/nav_top_algoritma"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
 </androidx.constraintlayout.widget.ConstraintLayout>

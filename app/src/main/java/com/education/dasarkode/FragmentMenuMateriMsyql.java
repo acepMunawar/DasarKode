@@ -134,7 +134,7 @@ public class FragmentMenuMateriMsyql extends Fragment {
         btnTenthMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MysqlMateri12 fragmentTenMateri = new MysqlMateri12();
+                MysqlMateri10 fragmentTenMateri = new MysqlMateri10();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentTenMateri);
                 fragmentTransactionTree.commit();
@@ -144,7 +144,7 @@ public class FragmentMenuMateriMsyql extends Fragment {
         btnEleventhMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MysqlMateri12 fragmentTreeMateri = new MysqlMateri12();
+                MysqlMateri11 fragmentTreeMateri = new MysqlMateri11();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
                 fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarMysql,fragmentTreeMateri);
                 fragmentTransactionTree.commit();
