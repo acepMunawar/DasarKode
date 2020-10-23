@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInterface.Belajar.Algoritma.FragmentAlgoritmaMateri1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/FirstTheory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/materi1_lg_ic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPengertianAL"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAegeanBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/TujuanBelajarAlgoritma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tujuan Belajar Logika dan Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/PenjelasanTujuanBelajarLA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Tujuan dari belajar logika dan algoritma adalah agar dapat membiasakan diri
+melakukan suatu perencanaan apabila menyelesaikan suatu masalah.Karena suatu
+permasalahan yang diselesaikan dengan suatu perencanaan yang matang maka akan
+mendapatkan solusi yang lebih optimal dibandingkan menyelesaikan masalah tanpa
+menggunakan suatu perencanaan."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TujuanBelajarAlgoritma" />
+
+                <TextView
+                    android:id="@+id/logikaDanAlgoritma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian logika dan algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PenjelasanTujuanBelajarLA" />
+
+                <TextView
+                    android:id="@+id/definisiLogikaDanAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Pengertiaan algoritma sangat lekat dengan kata logika, yaitu kemampuan seorang manusia untuk berfikir
+                     dengan akal tentang suatu masalah dan menghasilkan sebuah kebenaran, dapat dibuktikan dan masuk akal.
+Dalam menyelesaikan suatu masalah logika sangat diperlukan. Logika dan Algoritma adalah ilmu yang mempelajari cara penyelesaian suatu masalah berdasarkan urutan langkah-langkah yang disusun secara sistematis dan menggunakan bahasa yang logis dengan tujuan tertentu."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logikaDanAlgoritma" />
+
+                <TextView
+                    android:id="@+id/logika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian logika"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiLogikaDanAlgoritma" />
+
+                <TextView
+                    android:id="@+id/definisiL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Logika berasal dari bahasa yunani yaitu logos yang berarti ilmu. Logika dapat diartikan ilmu
+yang mengajarkan cara berfikir untuk melakukan kegiatan dengan tujuan tertentu.
+\nLogika merupakan kemampuan seorang manusia dalam berpikir jelas dengan akal tentang
+sesuatu permasalahan yang dapat menghasilkan sebuah kebenaran yang dapat dibuktikan,
+sehingga dapat diterima oleh akal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logika" />
+
+                <TextView
+                    android:id="@+id/algoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pengertian Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiL" />
+
+                <TextView
+                    android:id="@+id/definisiAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Algoritma berasal dari kata “algorist” yang berarti langkah menghitung dengan memanfaatkan angka arab.
+\nAlgoritma adalah deretan instruksi yang jelas dalam memecahkan masalah, yaitu untuk memperoleh
+keluaran yang diinginkan dari suatu masukkan dalam jumlah waktu yang terbatas.  Algoritma merupakan sebuah urutan intruksi yang jelas untuk menyelesaikan masalah atau
+mencapai tujuan tertentu dengan cara yang masuk akal. \nDari pengertian diatas maka dapat
+disimpulkan bahwa Logika dan Algoritma adalah ilmu yang mempelajari cara penyelesaian
+suatu masalah berdasarkan urutan langkah-langkah terbatas yang disusun secara sistematis
+dan menggunakan bahasa yang logis dengan tujuan tertentu.
+"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/algoritma" />
+
+                <TextView
+                    android:id="@+id/studiKasus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Pemecahan masalah dengan algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/definisiAlgoritma" />
+
+                <TextView
+                    android:id="@+id/FirststudiKasus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Untuk lebih mudah  memahami arti dari algoritma dicontohkan dua kasus permasalan. \n\nA. Kasus Penukaran isi dari dua gelas.
+\n&#160;&#160;&#160;&#160;&#160;Diberikan dua buah gelas yang &#160;&#160;&#160;&#160;&#160;berisi gelas A Teh dan gelas B Kopi. &#160;&#160;&#160;&#160;&#160;Tukarkan isi gelas tersebut hingga &#160;&#160;&#160;&#160;&#160;menghasilkan
+gelas A kopi dan gelas &#160;&#160;&#160;&#160;&#160;B Teh. Ilustrasi permasalahan bisa &#160;&#160;&#160;&#160;&#160;dilihat pada gambar berikut :"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/studiKasus" />
+
+                <ImageView
+                    android:id="@+id/glasscoffeeandteh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/glasscoffeeandteh"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FirststudiKasus" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/answercoffeandteh2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/glasscoffeeandteh" />
+
+                <TextView
+                    android:id="@+id/penyelesaianMasalahJawaban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="1.  Siapkan gelas cadangan X \n2.  Tuangkan air teh dari gelas A ke \n&#160;&#160;&#160;&#160;&#160;dalam gelas cadangan X maka gelas A &#160;&#160;&#160;&#160;&#160;menjadi kosong.
+\n3.  Tuangkan kopi dari gelas B ke dalam &#160;&#160;&#160;&#160;&#160;gelas A maka gelas B menjadi kosong. \n4.  Tuangkan air teh di dalam gelas X ke &#160;&#160;&#160;&#160;&#160;dalam gelas B."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/KasusKedua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="B. Kasus menghitung luas lingkaran. \n&#160;&#160;&#160;&#160;&#160;1.  Menentukan nilai jari - jari (r) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lingkaran. \n&#160;&#160;&#160;&#160;&#160;2.  Menentukan nilai PHI
+\n&#160;&#160;&#160;&#160;&#160;3. Menghitung luas lingkaran dengan &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cara mengkalikan nilai jari-jari (r) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dengan (r) lalu.
+dikalikan dengan \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nilai PHI. \n&#160;&#160;&#160;&#160;&#160;4. Maka luas lingkaran ditemukan. \n&#160;&#160;&#160;&#160;&#160;5. Selesai"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penyelesaianMasalahJawaban" />
+
+                <TextView
+                    android:id="@+id/SolusiAlgoritma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Solusi Algoritma"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/KasusKedua" />
+
+                <ImageView
+                    android:id="@+id/imageSolusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:src="@drawable/solusialgoritma"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SolusiAlgoritma" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <SeekBar
+                android:id="@+id/FirstSeekBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAL" />
+            <LinearLayout
+                android:id="@+id/FirstLinearLayout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+
+                <TextView
+                    android:id="@+id/FirstElapsedTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:11" />
+
+                <TextView
+                    android:id="@+id/FirstRemainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:text="-1:49" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FirstBtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/play_sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPengertianAL"
+                app:layout_constraintVertical_bias="0.23000002" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_top_algoritma"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAegeanBlue"
+            app:itemIconSize="80px"
+            app:itemIconTint="@drawable/state_btnnav"
+            app:itemTextColor="@drawable/state_btnnav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/navigasi_top"></com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_belajar_algoritma"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_algoritma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAegeanBlue"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_top_algoritma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/nav_top_algoritma"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+</androidx.constraintlayout.widget.ConstraintLayout>

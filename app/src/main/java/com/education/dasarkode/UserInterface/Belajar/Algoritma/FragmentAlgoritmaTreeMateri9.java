@@ -4,10 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.os.Handler;
-import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +14,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.education.dasarkode.R;
-import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
 
 
 /**

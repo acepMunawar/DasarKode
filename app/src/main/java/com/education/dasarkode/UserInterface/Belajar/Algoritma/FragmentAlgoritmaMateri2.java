@@ -17,7 +17,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.education.dasarkode.R;
-import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
+import com.education.dasarkode.FragmentMenuJava;
 
 
 public class FragmentAlgoritmaMateri2 extends Fragment {

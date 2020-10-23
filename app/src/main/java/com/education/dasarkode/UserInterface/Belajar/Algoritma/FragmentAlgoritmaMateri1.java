@@ -16,7 +16,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.media.MediaPlayer;
 import com.education.dasarkode.R;
-import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
+import com.education.dasarkode.FragmentMenuJava;
 
 public class FragmentAlgoritmaMateri1 extends Fragment {
     Button firstButtonPlaying;

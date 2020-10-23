@@ -16,8 +16,6 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.education.dasarkode.UserInterface.Belajar.Java.FragmentMenuJava;
-
 public class CppMateri4 extends Fragment {
     Button firstButtonPlaying;
     SeekBar firstSeekBar;
