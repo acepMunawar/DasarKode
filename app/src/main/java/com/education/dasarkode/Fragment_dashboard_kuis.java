@@ -1,10 +1,12 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,12 +21,14 @@ public class Fragment_dashboard_kuis extends Fragment {
     private ImageView imageViewMySQL;
     private ImageView imageViewPython;
     private ImageView imageViewJavaScript;
+    private TextView timeNewRoman;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dashboard_kuis, container, false);
         initializeView(view);
+        FontTMR(view);
         return view;
     }
 
@@ -32,6 +36,12 @@ public class Fragment_dashboard_kuis extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         bindViewEvents();
+    }
+
+    private void FontTMR(View view){
+        timeNewRoman = view.findViewById(R.id.kuisBrand);
+        Typeface customfont=Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        timeNewRoman.setTypeface(customfont);
     }
 
     private void initializeView(View view) {

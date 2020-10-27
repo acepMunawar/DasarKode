@@ -2,6 +2,7 @@ package com.education.dasarkode;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.education.dasarkode.UserInterface.profile.Fragment_dashboard_profile;
@@ -31,7 +33,15 @@ public class EditProfile extends Fragment {
     private EditText editTextPassword;
     private EditText editTextHobby;
     private Button buttonUpdate;
-    
+    private TextView FontEditTextEmail;
+    private TextView FontEditTextName;
+    private TextView FontEditTextPassword;
+    private TextView FontEditTextHobby;
+    private TextView TextViewEmailLabel;
+    private TextView TextViewNameLabel;
+    private TextView TextViewPasswordLabel;
+    private TextView TextViewHobbyLabel;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,9 +61,31 @@ public class EditProfile extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_edit_profile, container, false);
         initializeView(view);
+        onCreateFontView(view);
         return view;
     }
-    
+
+    private void onCreateFontView(View view){
+            FontEditTextEmail = view.findViewById(R.id.editTextEmail);
+            FontEditTextName = view.findViewById(R.id.editTextName);
+            FontEditTextPassword = view.findViewById(R.id.editTextPassword);
+            FontEditTextHobby = view.findViewById(R.id.editTextHobby);
+            TextViewEmailLabel = view.findViewById(R.id.textViewHobbyLabel);
+            TextViewNameLabel = view.findViewById(R.id.textViewNameLabel);
+            TextViewHobbyLabel = view.findViewById(R.id.textViewHobbyLabel);
+            TextViewPasswordLabel = view.findViewById(R.id.textViewPasswordLabel);
+                Typeface customfont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                    FontEditTextEmail.setTypeface(customfont);
+                    FontEditTextName.setTypeface(customfont);
+                    FontEditTextPassword.setTypeface(customfont);
+                    FontEditTextHobby.setTypeface(customfont);
+                    TextViewEmailLabel.setTypeface(customfont);
+                    TextViewNameLabel.setTypeface(customfont);
+                    TextViewHobbyLabel.setTypeface(customfont);
+                    TextViewPasswordLabel.setTypeface(customfont);
+    }
+
+
     private void initializeView(View view) {
         editTextEmail = view.findViewById(R.id.editTextEmail);
         editTextName = view.findViewById(R.id.editTextName);

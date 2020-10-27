@@ -3,6 +3,8 @@ package com.education.dasarkode;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
+import android.icu.util.ValueIterator;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -36,7 +38,6 @@ public class Register extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         firebaseAuth = FirebaseAuth.getInstance();
         sharedPreferences = getActivity().getSharedPreferences(Constants.SHARED_PREFERENCES_KEY, Context.MODE_PRIVATE);
     }
@@ -46,6 +47,7 @@ public class Register extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_register, container, false);
         initializeView(view);
+        onFontTextView(view);
         return view;
     }
 
@@ -62,6 +64,20 @@ public class Register extends Fragment {
         editTextPassword = view.findViewById(R.id.password);
         editTextHobby = view.findViewById(R.id.hoby);
         buttonRegister = view.findViewById(R.id.buttonRegister);
+    }
+
+    private void onFontTextView(View view){
+        editTextEmail = view.findViewById(R.id.email);
+        editTextName = view.findViewById(R.id.nama);
+        editTextPassword = view.findViewById(R.id.password);
+        editTextHobby = view.findViewById(R.id.hoby);
+        buttonRegister = view.findViewById(R.id.buttonRegister);
+            Typeface costumFace = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                editTextEmail.setTypeface(costumFace);
+                editTextName.setTypeface(costumFace);
+                editTextPassword.setTypeface(costumFace);
+                editTextHobby.setTypeface(costumFace);
+                buttonRegister.setTypeface(costumFace);
     }
 
     private void bindViewEvents() {

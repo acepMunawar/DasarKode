@@ -3,6 +3,7 @@ package com.education.dasarkode.UserInterface.profile;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,8 @@ import com.education.dasarkode.commons.Constants;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.lang.reflect.Type;
+
 
 public class Fragment_dashboard_profile extends Fragment {
 
@@ -32,7 +35,12 @@ public class Fragment_dashboard_profile extends Fragment {
     private TextView textViewName;
     private TextView textViewEmail;
     private TextView textViewHobby;
-
+    private TextView TextViewNameLabel;
+    private TextView TextViewEmailLabel;
+    private TextView TextViewPasswordLabel;
+    private TextView TextViewHobbyLabel;
+    private Button FontButtonUpdate;
+    private Button FontButtonLogout;
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -54,6 +62,7 @@ public class Fragment_dashboard_profile extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dashboard_profile, container, false);
         initializeView(view);
+        onCreateFontText(view);
         return view;
     }
 
@@ -66,10 +75,33 @@ public class Fragment_dashboard_profile extends Fragment {
         }
     }
 
+    public void onCreateFontText(View view){
+        TextViewEmailLabel = view.findViewById(R.id.textViewEmailLabel);
+        TextViewNameLabel = view.findViewById(R.id.textViewNameLabel);
+        TextViewHobbyLabel = view.findViewById(R.id.textViewHobbyLabel);
+        TextViewPasswordLabel = view.findViewById(R.id.textViewPasswordLabel);
+        textViewEmail = view.findViewById(R.id.textViewEmail);
+        textViewName = view.findViewById(R.id.textViewName);
+        textViewHobby = view.findViewById(R.id.textViewHobby);
+        FontButtonUpdate = view.findViewById(R.id.buttonUpdate);
+        FontButtonLogout = view.findViewById(R.id.buttonLogout);
+            Typeface customfont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                TextViewEmailLabel.setTypeface(customfont);
+                TextViewNameLabel.setTypeface(customfont);
+                TextViewHobbyLabel.setTypeface(customfont);
+                TextViewHobbyLabel.setTypeface(customfont);
+                TextViewPasswordLabel.setTypeface(customfont);
+                textViewEmail.setTypeface(customfont);
+                textViewName.setTypeface(customfont);
+                textViewHobby.setTypeface(customfont);
+                FontButtonUpdate.setTypeface(customfont);
+                FontButtonLogout.setTypeface(customfont);
+
+    }
+
     private void initializeView(View view) {
        buttonUpdate = view.findViewById(R.id.buttonUpdate);
        buttonLogout = view.findViewById(R.id.buttonLogout);
-
        textViewEmail = view.findViewById(R.id.textViewEmail);
        textViewName = view.findViewById(R.id.textViewName);
        textViewHobby = view.findViewById(R.id.textViewHobby);
@@ -80,7 +112,6 @@ public class Fragment_dashboard_profile extends Fragment {
             @Override
             public void onClick(View v) { onLogout(); }
         });
-
         buttonUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { onUpdate(); }

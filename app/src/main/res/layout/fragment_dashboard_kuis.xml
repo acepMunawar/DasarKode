@@ -16,18 +16,18 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
         android:src="@drawable/processor_logo_ic"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintBottom_toTopOf="@+id/history_ic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.65999997" />
 
     <ImageButton
         android:id="@+id/algoritma_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/algoritma_ic"
         app:layout_constraintBottom_toTopOf="@+id/processor_logo"
@@ -41,6 +41,7 @@
         android:id="@+id/cpp_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/cpp_ic"
         app:layout_constraintBottom_toTopOf="@+id/processor_logo"
@@ -83,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/js_ic"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="@+id/processor_logo"
@@ -96,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/python_ic"
         android:src="@drawable/python_ic"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
@@ -104,10 +105,13 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/javascript_logo"
         app:layout_constraintTop_toBottomOf="@+id/processor_logo" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+
+
+    <View
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_gravity="bottom"
         android:background="@color/colorAegeanBlue"
         app:itemIconSize="80px"
@@ -118,14 +122,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigasi_top">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </View>
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <View
         android:id="@+id/bottomNavigationView2"
         android:layout_width="240dp"
-        android:layout_height="130dp"
+        android:layout_height="80dp"
         android:layout_gravity="bottom"
+        android:layout_marginTop="32dp"
         android:background="@color/colorAegeanBlue"
         app:itemIconSize="80px"
         app:itemIconTint="@drawable/state_btnnav"
@@ -133,26 +138,42 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navigasi_top">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/navigasi_top" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="100dp"
-            android:text="MENU KUIS"
-            android:textColor="@color/colorWhite"
-            android:textSize="24sp" />
+    <TextView
+        android:id="@+id/kuisBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Menu Kuis"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_ic"
+        app:layout_constraintVertical_bias="0.82" />
 
-        <ImageView
-            android:id="@+id/history_ic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/logo_kuis" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <ImageView
+        android:id="@+id/history_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/logo_kuis"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="@+id/bottomNavigationView2"
+        app:layout_constraintStart_toStartOf="@+id/bottomNavigationView2"
+        app:layout_constraintTop_toTopOf="@+id/bottomNavigationView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

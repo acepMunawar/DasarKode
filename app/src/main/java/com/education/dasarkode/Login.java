@@ -1,6 +1,7 @@
 package com.education.dasarkode;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -34,6 +35,7 @@ public class Login extends Fragment {
     private Button buttonRegister;
     private TextView buttonForgotPassword;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,7 @@ public class Login extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         initializeView(view);
+        onCreateFontView(view);
         return view;
     }
 
@@ -52,6 +55,21 @@ public class Login extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         bindViewEvents();
+    }
+
+    private void onCreateFontView(View view){
+        editTextEmail = view.findViewById(R.id.email);
+        editTextPassword = view.findViewById(R.id.password);
+        buttonRegister = view.findViewById(R.id.BtnRegister);
+        buttonLogin = view.findViewById(R.id.BtnLogin);
+        buttonForgotPassword = view.findViewById(R.id.buttonForgotPassword);
+            Typeface customFace = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                editTextEmail.setTypeface(customFace);
+                editTextPassword.setTypeface(customFace);
+                buttonRegister.setTypeface(customFace);
+                buttonLogin.setTypeface(customFace);
+                buttonForgotPassword.setTypeface(customFace);
+
     }
 
     private void initializeView(View view) {
