@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -36,6 +37,7 @@ public class ForgotPassword extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forgot_password, container, false);
         initializeView(view);
+        onFontTextView(view);
         return view;
     }
 
@@ -48,6 +50,14 @@ public class ForgotPassword extends Fragment {
     private void initializeView(View view) {
         editTextEmail = view.findViewById(R.id.email);
         buttonSubmit = view.findViewById(R.id.buttonSubmit);
+    }
+
+    private void onFontTextView(View view){
+        editTextEmail = view.findViewById(R.id.email);
+        buttonSubmit = view.findViewById(R.id.buttonSubmit);
+            Typeface customfont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                editTextEmail.setTypeface(customfont);
+                buttonSubmit.setTypeface(customfont);
     }
 
     private void bindViewEvents() {

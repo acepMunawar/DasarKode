@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -63,6 +64,7 @@ public class QuizFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_quiz, container, false);
         initializeView(view);
+        onTextFontView(view);
         return view;
     }
 
@@ -86,6 +88,22 @@ public class QuizFragment extends Fragment {
         answerBCardView = view.findViewById(R.id.answerBCardView);
         answerCCardView = view.findViewById(R.id.answerCCardView);
         answerDCardView = view.findViewById(R.id.answerDCardView);
+    }
+
+    private void onTextFontView(View view){
+        textViewQuestion = view.findViewById(R.id.textViewQuestion);
+        textViewAnswerA = view.findViewById(R.id.textViewAnswerA);
+        textViewAnswerB = view.findViewById(R.id.textViewAnswerB);
+        textViewAnswerC = view.findViewById(R.id.textViewAnswerC);
+        textViewAnswerD = view.findViewById(R.id.textViewAnswerD);
+        textViewTitle = view.findViewById(R.id.textViewTitle);
+            Typeface customfont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                textViewQuestion.setTypeface(customfont);
+                textViewAnswerA.setTypeface(customfont);
+                textViewAnswerB.setTypeface(customfont);
+                textViewAnswerC.setTypeface(customfont);
+                textViewAnswerD.setTypeface(customfont);
+                textViewTitle.setTypeface(customfont);
     }
 
     private void loadData() {

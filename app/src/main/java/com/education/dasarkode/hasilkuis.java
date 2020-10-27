@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ public class hasilkuis extends Fragment {
     private TextView textViewScoreValue;
     private TextView textViewCorrect;
     private TextView textViewWrong;
+    private TextView scoreTeks;
     private Button buttonFinish;
 
     public static hasilkuis newInstance(String correctAnswer, String wrongAnswer, String score) {
@@ -54,6 +56,7 @@ public class hasilkuis extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hasilkuis, container, false);
         initializeView(view);
+        onTextFontView(view);
         return view;
     }
 
@@ -72,6 +75,20 @@ public class hasilkuis extends Fragment {
         textViewScoreValue.setText(score);
         textViewCorrect.setText(String.format("Correct\n%s", correctAnswer));
         textViewWrong.setText(String.format("Incorrect\n%s", wrongAnswer));
+    }
+
+    private void onTextFontView(View view){
+        textViewScoreValue = view.findViewById(R.id.textViewScoreValue);
+        textViewCorrect = view.findViewById(R.id.textViewCorrect);
+        textViewWrong = view.findViewById(R.id.textViewWrong);
+        buttonFinish = view.findViewById(R.id.buttonFinish);
+        scoreTeks = view.findViewById(R.id.textViewScore);
+            Typeface customfont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                textViewScoreValue.setTypeface(customfont);
+                textViewCorrect.setTypeface(customfont);
+                textViewWrong.setTypeface(customfont);
+                buttonFinish.setTypeface(customfont);
+                scoreTeks.setTypeface(customfont);
     }
 
     private void bindViewEvents() {
