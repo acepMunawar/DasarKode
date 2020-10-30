@@ -23,20 +23,23 @@
             <ImageView
                 android:id="@+id/FirstTheory"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="600dp"
                 android:layout_marginTop="50dp"
                 android:src="@drawable/definisoperatorcpp"
+                app:layout_constraintBottom_toTopOf="@+id/SecondTheory"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <!-- operator aritmatika-->
 
             <ImageView
                 android:id="@+id/SecondTheory"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cppoperatoraritmatika"
+                app:layout_constraintBottom_toTopOf="@+id/ThirdTheory"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
