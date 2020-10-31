@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -22,9 +23,20 @@ public class CppMateri2 extends Fragment {
     SeekBar firstSeekBar;
     TextView firstElapsedTimeLabel;
     TextView firstRemainingTimeLabel;
+    TextView tujuanBelajarAlgoritmaAd;
+    TextView penjelasanTujuanBelajarAd;
+    TextView definisiJudulAd;
+    TextView penjelasanJudulAd;
+    TextView definisiContohJudulAD;
+    TextView penjelasanContohJudulAD;
+    TextView judulPengertianAlgoritmaDeskriptif;
+    TextView defenisiPengertianAlgoritmaDes;
+    TextView defenisiContohAlgoritmaDes;
+    TextView defenisiContohmenhitungjarijari;
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,7 +44,7 @@ public class CppMateri2 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javainstall2);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.cppfirstmateri);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
@@ -40,16 +52,40 @@ public class CppMateri2 extends Fragment {
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentMenuJava fragmentTreeMateri = new FragmentMenuJava();
+                FragmentMenuMateriCpp fragmentTreeMateri = new FragmentMenuMateriCpp();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
-                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarJava,fragmentTreeMateri);
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTreeMateri);
                 fragmentTransactionTree.commit();
             }
         });
         btnSound1();
+        onTextFontView(view);
         return view;
     }
 
+    private void onTextFontView(View view){
+        tujuanBelajarAlgoritmaAd = (TextView) view.findViewById(R.id.TujuanBelajarAlgoritmaAD);
+        penjelasanTujuanBelajarAd = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarAD);
+        definisiJudulAd = (TextView) view.findViewById(R.id.DefinisiJudulAD);
+        penjelasanJudulAd = (TextView) view.findViewById(R.id.PenjelasanJudulAD);
+        definisiContohJudulAD = (TextView) view.findViewById(R.id.DefinisiContohJudulAD);
+        penjelasanContohJudulAD = (TextView) view.findViewById(R.id.PenjelasanContohJudulAD);
+        judulPengertianAlgoritmaDeskriptif = (TextView) view.findViewById(R.id.JudulPengertianAlgoritmaDeskriptif);
+        defenisiPengertianAlgoritmaDes = (TextView) view.findViewById(R.id.DefenisiPengertianAlgoritmaDes);
+        defenisiContohAlgoritmaDes = (TextView) view.findViewById(R.id.DefenisiContohAlgoritmaDes);
+        defenisiContohmenhitungjarijari = (TextView) view.findViewById(R.id.DefenisiContohmenhitungjarijari);
+        Typeface costumeFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        tujuanBelajarAlgoritmaAd.setTypeface(costumeFont);
+        penjelasanTujuanBelajarAd.setTypeface(costumeFont);
+        definisiJudulAd.setTypeface(costumeFont);
+        penjelasanJudulAd.setTypeface(costumeFont);
+        definisiContohJudulAD.setTypeface(costumeFont);
+        penjelasanContohJudulAD.setTypeface(costumeFont);
+        judulPengertianAlgoritmaDeskriptif.setTypeface(costumeFont);
+        defenisiPengertianAlgoritmaDes.setTypeface(costumeFont);
+        defenisiContohAlgoritmaDes.setTypeface(costumeFont);
+        defenisiContohmenhitungjarijari.setTypeface(costumeFont);
+    }
 
     //    method btn sound 1
     public void btnSound1(){

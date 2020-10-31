@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -21,9 +22,16 @@ public class CppMateri4 extends Fragment {
     SeekBar firstSeekBar;
     TextView firstElapsedTimeLabel;
     TextView firstRemainingTimeLabel;
+    TextView tujuanBelajarAlgoritmaAD;
+    TextView penjelasanTujuanBelajarAD;
+    TextView definisiContohJudulAD;
+    TextView penjelasanContohJudulAD;
+    TextView judulPengertianAlgoritmaDeskriptif;
+    TextView defenisiPengertianAlgoritmaDes;
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -46,7 +54,24 @@ public class CppMateri4 extends Fragment {
             }
         });
         btnSound1();
+        onTextFontView(view);
         return view;
+    }
+
+    private void onTextFontView(View view){
+         tujuanBelajarAlgoritmaAD = (TextView) view.findViewById(R.id.TujuanBelajarAlgoritmaAD);
+         penjelasanTujuanBelajarAD = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarAD);
+         definisiContohJudulAD = (TextView) view.findViewById(R.id.DefinisiContohJudulAD);
+         penjelasanContohJudulAD = (TextView) view.findViewById(R.id.PenjelasanContohJudulAD);
+         judulPengertianAlgoritmaDeskriptif = (TextView) view.findViewById(R.id.JudulPengertianAlgoritmaDeskriptif);
+         defenisiPengertianAlgoritmaDes = (TextView) view.findViewById(R.id.DefenisiPengertianAlgoritmaDes);
+         Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+         tujuanBelajarAlgoritmaAD.setTypeface(costumFont);
+         penjelasanTujuanBelajarAD.setTypeface(costumFont);
+         definisiContohJudulAD.setTypeface(costumFont);
+         penjelasanContohJudulAD.setTypeface(costumFont);
+         judulPengertianAlgoritmaDeskriptif.setTypeface(costumFont);
+         defenisiPengertianAlgoritmaDes.setTypeface(costumFont);
     }
 
     //    method btn sound 1

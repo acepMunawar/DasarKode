@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -21,9 +22,16 @@ public class CppMateri1 extends Fragment {
     SeekBar firstSeekBar;
     TextView firstElapsedTimeLabel;
     TextView firstRemainingTimeLabel;
+    TextView tujuanBelajarAlgoritmaAD;
+    TextView penjelasanTujuanBelajarAD;
+    TextView kalimatDeskriptif;
+    TextView penjelasanKalimatDeskrip;
+    TextView definisiJudulAD;
+    TextView penjelasanJudulAD;
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,7 +41,7 @@ public class CppMateri1 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.cppfirstmateri);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
@@ -47,8 +55,25 @@ public class CppMateri1 extends Fragment {
                 fragmentTransactionTree.commit();
             }
         });
-
+        btnSound1();
+        onFontTextView(view);
         return view;
+    }
+
+    private void onFontTextView(View view){
+        tujuanBelajarAlgoritmaAD = (TextView) view.findViewById(R.id.TujuanBelajarAlgoritmaAD);
+        penjelasanTujuanBelajarAD = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarAD);
+        kalimatDeskriptif = (TextView) view.findViewById(R.id.KalimatDeskriptif);
+        penjelasanKalimatDeskrip = (TextView) view.findViewById(R.id.PenjelasanKalimatDeskrip);
+        definisiJudulAD = (TextView) view.findViewById(R.id.DefinisiJudulAD);
+        penjelasanJudulAD = (TextView) view.findViewById(R.id.PenjelasanJudulAD);
+            Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+                tujuanBelajarAlgoritmaAD.setTypeface(costumFont);
+                penjelasanTujuanBelajarAD.setTypeface(costumFont);
+                kalimatDeskriptif.setTypeface(costumFont);
+                penjelasanKalimatDeskrip.setTypeface(costumFont);
+                definisiJudulAD.setTypeface(costumFont);
+                penjelasanJudulAD.setTypeface(costumFont);
     }
 
 //    method btn sound 1

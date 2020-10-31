@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -22,6 +23,11 @@ public class CppMateri3 extends Fragment {
     SeekBar firstSeekBar;
     TextView firstElapsedTimeLabel;
     TextView firstRemainingTimeLabel;
+    TextView penjelasanTujuanBelajarAD;
+    TextView kalimatDeskriptif;
+    TextView penjelasanKalimatDeskrip;
+    TextView definisiJudulAD;
+    TextView definisiJudulAD1;
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
@@ -40,16 +46,30 @@ public class CppMateri3 extends Fragment {
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentMenuJava fragmentTreeMateri = new FragmentMenuJava();
+                FragmentMenuMateriCpp fragmentTreeMateri = new FragmentMenuMateriCpp();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
-                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarJava,fragmentTreeMateri);
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTreeMateri);
                 fragmentTransactionTree.commit();
             }
         });
         btnSound1();
+        onTextFontView(view);
     return view;
     }
 
+    private void onTextFontView(View view){
+        penjelasanTujuanBelajarAD = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarAD);
+        kalimatDeskriptif = (TextView) view.findViewById(R.id.KalimatDeskriptif);
+        penjelasanKalimatDeskrip = (TextView) view.findViewById(R.id.PenjelasanKalimatDeskrip);
+        definisiJudulAD = (TextView) view.findViewById(R.id.DefinisiJudulAD);
+        definisiJudulAD1 = (TextView) view.findViewById(R.id.DefinisiJudulAD1);
+        Typeface costumeFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        penjelasanTujuanBelajarAD.setTypeface(costumeFont);
+        kalimatDeskriptif.setTypeface(costumeFont);
+        penjelasanKalimatDeskrip.setTypeface(costumeFont);
+        definisiJudulAD.setTypeface(costumeFont);
+        definisiJudulAD1.setTypeface(costumeFont);
+    }
 
     //    method btn sound 1
     public void btnSound1(){

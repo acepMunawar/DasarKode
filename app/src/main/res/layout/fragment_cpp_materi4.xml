@@ -31,7 +31,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianAD"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -43,12 +43,12 @@
                     android:id="@+id/TujuanBelajarAlgoritmaAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:text="Apa itu Variable dan tipe data"
                     android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.13"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,7 +71,7 @@ Semakin banyak variabel yang kamu buat semakin besar pula memori yang akan digun
 Variabel adalah sebuah nama lokasi penyimpanan di dalam memori.
 Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUntuk lebih jelas bisa kunjungi dokumentasi C++ di link tersebut http://www.cplusplus.com/doc/tutorial/variables/"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
+                    android:textSize="14dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -92,7 +92,7 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianContohJudulAD"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -104,12 +104,12 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:id="@+id/DefinisiContohJudulAD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="Cara membuat variable"
                     android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.13"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/layoutPengertianContohJudulAD" />
 
@@ -126,7 +126,7 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:lineSpacingMultiplier="1.5"
                     android:text="Variabel-variabel di atas akan menyimpan nilai null (kosong), karena belum kita isi."
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
+                    android:textSize="14dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -148,7 +148,7 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LayoutPengertianAlgoritmaDeskriptif"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="32dp"
                 android:background="@color/colorAegeanBlue"
@@ -163,18 +163,18 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="Mengisi nilai Variable"
                     android:textColor="@color/colorAqua"
-                    android:textSize="22dp"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.11"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/LayoutPengertianAlgoritmaDeskriptif" />
 
                 <TextView
                     android:id="@+id/DefenisiPengertianAlgoritmaDes"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
@@ -185,59 +185,85 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pada variable tersebut terdapat nilai Teks dengan tipe data String dimana di isi dengan nama dan tipe data integer yang di beri nilai bilangan"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
+                    android:textSize="14dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/JudulPengertianAlgoritmaDeskriptif" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <SeekBar
                 android:id="@+id/FirstSeekBar"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/FirstLinearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.02"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif" />
+
             <LinearLayout
                 android:id="@+id/FirstLinearLayout"
-                android:layout_width="340dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginBottom="32dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.12"
-                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/FirstSeekBar"
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
-                <TextView
-                    android:id="@+id/FirstElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/FirstRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                    <TextView
+                        android:id="@+id/FirstElapsedTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:11"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
+                    <TextView
+                        android:id="@+id/FirstRemainingTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-1:49"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/FirstElapsedTimeLabel"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
             <Button
                 android:id="@+id/FirstBtnPlay"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:background="@drawable/play_sound"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutPengertianAlgoritmaDeskriptif"
-                app:layout_constraintVertical_bias="0.23000002" />
+                app:layout_constraintVertical_bias="0.16000003" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -280,7 +306,7 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorAegeanBlue"
-        android:src="@drawable/back"
+        app:srcCompat="@drawable/back"
         app:layout_constraintBottom_toBottomOf="@+id/nav_top_cpp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"

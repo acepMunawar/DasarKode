@@ -7,13 +7,16 @@
     tools:context=".CppMateri2">
 
     <ScrollView
+        android:id="@+id/scrollView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/nav_top_cpp"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -30,7 +33,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianAD"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +43,17 @@
 
                 <TextView
                     android:id="@+id/TujuanBelajarAlgoritmaAD"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:text="Alur C++"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,11 +61,11 @@
                     android:id="@+id/PenjelasanTujuanBelajarAD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pada dasarnya kita hanya membutuhkan dua alat saja, yaitu: teks editor dan compiler.
@@ -70,10 +76,8 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/TujuanBelajarAlgoritmaAD" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!--second layout -->
@@ -90,7 +94,7 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianJudulAD"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -100,14 +104,17 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
 
                 <TextView
                     android:id="@+id/DefinisiJudulAD"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:text="Install minGW"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/layoutPengertianJudulAD" />
 
@@ -115,15 +122,14 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
                     android:id="@+id/PenjelasanJudulAD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Untuk proses compile bahasa C/C++, diperlukan tool yaitu MinGW. Bagi pengguna Linux tidak perlu lagi install dan seting MinGW, karena biasanya sudah ada. Tapi bagi pengguna windows, harus install dan seting path-nya agar bisa kita gunakan.
-Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem Operasi windows. Baik langsung saja kita mulai, namun sebelumnya kita siapkan terlebih dahulu MinGW-nya. \n\nBisa didownload melalui \nlink https://sourceforge.net/projects/mingw-w64/"
+                    android:text="Untuk proses compile bahasa C/C++, diperlukan tool yaitu MinGW. Bagi pengguna Linux tidak perlu lagi install dan setting MinGW, karena biasanya sudah ada. Tapi bagi pengguna windows, harus install dan setting path-nya agar bisa kita gunakan. Sebelumnya kita siapkan terlebih dahulu MinGW-nya. Bisa didownload melalui link https://sourceforge.net/projects/mingw-w64/"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +145,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:id="@+id/ThirdTheoryAD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/installcpp1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +154,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianContohJudulAD"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -158,14 +164,17 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
                 <TextView
                     android:id="@+id/DefinisiContohJudulAD"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:text="Langkah Pertama"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/layoutPengertianContohJudulAD" />
 
@@ -173,6 +182,11 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:id="@+id/PenjelasanContohJudulAD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Setelah kita siapkan file kita buka file tersebut atau dengan double klik. Namun sebaiknya gunakan Run Administrator, karena MinGW ini akan langsung melakukan extract file. Jadi dengan kita Run Administrator kita bisa langsung pilih lokasi extract ke drive C, namun jika tidak menggunakan Run Administrator pasti akan terjadi kesalah jika kita extract di Drive C."
@@ -180,7 +194,6 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.51"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/DefinisiContohJudulAD" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -191,6 +204,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:id="@+id/FourthTheoryAD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/installcpp2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -199,7 +213,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/Install2"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -209,14 +223,17 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
                 <TextView
                     android:id="@+id/JudulPengertianAlgoritmaDeskriptif"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
                     android:layout_marginTop="8dp"
-                    android:text="Deklarasi algoritma deskriptif"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Langakah Kedua"
                     android:textColor="@color/colorAqua"
                     android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/Install2" />
 
@@ -224,11 +241,11 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:id="@+id/DefenisiPengertianAlgoritmaDes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Setelah kita buka akan muncul dialog untuk memilih lokasi extract, dan bisa juga sekaligus tempat penyimpana file program MinGW. Kita pili saja ke C:\Program Files. Kmudian pilih extract."
@@ -236,7 +253,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.49"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/JudulPengertianAlgoritmaDeskriptif" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -247,6 +264,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:id="@+id/FifthTheoryAD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/install4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -255,7 +273,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LayoutInstall"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAegeanBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -267,19 +285,18 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:id="@+id/DefenisiContohAlgoritmaDes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text=" Mengatur Path.Pertama kita masuk dulu ke direktori atau folder tempat file MinGW di simpan, masuk ke C:\Program Files\MinGW\bin. "
+                    android:text="Mengatur Path.Pertama kita masuk dulu ke direktori atau folder tempat file MinGW di simpan, masuk ke C:\Program Files\MinGW\bin. "
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -300,6 +317,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:id="@+id/Theory8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/cppinstall7"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -309,6 +327,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                 android:id="@+id/Theory9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/cppinstall8"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -335,7 +354,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
             <ImageView
                 android:id="@+id/Theory12"
                 android:layout_width="wrap_content"
-                android:layout_height="420dp"
+                android:layout_height="wrap_content"
                 android:src="@drawable/cppinstall11"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -371,7 +390,7 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LayoutJudulContohmenghiutngjarijari"
-                android:layout_width="450dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="32dp"
                 android:background="@color/colorAegeanBlue"
@@ -387,15 +406,15 @@ Pada artikel ini saya akan berbagi cara mudah install dan seting MinGW di Sistem
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="32dp"
+                    android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="coba anda lihat di kolom variable pada gambar diatas, jika sudah ada variable dengan nama PATH klik variable tersebut lalu klik edit. Ingat! jangan hapus apapun isi variable value, anda hanya perlu menambahkan tulisan  ;%MINGW_PATH%\bin . lalu klik ok.
-namun jika variable PATH itu belum ada, klik New seperti pada langkah diatas. lalu isi variable name dengan nama PATH dan variable value dengan %MINGW_PATH%\bin . lalu klik OK.
+namun jika variable PATH itu belum ada, klik New seperti pada langkah diatas. Lalu isi variable name dengan nama PATH dan variable value dengan %MINGW_PATH%\bin . lalu klik OK.
 Proses konfigurasi selesai.
-Buka commandPrompt, lalu ketik gcc –version . jika outputnya seperti pada tampilan dibawah ini berarti proses konfigurasi berhasil"
+Buka command prompt, lalu ketik gcc –version . jika outputnya seperti pada tampilan dibawah ini berarti proses konfigurasi berhasil"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -405,52 +424,78 @@ Buka commandPrompt, lalu ketik gcc –version . jika outputnya seperti pada tamp
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
             <SeekBar
                 android:id="@+id/FirstSeekBar"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/FirstLinearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.02"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohmenghiutngjarijari" />
+
             <LinearLayout
                 android:id="@+id/FirstLinearLayout"
-                android:layout_width="340dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginBottom="32dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.12"
-                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
-                app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohmenghiutngjarijari">
 
-                <TextView
-                    android:id="@+id/FirstElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/FirstRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                    <TextView
+                        android:id="@+id/FirstElapsedTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:11"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
+                    <TextView
+                        android:id="@+id/FirstRemainingTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-1:49"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/FirstElapsedTimeLabel"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
             <Button
                 android:id="@+id/FirstBtnPlay"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:background="@drawable/play_sound"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/LayoutJudulContohmenghiutngjarijari"
-                app:layout_constraintVertical_bias="0.23000002" />
+                app:layout_constraintVertical_bias="0.16000003" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -493,14 +538,12 @@ Buka commandPrompt, lalu ketik gcc –version . jika outputnya seperti pada tamp
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorAegeanBlue"
-        android:src="@drawable/back"
+        app:srcCompat="@drawable/back"
         app:layout_constraintBottom_toBottomOf="@+id/nav_top_cpp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="@+id/nav_top_cpp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.42" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
