@@ -33,7 +33,7 @@ public class CppMateri9 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javainstall2);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.cppnineth);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
@@ -41,9 +41,9 @@ public class CppMateri9 extends Fragment {
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentMenuJava fragmentTreeMateri = new FragmentMenuJava();
+                FragmentMenuMateriCpp fragmentTreeMateri = new FragmentMenuMateriCpp();
                 FragmentTransaction fragmentTransactionTree = getFragmentManager().beginTransaction();
-                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarJava,fragmentTreeMateri);
+                fragmentTransactionTree.replace(R.id.fragmentLayoutBelajarCpp,fragmentTreeMateri);
                 fragmentTransactionTree.commit();
             }
         });

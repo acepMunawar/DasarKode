@@ -69,8 +69,7 @@
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pada dasarnya kita hanya membutuhkan dua alat saja, yaitu: teks editor dan compiler.
-Teks editor adalah program yang digunakan untuk menulis kode program C++…
-…dan compiler adalah program yang digunakan untuk menerjemahkan bahasa C ke dalam bahasa mesin sehingga dapat dimengerti oleh komputer.Pemrograman C++ dilakukan juga menggunakan IDE (Integreted Development Environment).
+Teks editor adalah program yang digunakan untuk menulis kode program C++ dan compiler adalah program yang digunakan untuk menerjemahkan bahasa C ke dalam bahasa mesin sehingga dapat dimengerti oleh komputer.Pemrograman C++ dilakukan juga menggunakan IDE (Integreted Development Environment).
 IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
@@ -397,7 +396,8 @@ IDE adalah teks editor khusus yang di dalamnya sudah ada compiler."
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Theory15">
+                app:layout_constraintTop_toBottomOf="@+id/Theory15"
+                app:layout_constraintVertical_bias="0.13">
 
 
                 <TextView

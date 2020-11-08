@@ -46,7 +46,7 @@
                     android:layout_marginTop="16dp"
                     android:text="Apa itu Variable dan tipe data"
                     android:textColor="@color/colorAqua"
-                    android:textSize="18dp"
+                    android:textSize="22dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.13"
                     app:layout_constraintStart_toStartOf="parent"
@@ -63,15 +63,10 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="Semua program komputer yang sedang berjalan akan menyimpan data sementara di dalam RAM (Random Access Memori).
-Data-data yang tersimpan di dalam RAM memiliki alamat yang direpresentasikan dalam bilangan heksa desmial.
-Bagaiaman cara program menyimpan nilai ke RAM?
-Jawabannya dengan menggunakan variabel.
-Semakin banyak variabel yang kamu buat semakin besar pula memori yang akan digunakan di dalam RAM.\n\nJadi dapat kita simpulkan…
-Variabel adalah sebuah nama lokasi penyimpanan di dalam memori.
-Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUntuk lebih jelas bisa kunjungi dokumentasi C++ di link tersebut http://www.cplusplus.com/doc/tutorial/variables/"
+                    android:text="Semua program komputer yang sedang berjalan akan menyimpan data sementara di dalam RAM (Random Access Memori). Data-data yang tersimpan di dalam RAM memiliki alamat yang direpresentasikan dalam bilangan heksa desimal. Bagaiaman cara program menyimpan nilai ke RAM ? Jawabannya dengan menggunakan variabel. Semakin banyak variabel yang kamu buat semakin besar pula memori yang akan digunakan di dalam RAM. Jadi dapat kita simpulkan…
+Variabel adalah sebuah nama lokasi penyimpanan di dalam memori. Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel. Untuk lebih jelas bisa kunjungi dokumentasi C++ di link tersebut http://www.cplusplus.com/doc/tutorial/variables/"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14dp"
+                    android:textSize="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -107,9 +102,9 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:layout_marginTop="16dp"
                     android:text="Cara membuat variable"
                     android:textColor="@color/colorAqua"
-                    android:textSize="18dp"
+                    android:textSize="22dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.13"
+                    app:layout_constraintHorizontal_bias="0.1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/layoutPengertianContohJudulAD" />
 
@@ -126,7 +121,7 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:lineSpacingMultiplier="1.5"
                     android:text="Variabel-variabel di atas akan menyimpan nilai null (kosong), karena belum kita isi."
                     android:textColor="@color/colorWhite"
-                    android:textSize="14dp"
+                    android:textSize="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -166,15 +161,15 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:layout_marginTop="16dp"
                     android:text="Mengisi nilai Variable"
                     android:textColor="@color/colorAqua"
-                    android:textSize="18dp"
+                    android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.11"
+                    app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/LayoutPengertianAlgoritmaDeskriptif" />
 
                 <TextView
                     android:id="@+id/DefenisiPengertianAlgoritmaDes"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
@@ -185,10 +180,9 @@ Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel.\nUnt
                     android:lineSpacingMultiplier="1.5"
                     android:text="Pada variable tersebut terdapat nilai Teks dengan tipe data String dimana di isi dengan nama dan tipe data integer yang di beri nilai bilangan"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14dp"
+                    android:textSize="22dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/JudulPengertianAlgoritmaDeskriptif" />
             </androidx.constraintlayout.widget.ConstraintLayout>
