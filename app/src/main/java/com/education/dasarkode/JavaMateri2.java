@@ -34,7 +34,7 @@ ImageButton imgBtn;
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javainstall2);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javasecond);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);

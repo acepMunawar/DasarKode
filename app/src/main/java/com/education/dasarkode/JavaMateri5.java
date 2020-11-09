@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 
 public class JavaMateri5 extends Fragment {
-    Button firstButtonPlaying,secondButtonPlaying,thirdButtonPlaying,fourthButtonPlaying,fifthButtonPlaying,sixthButtonPlaying,seventhButtonPlaying,eigthButtonPlaying ;
-    SeekBar firstSeekBar,secondSeekBar,thirdSeekBar,fourthSeekBar,fifthSeekBar,sixthSeekBar,seventhSeekBar,eigthSeekBar;
-    TextView firstElapsedTimeLabel,secondElapsedTimeLabel,thirdElapsedTimeLabel,fourthElapsedTimeLabel,fifthElapsedTimeLabel,sixthElapsedTimeLabel,seventhElapsedTimeLabel,eigthElapsedTimeLabel;
-    TextView firstRemainingTimeLabel,secondRemainingTimeLabel,thirdRemainingTimeLabel,fourthRemainingTimeLabel,fifthRemainingTimeLabel,sixthRemainingTimeLabel,seventhRemainingTimeLabel,eigthRemainingTimeLabel;
-    MediaPlayer firstMediaPlayer,secondMediaPlayer,thirdMediaPlayer,fourthMediaPlayer,fifthMediaPlayer,sixthMediaPlayer,seventhMediaPlayer,eigthMediaPlayer;
-    int firstTotalTime, secondTotalTime,thirdTotalTime,fourthTotalTime,fifthTotalTime,sixthTotalTime,seventhTotalTime,eigthTotalTime;
+    Button firstButtonPlaying;
+    SeekBar firstSeekBar;
+    TextView firstElapsedTimeLabel;
+    TextView firstRemainingTimeLabel;
+    MediaPlayer firstMediaPlayer;
+    int firstTotalTime;
     ImageButton imgBtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,7 +33,7 @@ public class JavaMateri5 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javafifth);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);

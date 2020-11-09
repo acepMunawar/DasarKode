@@ -33,7 +33,7 @@ public class JavaMateri3 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.java3);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javathird);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);

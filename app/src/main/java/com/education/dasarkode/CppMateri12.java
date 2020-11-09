@@ -35,7 +35,7 @@ public class CppMateri12 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.cppeleventhmateri);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.cppseventh);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);

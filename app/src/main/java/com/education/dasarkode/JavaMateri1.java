@@ -32,13 +32,13 @@ public class JavaMateri1 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_java_materi1, container, false);
         //second sound button
-        secondButtonPlaying= (Button) view.findViewById(R.id.SecondBtnPlay);
-        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.SecondElapsedTimeLabel);
-        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.SecondRemainingTimeLabel);
-        secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.java1);
+        secondButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
+        secondElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
+        secondRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
+        secondMediaPlayer = MediaPlayer.create(getActivity(), R.raw.javafirst);
         secondMediaPlayer.seekTo(0);
         secondTotalTime = secondMediaPlayer.getDuration();
-        secondSeekBar =(SeekBar) view.findViewById(R.id.SecondSeekBar);
+        secondSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
         imgBtn = (ImageButton) view.findViewById(R.id.back);
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
