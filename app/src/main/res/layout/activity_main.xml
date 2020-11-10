@@ -19,10 +19,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_bottom_dasarkode"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAegeanBlue"
-        app:itemIconSize="35px"
+        app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@drawable/state_btnnav"
         app:itemTextColor="@drawable/state_btnnav"
         app:layout_constraintBottom_toBottomOf="parent"
