@@ -1,5 +1,6 @@
 package com.education.dasarkode.UserInterface.Belajar.Algoritma;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -28,6 +29,24 @@ public class FragmentAlgoritmaMateri3 extends Fragment {
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+    TextView TujuanBelajarAlgoritmaAD;
+    TextView PenjelasanTujuanBelajarAD;
+    TextView KalimatDeskriptif;
+    TextView PenjelasanKalimatDeskrip;
+    TextView DefinisiAD;
+    TextView PenjelasanAD;
+    TextView DefinisiJudulAD;
+    TextView PenjelasanJudulAD;
+    TextView DefinisiContohJudulAD;
+    TextView PenjelasanContohJudulAD;
+    TextView JudulPengertianAlgoritmaDeskriptif;
+    TextView DefenisiPengertianAlgoritmaDes;
+    TextView DefenisiContohAlgoritmaDes;
+    TextView DefenisiContohmenhitungjarijari;
+    TextView DefenisiContohdeskripsiAD;
+    TextView DefenisiContohpenggunaandeskripsiAD;
+    TextView PenjelasanADPK;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,9 +70,47 @@ public class FragmentAlgoritmaMateri3 extends Fragment {
             }
         });
         btnSound1();
+        onFontTextView(view);
         return view;
     }
 
+    private void onFontTextView(View view){
+        TujuanBelajarAlgoritmaAD = (TextView) view.findViewById(R.id.TujuanBelajarAlgoritmaAD);
+        PenjelasanTujuanBelajarAD = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarAD);
+        KalimatDeskriptif = (TextView) view.findViewById(R.id.KalimatDeskriptif);
+        PenjelasanKalimatDeskrip = (TextView) view.findViewById(R.id.PenjelasanKalimatDeskrip);
+        DefinisiAD = (TextView) view.findViewById(R.id.DefinisiAD);
+        PenjelasanAD = (TextView) view.findViewById(R.id.PenjelasanAD);
+        DefinisiJudulAD = (TextView) view.findViewById(R.id.DefinisiJudulAD);
+        PenjelasanJudulAD = (TextView) view.findViewById(R.id.PenjelasanJudulAD);
+        DefinisiContohJudulAD = (TextView) view.findViewById(R.id.DefinisiContohJudulAD);
+        PenjelasanContohJudulAD = (TextView) view.findViewById(R.id.PenjelasanContohJudulAD);
+        JudulPengertianAlgoritmaDeskriptif = (TextView) view.findViewById(R.id.JudulPengertianAlgoritmaDeskriptif);
+        DefenisiPengertianAlgoritmaDes = (TextView) view.findViewById(R.id.DefenisiPengertianAlgoritmaDes);
+        DefenisiContohAlgoritmaDes = (TextView) view.findViewById(R.id.DefenisiContohAlgoritmaDes);
+        DefenisiContohmenhitungjarijari = (TextView) view.findViewById(R.id.DefenisiContohmenhitungjarijari);
+        DefenisiContohdeskripsiAD = (TextView) view.findViewById(R.id.DefenisiContohdeskripsiAD);
+        DefenisiContohmenhitungjarijari = (TextView) view.findViewById(R.id.DefenisiContohmenhitungjarijari);
+        DefenisiContohpenggunaandeskripsiAD = (TextView) view.findViewById(R.id.DefenisiContohpenggunaandeskripsiAD);
+        PenjelasanADPK = (TextView) view.findViewById(R.id.PenjelasanADPK);
+
+        Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        TujuanBelajarAlgoritmaAD.setTypeface(costumFont);
+        PenjelasanTujuanBelajarAD.setTypeface(costumFont);
+        KalimatDeskriptif.setTypeface(costumFont);
+        PenjelasanKalimatDeskrip.setTypeface(costumFont);
+        DefinisiAD.setTypeface(costumFont);
+        PenjelasanAD.setTypeface(costumFont);
+        DefinisiJudulAD.setTypeface(costumFont);
+        PenjelasanJudulAD.setTypeface(costumFont);
+        DefinisiContohJudulAD.setTypeface(costumFont);
+        PenjelasanContohJudulAD.setTypeface(costumFont);
+        JudulPengertianAlgoritmaDeskriptif.setTypeface(costumFont);
+        DefenisiPengertianAlgoritmaDes.setTypeface(costumFont);
+        DefenisiContohmenhitungjarijari.setTypeface(costumFont);
+        DefenisiContohpenggunaandeskripsiAD.setTypeface(costumFont);
+        PenjelasanADPK.setTypeface(costumFont);
+    }
 
     //    method btn sound 1
     public void btnSound1(){

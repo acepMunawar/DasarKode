@@ -1,5 +1,6 @@
 package com.education.dasarkode.UserInterface.Belajar.Algoritma;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -26,6 +27,19 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+    TextView tujuanBelajarAlgoritma;
+    TextView PenjelasanTujuanBelajarLA;
+    TextView logikaDanAlgoritma;
+    TextView definisiLogikaDanAlgoritma;
+    TextView logika;
+    TextView definisiL;
+    TextView algoritma;
+    TextView definisiAlgoritma;
+    TextView studiKasus;
+    TextView FirststudiKasus;
+    TextView penyelesaianMasalahJawaban;
+    TextView KasusKedua;
+    TextView SolusiAlgoritma;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -48,9 +62,40 @@ public class FragmentAlgoritmaMateri1 extends Fragment {
             }
         });
         btnSound1();
+        onFontTextView(view);
         return view;
     }
 
+    private void onFontTextView(View view){
+        tujuanBelajarAlgoritma = (TextView) view.findViewById(R.id.TujuanBelajarAlgoritma);
+        PenjelasanTujuanBelajarLA = (TextView) view.findViewById(R.id.PenjelasanTujuanBelajarLA);
+        logikaDanAlgoritma = (TextView) view.findViewById(R.id.logikaDanAlgoritma);
+        definisiLogikaDanAlgoritma = (TextView) view.findViewById(R.id.definisiLogikaDanAlgoritma);
+        logika = (TextView) view.findViewById(R.id.logika);
+        definisiL = (TextView) view.findViewById(R.id.definisiL);
+        algoritma = (TextView) view.findViewById(R.id.algoritma);
+        definisiAlgoritma = (TextView) view.findViewById(R.id.definisiAlgoritma);
+        studiKasus = (TextView) view.findViewById(R.id.studiKasus);
+        FirststudiKasus = (TextView) view.findViewById(R.id.FirststudiKasus);
+        penyelesaianMasalahJawaban = (TextView) view.findViewById(R.id.penyelesaianMasalahJawaban);
+        KasusKedua = (TextView) view.findViewById(R.id.KasusKedua);
+        SolusiAlgoritma = (TextView) view.findViewById(R.id.SolusiAlgoritma);
+
+        Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        tujuanBelajarAlgoritma.setTypeface(costumFont);
+        PenjelasanTujuanBelajarLA.setTypeface(costumFont);
+        logikaDanAlgoritma.setTypeface(costumFont);
+        definisiLogikaDanAlgoritma.setTypeface(costumFont);
+        logika.setTypeface(costumFont);
+        definisiL.setTypeface(costumFont);
+        algoritma.setTypeface(costumFont);
+        definisiAlgoritma.setTypeface(costumFont);
+        studiKasus.setTypeface(costumFont);
+        FirststudiKasus.setTypeface(costumFont);
+        penyelesaianMasalahJawaban.setTypeface(costumFont);
+        KasusKedua.setTypeface(costumFont);
+        SolusiAlgoritma.setTypeface(costumFont);
+    }
 
     //    method btn sound 1
     public void btnSound1(){

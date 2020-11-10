@@ -1,5 +1,6 @@
 package com.education.dasarkode;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -25,6 +26,8 @@ public class CppMateri5 extends Fragment {
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,6 +53,8 @@ public class CppMateri5 extends Fragment {
         btnSound1();
         return view;
     }
+
+
 
     //    method btn sound 1
     public void btnSound1(){

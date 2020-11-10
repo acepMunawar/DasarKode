@@ -1,5 +1,6 @@
 package com.education.dasarkode.UserInterface.Belajar.Algoritma;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -28,6 +29,14 @@ public class FragmentAlgoritmaMateri5 extends Fragment {
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+
+    TextView JudulPengertianPseudocode;
+    TextView PengertianPseudocode;
+    TextView JudulTujuanBelajarPseudocode;
+    TextView TujuanBelajarPseudocode;
+    TextView PengertianADDP;
+    TextView JudulPengertianContohPenulisanPseudocode;
+    TextView PengertianContohPenulisanPseudocode;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,10 +60,28 @@ public class FragmentAlgoritmaMateri5 extends Fragment {
             }
         });
         btnSound1();
+        onFontTextView(view);
         return view;
     }
 
+    private void onFontTextView(View view){
+        JudulPengertianPseudocode = (TextView) view.findViewById(R.id.JudulPengertianPseudocode);
+        PengertianPseudocode = (TextView) view.findViewById(R.id.PengertianPseudocode);
+        JudulTujuanBelajarPseudocode = (TextView) view.findViewById(R.id.JudulTujuanBelajarPseudocode);
+        TujuanBelajarPseudocode = (TextView) view.findViewById(R.id.TujuanBelajarPseudocode);
+        PengertianADDP = (TextView) view.findViewById(R.id.PengertianADDP);
+        JudulPengertianContohPenulisanPseudocode = (TextView) view.findViewById(R.id.JudulPengertianContohPenulisanPseudocode);
+        PengertianContohPenulisanPseudocode = (TextView) view.findViewById(R.id.PengertianContohPenulisanPseudocode);
 
+        Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        JudulPengertianPseudocode.setTypeface(costumFont);
+        PengertianPseudocode.setTypeface(costumFont);
+        JudulTujuanBelajarPseudocode.setTypeface(costumFont);
+        TujuanBelajarPseudocode.setTypeface(costumFont);
+        PengertianADDP.setTypeface(costumFont);
+        JudulPengertianContohPenulisanPseudocode.setTypeface(costumFont);
+        PengertianContohPenulisanPseudocode.setTypeface(costumFont);
+    }
 
     //    method btn sound 1
     public void btnSound1(){

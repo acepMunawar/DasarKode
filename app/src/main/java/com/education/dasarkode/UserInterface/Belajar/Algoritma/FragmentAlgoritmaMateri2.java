@@ -1,5 +1,6 @@
 package com.education.dasarkode.UserInterface.Belajar.Algoritma;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -28,6 +29,17 @@ public class FragmentAlgoritmaMateri2 extends Fragment {
     MediaPlayer firstMediaPlayer;
     int firstTotalTime;
     ImageButton imgBtn;
+    TextView ciriciriAlgoritma;
+    TextView ciriAlgoritmaDefinisi;
+    TextView sifatAlgoritma;
+    TextView sifatAlgoritmaDefinisi;
+    TextView strukturDasarAlgoritma;
+    TextView strukturDasarAlgoritmaRuntunan;
+    TextView strukturDasarAlgoritmaRuntunanCont;
+    TextView strukturDasarAlgoritmaPemilihan;
+    TextView strukturDasarAlgoritmaPengulangan;
+    TextView perbedaanAlgoritmaDanProgram;
+    TextView perbedaanAlgoritmaDanProgramdesk;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,7 +63,35 @@ public class FragmentAlgoritmaMateri2 extends Fragment {
             }
         });
         btnSound1();
+        onFontTextView(view);
 return view;
+    }
+
+    private void onFontTextView(View view){
+        ciriciriAlgoritma = (TextView) view.findViewById(R.id.ciriciriAlgoritma);
+        ciriAlgoritmaDefinisi = (TextView) view.findViewById(R.id.ciriAlgoritmaDefinisi);
+        sifatAlgoritma = (TextView) view.findViewById(R.id.sifatAlgoritma);
+        sifatAlgoritmaDefinisi = (TextView) view.findViewById(R.id.sifatAlgoritmaDefinisi);
+        strukturDasarAlgoritma = (TextView) view.findViewById(R.id.strukturDasarAlgoritma);
+        strukturDasarAlgoritmaRuntunan = (TextView) view.findViewById(R.id.strukturDasarAlgoritmaRuntunan);
+        strukturDasarAlgoritmaRuntunanCont = (TextView) view.findViewById(R.id.strukturDasarAlgoritmaRuntunanCont);
+        strukturDasarAlgoritmaPemilihan = (TextView) view.findViewById(R.id.strukturDasarAlgoritmaPemilihan);
+        strukturDasarAlgoritmaPengulangan = (TextView) view.findViewById(R.id.strukturDasarAlgoritmaPengulangan);
+        perbedaanAlgoritmaDanProgram = (TextView) view.findViewById(R.id.perbedaanAlgoritmaDanProgram);
+        perbedaanAlgoritmaDanProgramdesk = (TextView) view.findViewById(R.id.perbedaanAlgoritmaDanProgramdesk);
+
+        Typeface costumFont = Typeface.createFromAsset(getActivity().getAssets(),"font/timenewroman.otf");
+        ciriciriAlgoritma.setTypeface(costumFont);
+        ciriAlgoritmaDefinisi.setTypeface(costumFont);
+        sifatAlgoritma.setTypeface(costumFont);
+        sifatAlgoritmaDefinisi.setTypeface(costumFont);
+        strukturDasarAlgoritma.setTypeface(costumFont);
+        strukturDasarAlgoritmaRuntunan.setTypeface(costumFont);
+        strukturDasarAlgoritmaRuntunanCont.setTypeface(costumFont);
+        strukturDasarAlgoritmaPemilihan.setTypeface(costumFont);
+        strukturDasarAlgoritmaPengulangan.setTypeface(costumFont);
+        perbedaanAlgoritmaDanProgram.setTypeface(costumFont);
+        perbedaanAlgoritmaDanProgramdesk.setTypeface(costumFont);
     }
 
     //    method btn sound 1

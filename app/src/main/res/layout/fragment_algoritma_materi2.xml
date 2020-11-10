@@ -34,14 +34,11 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutPengertianSD"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorAegeanBlue"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FirstTheory"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/FirstTheory">
 
 
                 <TextView
@@ -175,7 +172,7 @@ aksinya diubah maka hasil &#160;&#160;&#160;&#160;&#160;keluaran akan berbeda me
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
                     android:lineSpacingMultiplier="1.5"
-                    android:text="&#160;&#160;&#160;&#160;&#160;Contoh lain dari runtunan aksi adalah &#160;&#160;&#160;&#160;&#160;algoritma penukaran dua bilangan \n &#160;&#160;&#160;&#160;&#160;bulat, yaitu:
+                    android:text="&#160;&#160;&#160;&#160;&#160;Contoh lain dari runtunan aksi adalah &#160;&#160;&#160;&#160;&#160;algoritma penukaran dua bilangan &#160;&#160;&#160;&#160;&#160;bulat, yaitu:
 \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Deklarasikan A, B, dan X sebagai &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;bilangan bulat
 \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Masukkan nilai A dan B
 \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Masukkan nilai A ke dalam X
@@ -286,73 +283,95 @@ sudah dilakukan.
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="32dp"
+                    android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="Algoritma adalah urutan
 langkah-langkah terbatas yang disusun secara sistematis dan menggunakan bahasa yang logis
 dengan tujuan menyelesaikan suatu masalah tertentu. Sementara program adalah kumpulan
 instruksi berupa pernyataan yang ditulis dengan menggunakan bahasa pemrograman yang
 melibatkan pemilihan struktur data. Beberapa pakar komputer menyatakan program dengan
-formula Program = Algoritma + Bahasa Pemrograman.
- "
+formula Program = Algoritma + Bahasa Pemrograman."
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                    app:layout_constraintVertical_bias="0.0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <SeekBar
                 android:id="@+id/FirstSeekBar"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/FirstLinearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.02"
-                app:layout_constraintStart_toEndOf="@+id/FirstBtnPlay"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianSD" />
 
             <LinearLayout
                 android:id="@+id/FirstLinearLayout"
-                android:layout_width="340dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginBottom="32dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.12"
-                app:layout_constraintStart_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/FirstSeekBar"
                 app:layout_constraintTop_toBottomOf="@+id/FirstSeekBar">
 
-                <TextView
-                    android:id="@+id/FirstElapsedTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0:11" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/FirstRemainingTimeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="265dp"
-                    android:text="-1:49" />
+                    <TextView
+                        android:id="@+id/FirstElapsedTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:11"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
+                    <TextView
+                        android:id="@+id/FirstRemainingTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-1:49"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/FirstElapsedTimeLabel"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
             <Button
                 android:id="@+id/FirstBtnPlay"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:background="@drawable/play_sound"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPengertianSD"
-                app:layout_constraintVertical_bias="0.23000002" />
+                app:layout_constraintVertical_bias="0.16000003" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

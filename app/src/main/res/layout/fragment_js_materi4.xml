@@ -39,7 +39,7 @@
                 android:id="@+id/SecondTheory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jspenulisaninternal2"
+                android:src="@drawable/jstipedata2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/FirstTheory" />
@@ -58,18 +58,6 @@
 
             <!-- -->
 
-            <ImageView
-                android:id="@+id/FourthTheory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
-                android:src="@drawable/jstipedata"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory"
-                app:layout_constraintVertical_bias="0.0" />
-
 
             <SeekBar
                 android:id="@+id/FirstSeekBar"
@@ -82,7 +70,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheory" />
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory" />
 
             <LinearLayout
                 android:id="@+id/FirstLinearLayout"
@@ -139,7 +127,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/FirstSeekBar"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FourthTheory"
+                app:layout_constraintTop_toBottomOf="@+id/ThirdTheory"
                 app:layout_constraintVertical_bias="0.16000003" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
