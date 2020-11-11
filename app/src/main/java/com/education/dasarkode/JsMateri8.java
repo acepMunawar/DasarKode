@@ -34,7 +34,7 @@ public class JsMateri8 extends Fragment {
         firstButtonPlaying= (Button) view.findViewById(R.id.FirstBtnPlay);
         firstElapsedTimeLabel = (TextView) view.findViewById(R.id.FirstElapsedTimeLabel);
         firstRemainingTimeLabel = (TextView) view.findViewById(R.id.FirstRemainingTimeLabel);
-        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.song);
+        firstMediaPlayer = MediaPlayer.create(getActivity(), R.raw.jseight);
         firstMediaPlayer.seekTo(0);
         firstTotalTime = firstMediaPlayer.getDuration();
         firstSeekBar =(SeekBar) view.findViewById(R.id.FirstSeekBar);
